@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Syntonie ☂️ — Être en résonance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Spectral:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Syne+Mono&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   TOKENS
+   ============================================================ */
+:root {
+  --tile: 59px;
+  --sidebar: 280px;
+
+  /* Syntonie cool palette */
+  --bg-void:    #070E14;
+  --bg-deep:    #0D1B2A;
+  --bg-mid:     #112233;
+  --bg-surface: #162B3E;
+  --bg-lift:    #1D3A52;
+
+  --lapis:      #2A6A9A;
+  --lapis-lt:   #4A8DB8;
+  --teal:       #2D7D79;
+  --dusk:       #3B5998;
+
+  --text-1:     #E8EDF5;
+  --text-2:     rgba(200, 220, 240, 0.75);
+  --text-3:     rgba(160, 190, 215, 0.50);
+
+  --grid-line:  rgba(160, 200, 235, 0.10);
+  --grid-accent:rgba(160, 200, 235, 0.22);
+  --pillar-line:rgba(180, 215, 240, 0.25);
+
+  /* shifted primaries */
+  --red-e:      #8B3A3A;
+  --blue-e:     #3B5998;
+  --gold-e:     #7A8F70;
+
+  /* trinity brand spots */
+  --of-warm:    #C84B31;
+  --po-pure:    #E63946;
+
+  --radius: 2px;
+  --border: 1px solid rgba(180, 215, 240, 0.15);
+}
+
+/* ============================================================
+   RESET
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg-void);
+  color: var(--text-1);
+  font-family: 'Spectral', Georgia, serif;
+  font-size: 17px;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ============================================================
+   GLOBAL BLUEPRINT GRID
+   ============================================================ */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: var(--tile) var(--tile);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ============================================================
+   LAYOUT
+   ============================================================ */
+.layout {
+  display: grid;
+  grid-template-columns: var(--sidebar) 1fr;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================================================
+   SIDEBAR
+   ============================================================ */
+.sidebar {
+  position: fixed;
+  top: 0; left: 0; bottom: 0;
+  width: var(--sidebar);
+  background: var(--bg-deep);
+  border-right: var(--border);
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  overflow: hidden;
+}
+
+/* blueprint grid on sidebar */
+.sidebar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--grid-accent) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-accent) 1px, transparent 1px);
+  background-size: var(--tile) var(--tile);
+  pointer-events: none;
+}
+
+/* pillar motif — three vertical lines */
+.sidebar-pillars {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 65%;
+  pointer-events: none;
+  overflow: hidden;
+}
+.pillar {
+  position: absolute;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to top, var(--pillar-line) 0%, transparent 100%);
+  animation: pillar-breathe 6s ease-in-out infinite;
+}
+.pillar:nth-child(1) { left: 25%;  height: 95%; animation-delay: 0s; }
+.pillar:nth-child(2) { left: 50%;  height: 78%; animation-delay: 1.5s; }
+.pillar:nth-child(3) { left: 75%;  height: 88%; animation-delay: 0.8s; }
+.pillar-cap {
+  position: absolute;
+  top: 0;
+  width: 24px;
+  height: 1px;
+  background: var(--pillar-line);
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+@keyframes pillar-breathe {
+  0%, 100% { opacity: 0.6; }
+  50%       { opacity: 1;   }
+}
+
+/* sidebar content */
+.sidebar-inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 36px 28px 32px;
+}
+
+.sidebar-brand {
+  margin-bottom: 40px;
+}
+.sidebar-mark {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+  color: var(--text-1);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.sidebar-glyph {
+  font-size: 26px;
+  display: block;
+  margin-top: 8px;
+  opacity: 0.9;
+}
+.sidebar-tagline {
+  font-family: 'Syne Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: var(--text-3);
+  text-transform: uppercase;
+  margin-top: 12px;
+  line-height: 1.5;
+}
+
+/* nav */
+.sidebar-nav {
+  flex: 1;
+}
+.sidebar-nav a {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 9px 0;
+  border-bottom: 1px solid rgba(180,215,240,0.07);
+  color: var(--text-2);
+  text-decoration: none;
+  font-family: 'Syne', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  transition: color 0.25s, border-color 0.25s;
+}
+.sidebar-nav a:hover { color: var(--text-1); border-color: rgba(180,215,240,0.3); }
+.nav-num {
+  font-family: 'Syne Mono', monospace;
+  font-size: 10px;
+  color: var(--text-3);
+  min-width: 18px;
+}
+
+/* lang toggle */
+.lang-toggle {
+  margin-top: 28px;
+  display: flex;
+  gap: 0;
+  border: var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  width: fit-content;
+}
+.lang-btn {
+  font-family: 'Syne Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  padding: 5px 10px;
+  background: transparent;
+  border: none;
+  color: var(--text-3);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.lang-btn.active {
+  background: var(--lapis);
+  color: var(--text-1);
+}
+
+/* trinity portals */
+.trinity-portals {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: var(--border);
+}
+.portal-label {
+  font-family: 'Syne Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  color: var(--text-3);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.portal-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.portal-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border: var(--border);
+  border-radius: var(--radius);
+  color: var(--text-3);
+  text-decoration: none;
+  font-family: 'Syne', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: all 0.25s;
+  cursor: default;
+  position: relative;
+}
+.portal-link:hover { border-color: rgba(180,215,240,0.3); color: var(--text-2); }
+.portal-link .portal-glyph { font-size: 14px; }
+.portal-link .placeholder-tag {
+  position: absolute;
+  right: 8px;
+  font-family: 'Syne Mono', monospace;
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  color: var(--text-3);
+  border: 1px solid rgba(180,215,240,0.12);
+  padding: 1px 4px;
+  border-radius: 2px;
+}
+
+/* ============================================================
+   MAIN CONTENT
+   ============================================================ */
+.main {
+  margin-left: var(--sidebar);
+  position: relative;
+}
+
+/* ============================================================
+   SECTION BASE
+   ============================================================ */
+.section {
+  min-height: 100vh;
+  padding: 0 80px 0 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  border-bottom: var(--border);
+}
+.section:last-child { border-bottom: none; }
+
+/* ============================================================
+   SECTION LABELS (architectural annotation style)
+   ============================================================ */
+.section-label {
+  font-family: 'Syne Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  color: var(--text-3);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+.section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--grid-accent);
+  max-width: 120px;
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+#hero {
+  background: var(--bg-deep);
+  min-height: 100vh;
+  padding-top: 0;
+  overflow: hidden;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  padding: 80px 80px 80px 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* large pillar motif behind hero text */
+.hero-pillars {
+  position: absolute;
+  right: 0; top: 0; bottom: 0;
+  width: 45%;
+  pointer-events: none;
+  overflow: hidden;
+  opacity: 0.4;
+}
+.hero-pillar {
+  position: absolute;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to top, var(--pillar-line) 0%, transparent 80%);
+  animation: pillar-breathe 7s ease-in-out infinite;
+}
+.hero-pillar:nth-child(1) { left: 20%;  height: 90%; animation-delay: 0s; }
+.hero-pillar:nth-child(2) { left: 40%;  height: 70%; animation-delay: 1.2s; }
+.hero-pillar:nth-child(3) { left: 60%;  height: 100%; animation-delay: 0.6s; }
+.hero-pillar:nth-child(4) { left: 80%;  height: 60%; animation-delay: 2s; }
+.hero-pillar .hero-pillar-cap {
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 1px;
+  background: var(--pillar-line);
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+/* grid accent lines — architectural annotation */
+.hero-hline {
+  position: absolute;
+  left: 0; right: 0;
+  height: 1px;
+  background: var(--grid-accent);
+}
+.hero-hline:nth-child(1) { top: 30%; }
+.hero-hline:nth-child(2) { top: 65%; }
+
+.hero-eyebrow {
+  font-family: 'Syne Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  color: var(--lapis-lt);
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.hero-title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: clamp(42px, 6vw, 80px);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  color: var(--text-1);
+  margin-bottom: 20px;
+  max-width: 640px;
+}
+
+.hero-subtitle {
+  font-family: 'Spectral', serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--text-2);
+  margin-bottom: 48px;
+  max-width: 480px;
+  line-height: 1.6;
+}
+
+.hero-since {
+  font-family: 'Syne Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  color: var(--text-3);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.hero-since::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: var(--text-3);
+}
+
+/* ============================================================
+   VISION
+   ============================================================ */
+#vision {
+  background: var(--bg-mid);
+}
+
+.vision-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+  padding: 100px 80px 100px 72px;
+}
+
+.vision-body h2 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: clamp(28px, 3.5vw, 44px);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  color: var(--text-1);
+  margin-bottom: 28px;
+}
+
+.vision-body p {
+  font-size: 17px;
+  color: var(--text-2);
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+
+.vision-body p strong {
+  color: var(--text-1);
+  font-style: normal;
+}
+
+.vision-pull {
+  border-left: 2px solid var(--lapis);
+  padding-left: 28px;
+  margin-top: 8px;
+}
+
+.vision-pull blockquote {
+  font-family: 'Spectral', serif;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--text-1);
+  line-height: 1.55;
+  margin-bottom: 16px;
+}
+
+.pull-annotation {
+  font-family: 'Syne Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  color: var(--text-3);
+  text-transform: uppercase;
+}
+
+/* word origin */
+.word-origin {
+  margin-top: 40px;
+  padding: 24px;
+  border: var(--border);
+  background: rgba(42, 106, 154, 0.07);
+}
+.word-origin .word {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  color: var(--lapis-lt);
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+.word-origin .etymology {
+  font-family: 'Syne Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: var(--text-3);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.word-origin p {
+  font-size: 15px;
+  color: var(--text-2);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ============================================================
+   ROLE
+   ============================================================ */
+#role {
+  background: var(--bg-surface);
+  padding: 100px 80px 100px 72px;
+}
+
+#role h2 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: clamp(24px, 3vw, 38px);
+  letter-spacing: -0.025em;
+  color: var(--text-1);
+  margin-bottom: 12px;
+}
+
+#role > .section-label { margin-bottom: 40px; }
+
+.role-lead {
+  font-size: 18px;
+  color: var(--text-2);
+  max-width: 560px;
+  line-height: 1.7;
+  margin-bottom: 56px;
+}
+
+.role-do-dont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 56px;
+}
+
+.do-col, .dont-col {
+  border: var(--border);
+  padding: 28px;
+}
+
+.col-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: var(--border);
+}
+.do-col .col-header { color: var(--teal); }
+.dont-col .col-header { color: var(--red-e); }
+
+.do-list, .dont-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.do-list li, .dont-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-size: 15px;
+  color: var(--text-2);
+  line-height: 1.5;
+}
+.do-list li::before {
+  content: '→';
+  color: var(--teal);
+  font-family: 'Syne Mono', monospace;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+.dont-list li::before {
+  content: '✕';
+  color: var(--red-e);
+  font-family: 'Syne Mono', monospace;
+  font-size: 11px;
+  flex-shrink: 0;
+}
+
+/* asset badge */
+.asset-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  border: 1px solid rgba(42, 106, 154, 0.4);
+  background: rgba(42, 106, 154, 0.08);
+  font-family: 'Syne Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--lapis-lt);
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   TRINITY
+   ============================================================ */
+#trinity {
+  background: var(--bg-mid);
+  padding: 100px 80px 100px 72px;
+}
+
+#trinity h2 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: clamp(24px, 3vw, 38px);
+  letter-spacing: -0.025em;
+  color: var(--text-1);
+  margin-bottom: 12px;
+}
+
+.trinity-intro {
+  font-size: 18px;
+  color: var(--text-2);
+  max-width: 520px;
+  line-height: 1.7;
+  margin-bottom: 56px;
+}
+
+.trinity-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 56px;
+}
+
+.trinity-card {
+  border: var(--border);
+  padding: 32px 28px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s;
+  background: var(--bg-deep);
+  cursor: default;
+}
+.trinity-card:hover { border-color: rgba(180,215,240,0.35); }
+
+/* color accent strip */
+.trinity-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+}
+.trinity-card.syntonie::before { background: var(--lapis); }
+.trinity-card.politype::before { background: var(--po-pure); }
+.trinity-card.openfab::before  { background: var(--of-warm); }
+
+.card-glyph {
+  font-size: 28px;
+  margin-bottom: 16px;
+  display: block;
+}
+.card-name {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  color: var(--text-1);
+  margin-bottom: 4px;
+}
+.card-role {
+  font-family: 'Syne Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.trinity-card.syntonie .card-role { color: var(--lapis-lt); }
+.trinity-card.politype .card-role { color: #E68A8A; }
+.trinity-card.openfab  .card-role { color: #D4916A; }
+
+.card-desc {
+  font-size: 14px;
+  color: var(--text-2);
+  line-height: 1.65;
+  margin-bottom: 24px;
+}
+
+.card-placeholder {
+  display: inline-block;
+  font-family: 'Syne Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  border: 1px solid rgba(180,215,240,0.12);
+  padding: 4px 8px;
+}
+
+/* flow diagram */
+.trinity-flow {
+  border: var(--border);
+  padding: 32px;
+  background: var(--bg-deep);
+}
+.flow-label {
+  font-family: 'Syne Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  color: var(--text-3);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.flow-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.flow-node {
+  font-family: 'Syne', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 14px;
+  border: var(--border);
+  color: var(--text-2);
+}
+.flow-node.sy { border-color: var(--lapis); color: var(--lapis-lt); }
+.flow-node.po { border-color: var(--po-pure); color: #E68A8A; }
+.flow-node.of { border-color: var(--of-warm); color: #D4916A; }
+.flow-arrow {
+  font-family: 'Syne Mono', monospace;
+  color: var(--text-3);
+  font-size: 11px;
+}
+.flow-desc {
+  font-size: 13px;
+  color: var(--text-3);
+  font-style: italic;
+}
+
+/* ============================================================
+   WHO
+   ============================================================ */
+#who {
+  background: var(--bg-lift);
+  padding: 100px 80px 100px 72px;
+}
+
+#who h2 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: clamp(24px, 3vw, 38px);
+  letter-spacing: -0.025em;
+  color: var(--text-1);
+  margin-bottom: 40px;
+}
+
+.who-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.who-col h3 {
+  font-family: 'Syne Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: var(--border);
+}
+.who-col.for h3   { color: var(--teal); }
+.who-col.notfor h3 { color: var(--red-e); }
+
+.who-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.who-list li {
+  font-size: 15px;
+  color: var(--text-2);
+  line-height: 1.55;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.who-col.for .who-list li::before {
+  content: '◆';
+  font-size: 8px;
+  color: var(--teal);
+  flex-shrink: 0;
+  position: relative;
+  top: -1px;
+}
+.who-col.notfor .who-list li::before {
+  content: '◇';
+  font-size: 8px;
+  color: var(--red-e);
+  flex-shrink: 0;
+  position: relative;
+  top: -1px;
+}
+
+/* ============================================================
+   CONTACT
+   ============================================================ */
+#contact {
+  background: var(--bg-deep);
+  padding: 100px 80px 100px 72px;
+}
+
+#contact h2 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: clamp(24px, 3vw, 38px);
+  letter-spacing: -0.025em;
+  color: var(--text-1);
+  margin-bottom: 12px;
+}
+
+.contact-lead {
+  font-size: 17px;
+  color: var(--text-2);
+  max-width: 480px;
+  line-height: 1.7;
+  margin-bottom: 48px;
+}
+
+.contact-tracks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 56px;
+}
+
+.contact-track {
+  border: var(--border);
+  padding: 28px 24px;
+  background: var(--bg-mid);
+}
+.track-entity {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.track-glyph { font-size: 18px; }
+.track-name {
+  font-family: 'Syne', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-1);
+}
+.track-purpose {
+  font-size: 13px;
+  color: var(--text-3);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.track-cta {
+  font-family: 'Syne Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--lapis-lt);
+  border: 1px solid rgba(74, 141, 184, 0.4);
+  padding: 8px 14px;
+  display: inline-block;
+  cursor: default;
+  transition: all 0.2s;
+}
+.track-cta:hover {
+  background: rgba(74, 141, 184, 0.1);
+}
+
+/* membership call */
+.membership-call {
+  border: 1px solid rgba(74, 141, 184, 0.35);
+  padding: 36px;
+  background: rgba(42, 106, 154, 0.08);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 32px;
+  align-items: center;
+}
+.membership-call h3 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--text-1);
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+.membership-call p {
+  font-size: 15px;
+  color: var(--text-2);
+  line-height: 1.65;
+}
+.primary-cta {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: var(--lapis);
+  color: var(--text-1);
+  padding: 14px 24px;
+  border: none;
+  cursor: default;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+.primary-cta:hover { background: var(--lapis-lt); }
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer {
+  background: var(--bg-void);
+  padding: 48px 80px 48px 72px;
+  border-top: var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: gap;
+}
+.footer-brand {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--text-3);
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-legal {
+  font-family: 'Syne Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--text-3);
+  text-align: right;
+  line-height: 1.8;
+}
+.footer-legal a {
+  color: var(--text-3);
+  text-decoration: none;
+}
+.footer-legal a:hover { color: var(--text-2); }
+
+/* ============================================================
+   SCROLL FADE-IN
+   ============================================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ============================================================
+   SCROLLBAR
+   ============================================================ */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg-void); }
+::-webkit-scrollbar-thumb { background: var(--bg-lift); }
+
+</style>
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- ======================================================
+       SIDEBAR
+       ====================================================== -->
+  <aside class="sidebar">
+    <div class="sidebar-pillars">
+      <div class="pillar"><div class="pillar-cap"></div></div>
+      <div class="pillar"><div class="pillar-cap"></div></div>
+      <div class="pillar"><div class="pillar-cap"></div></div>
+    </div>
+
+    <div class="sidebar-inner">
+      <div class="sidebar-brand">
+        <div class="sidebar-mark">Syntonie</div>
+        <span class="sidebar-glyph">☂️</span>
+        <div class="sidebar-tagline">ASBL · Ixelles, Bruxelles<br>Fondée 2012</div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="#vision"><span class="nav-num">01</span> Vision</a>
+        <a href="#role"><span class="nav-num">02</span> Notre rôle</a>
+        <a href="#trinity"><span class="nav-num">03</span> La Trinity</a>
+        <a href="#who"><span class="nav-num">04</span> Pour qui</a>
+        <a href="#contact"><span class="nav-num">05</span> Contact</a>
+      </nav>
+
+      <div class="lang-toggle">
+        <button class="lang-btn active">FR</button>
+        <button class="lang-btn">EN</button>
+      </div>
+
+      <div class="trinity-portals">
+        <div class="portal-label">Écosystème</div>
+        <div class="portal-links">
+          <a class="portal-link">
+            <span class="portal-glyph">🫰</span>
+            Politype
+            <span class="placeholder-tag">bientôt</span>
+          </a>
+          <a class="portal-link">
+            <span class="portal-glyph">🧰</span>
+            OpenFab
+            <span class="placeholder-tag">bientôt</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ======================================================
+       MAIN
+       ====================================================== -->
+  <main class="main">
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-hline"></div>
+      <div class="hero-hline"></div>
+      <div class="hero-pillars">
+        <div class="hero-pillar"><div class="hero-pillar-cap"></div></div>
+        <div class="hero-pillar"><div class="hero-pillar-cap"></div></div>
+        <div class="hero-pillar"><div class="hero-pillar-cap"></div></div>
+        <div class="hero-pillar"><div class="hero-pillar-cap"></div></div>
+      </div>
+      <div class="hero-inner">
+        <div class="hero-eyebrow">Syntonie · ASBL · Bruxelles</div>
+        <h1 class="hero-title">Être en<br>résonance.</h1>
+        <p class="hero-subtitle">Démocratie, technologie, et faire appartiennent ensemble — comme pratique vivante.</p>
+        <div class="hero-since">Depuis 2012 · Ixelles</div>
+      </div>
+    </section>
+
+    <!-- VISION -->
+    <section id="vision" class="section" style="min-height:auto; padding-top:0; padding-bottom:0;">
+      <div class="vision-grid reveal">
+        <div class="vision-body">
+          <div class="section-label">01 — Vision</div>
+          <h2>La relation entre humains, technologie, et environnement se brisait.</h2>
+          <p>Syntonie a été créée pour être le pont : ni une entreprise, ni une ONG traditionnelle, mais une ASBL qui tient l'espace pour des expériences émergentes sur notre façon de vivre ensemble.</p>
+          <p>Les défis de notre temps — polarisation, capitalisme de surveillance, érosion démocratique — ne seront pas résolus par une seule discipline. Ils exigent <strong>une nouvelle écologie</strong> : penseurs, bâtisseurs et expérimentateurs en concert.</p>
+          <div class="asset-note">☂️&nbsp; Syntonie tient. Les autres créent.</div>
+        </div>
+        <div class="vision-pull">
+          <blockquote>« Le mot lui-même — syntonie — signifie "être en résonance." Vibrer ensemble. »</blockquote>
+          <div class="pull-annotation">Origine · Grec syntonia</div>
+          <div class="word-origin">
+            <div class="word">syn·to·nie</div>
+            <div class="etymology">nom féminin · du grec</div>
+            <p>État d'accord entre systèmes oscillants. En harmonie avec son environnement. Ce que nous cherchons à rendre possible.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROLE -->
+    <section id="role">
+      <div class="reveal">
+        <div class="section-label">02 — Notre rôle</div>
+        <h2>La tête. Le parapluie. Le gardien de la vision.</h2>
+        <p class="role-lead">Syntonie possède les actifs, signe les contrats, assure la conformité et maintient la cohérence stratégique de l'écosystème. Elle n'opère pas au quotidien — elle permet.</p>
+
+        <div class="role-do-dont">
+          <div class="do-col">
+            <div class="col-header">✓&nbsp; Ce que nous faisons</div>
+            <ul class="do-list">
+              <li>Penser à long terme</li>
+              <li>Maintenir la conformité légale</li>
+              <li>Posséder les actifs au nom de l'écosystème</li>
+              <li>Connecter partenaires et financeurs</li>
+              <li>Assurer la cohérence entre entités</li>
+              <li>Permettre aux sous-entités d'exister et de prospérer</li>
+            </ul>
+          </div>
+          <div class="dont-col">
+            <div class="col-header">✕&nbsp; Ce que nous ne faisons pas</div>
+            <ul class="dont-list">
+              <li>Gérer les opérations quotidiennes</li>
+              <li>Animer des ateliers directement</li>
+              <li>Fabriquer des choses (c'est OpenFab)</li>
+              <li>Prototyper la gouvernance (c'est Politype)</li>
+              <li>Microgérer les sous-entités</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRINITY -->
+    <section id="trinity">
+      <div class="reveal">
+        <div class="section-label">03 — La Trinity</div>
+        <h2>Trois entités. Un écosystème.</h2>
+        <p class="trinity-intro">Des rôles distincts, un but partagé. Tête, Cœur, Mains — l'organisme complet.</p>
+
+        <div class="trinity-cards">
+          <div class="trinity-card syntonie">
+            <span class="card-glyph">☂️</span>
+            <div class="card-name">Syntonie</div>
+            <div class="card-role">La Tête · Gouvernance</div>
+            <p class="card-desc">Vision, structure légale, actifs. L'entité qui tient l'espace pour que les autres puissent exister.</p>
+            <span class="card-placeholder">Vous êtes ici</span>
+          </div>
+          <div class="trinity-card politype">
+            <span class="card-glyph">🫰</span>
+            <div class="card-name">Politype</div>
+            <div class="card-role">Le Cœur · Démocratie</div>
+            <p class="card-desc">Prototypage de la gouvernance, jeux civiques, outils de participation. La démocratie comme problème de design.</p>
+            <span class="card-placeholder">Site à venir</span>
+          </div>
+          <div class="trinity-card openfab">
+            <span class="card-glyph">🧰</span>
+            <div class="card-name">OpenFab</div>
+            <div class="card-role">Les Mains · Fabrication</div>
+            <p class="card-desc">L'espace maker : outils, ateliers, communauté. Là où les idées deviennent réalité physique.</p>
+            <span class="card-placeholder">Site à venir</span>
+          </div>
+        </div>
+
+        <div class="trinity-flow">
+          <div class="flow-label">Flux de l'écosystème</div>
+          <div class="flow-row">
+            <div class="flow-node sy">Syntonie ☂️</div>
+            <span class="flow-arrow">→</span>
+            <span class="flow-desc">structure légale, financement, actifs</span>
+          </div>
+          <div class="flow-row">
+            <div class="flow-node po">Politype 🫰</div>
+            <span class="flow-arrow">→</span>
+            <span class="flow-desc">outils de gouvernance, méthodologie participative</span>
+          </div>
+          <div class="flow-row">
+            <div class="flow-node of">OpenFab 🧰</div>
+            <span class="flow-arrow">→</span>
+            <span class="flow-desc">espace physique, outils, expertise maker</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO -->
+    <section id="who">
+      <div class="reveal">
+        <div class="section-label">04 — Pour qui</div>
+        <h2>Ce projet est fait pour vous si…</h2>
+
+        <div class="who-grid">
+          <div class="who-col for">
+            <h3>Vous êtes au bon endroit</h3>
+            <ul class="who-list">
+              <li>Vous croyez que la démocratie peut être meilleure — et vous voulez la <em>construire</em></li>
+              <li>Vous voulez faire des choses, pas seulement parler de les faire</li>
+              <li>Vous voyez la gouvernance comme du design, pas de la bureaucratie</li>
+              <li>Vous êtes fatigué de devoir choisir entre "penseurs" et "faiseurs"</li>
+              <li>Vous croyez que l'accès aux outils devrait être universel</li>
+            </ul>
+          </div>
+          <div class="who-col notfor">
+            <h3>Ce n'est pas pour vous si</h3>
+            <ul class="who-list">
+              <li>Vous voulez défendre un parti politique spécifique</li>
+              <li>Vous cherchez un emploi traditionnel</li>
+              <li>Vous pensez que la gouvernance est le problème de quelqu'un d'autre</li>
+              <li>Vous voulez posséder des choses</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="reveal">
+        <div class="section-label">05 — Contact</div>
+        <h2>Entrons en contact.</h2>
+        <p class="contact-lead">Trois entités, trois façons de s'engager. Choisissez la porte qui correspond à votre intention.</p>
+
+        <div class="contact-tracks">
+          <div class="contact-track">
+            <div class="track-entity">
+              <span class="track-glyph">☂️</span>
+              <span class="track-name">Syntonie</span>
+            </div>
+            <p class="track-purpose">Partenariats, financement, questions légales, structure de l'écosystème.</p>
+            <span class="track-cta">Écrire →</span>
+          </div>
+          <div class="contact-track">
+            <div class="track-entity">
+              <span class="track-glyph">🫰</span>
+              <span class="track-name">Politype</span>
+            </div>
+            <p class="track-purpose">Expériences de gouvernance, outils civiques, prototypage de la démocratie.</p>
+            <span class="track-cta">Bientôt</span>
+          </div>
+          <div class="contact-track">
+            <div class="track-entity">
+              <span class="track-glyph">🧰</span>
+              <span class="track-name">OpenFab</span>
+            </div>
+            <p class="track-purpose">Accès makerspace, ateliers, utilisation des outils, communauté maker.</p>
+            <span class="track-cta">Bientôt</span>
+          </div>
+        </div>
+
+        <div class="membership-call">
+          <div>
+            <h3>Rejoignez l'écosystème.</h3>
+            <p>Si ce document résonne, vous êtes au bon endroit. Membre actif, partenaire ou sympathisant — la première étape est la même.</p>
+          </div>
+          <button class="primary-cta">Nous rejoindre →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-brand">
+        ☂️ Syntonie
+      </div>
+      <div class="footer-legal">
+        ASBL Syntonie · Ixelles, Bruxelles<br>
+        Numéro d'entreprise : [BCE placeholder]<br>
+        <a href="#">Mentions légales</a> · <a href="#">Politique de confidentialité</a>
+      </div>
+    </footer>
+
+  </main>
+</div>
+
+<script>
+// Reveal on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.08 });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Lang toggle (visual only)
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+</script>
+</body>
+</html>

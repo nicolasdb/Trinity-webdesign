@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Syntonie ASBL — Être en résonance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Syne:wght@600;700;800&family=Syne+Mono&family=Spectral:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   TOKENS — De Stijl: navy field / light grid / orange block
+   ============================================================ */
+:root {
+  --sidebar: 268px;
+  --tile: 59px;
+
+  /* Navy — dark field */
+  --navy-deep:  #0A1628;
+  --navy-mid:   #0F2040;
+  --navy-lift:  #1A3460;
+  --navy-line:  rgba(255,255,255,0.14);
+
+  /* Light — blueprint side */
+  --light-bg:   #EEF1F5;
+  --light-card: #FFFFFF;
+  --light-grid: rgba(30,74,122,0.14);
+  --light-line: rgba(30,74,122,0.12);
+
+  /* Orange — Mondrian block */
+  --orange:     #C4621E;
+  --orange-lt:  #D4804A;
+  --orange-dk:  #8B3A0A;
+
+  /* Ink on light */
+  --ink-1: #0A1628;
+  --ink-2: #2A3F5A;
+  --ink-3: #5A7090;
+
+  /* Ink on dark */
+  --white-1: #FFFFFF;
+  --white-2: rgba(255,255,255,0.75);
+  --white-3: rgba(255,255,255,0.42);
+
+  --radius: 0px; /* De Stijl: no rounding */
+}
+
+/* ============================================================
+   RESET
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  background: var(--light-bg);
+  color: var(--ink-1);
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ============================================================
+   SIDEBAR — solid navy block, no grid, geometric
+   ============================================================ */
+.sidebar {
+  position: fixed;
+  top: 0; left: 0; bottom: 0;
+  width: var(--sidebar);
+  background: var(--navy-deep);
+  border-right: 3px solid var(--orange);
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  overflow: hidden;
+}
+
+/* Pillar blocks — solid orange geometric rectangles growing from bottom */
+.sb-pillars {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 55%;
+  pointer-events: none;
+}
+
+.sb-pillar {
+  position: absolute;
+  bottom: 0;
+  background: var(--orange);
+  animation: pillar-grow 8s ease-in-out infinite;
+}
+.sb-pillar:nth-child(1) {
+  left: 18%; width: 10px;
+  height: 55%;
+  background: var(--orange);
+  animation-delay: 0s;
+}
+.sb-pillar:nth-child(2) {
+  left: 50%; width: 7px;
+  height: 38%;
+  background: var(--orange-dk);
+  animation-delay: 2.2s;
+  transform: translateX(-50%);
+}
+.sb-pillar:nth-child(3) {
+  right: 18%; width: 10px;
+  height: 47%;
+  background: var(--orange);
+  animation-delay: 1.1s;
+}
+
+/* cap on each pillar */
+.sb-pillar-cap {
+  position: absolute;
+  top: -3px; left: -3px;
+  width: calc(100% + 6px);
+  height: 3px;
+  background: var(--orange-lt);
+}
+
+@keyframes pillar-grow {
+  0%, 100% { opacity: 0.7; }
+  50%       { opacity: 1; }
+}
+
+/* Horizontal Mondrian bar — sits across middle of sidebar */
+.sb-bar {
+  position: absolute;
+  left: 0; right: 0;
+  height: 3px;
+  background: var(--navy-line);
+}
+.sb-bar:nth-child(1) { top: 42%; }
+.sb-bar:nth-child(2) { top: 68%; background: rgba(196,98,30,0.3); }
+
+/* sidebar inner content */
+.sb-inner {
+  position: relative; z-index: 2;
+  display: flex; flex-direction: column;
+  height: 100%;
+  padding: 32px 28px;
+}
+
+/* brand */
+.sb-brand {
+  margin-bottom: 40px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--navy-line);
+}
+.sb-name {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--white-1);
+  line-height: 1;
+  letter-spacing: 0.01em;
+  margin-bottom: 6px;
+}
+.sb-sub {
+  font-family: 'Syne Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.20em;
+  color: var(--white-3);
+  text-transform: uppercase;
+}
+
+/* nav */
+.sb-nav { flex: 1; }
+.sb-nav a {
+  display: flex; align-items: center; gap: 12px;
+  padding: 11px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  color: var(--white-2);
+  text-decoration: none;
+  font-family: 'Syne', sans-serif;
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  transition: color 0.15s;
+}
+.sb-nav a:hover { color: var(--white-1); }
+.nav-num {
+  font-family: 'Syne Mono', monospace;
+  font-size: 9px; color: var(--white-3);
+  min-width: 18px;
+}
+
+/* lang toggle */
+.lang-toggle {
+  margin-top: 24px;
+  display: flex;
+  border: 1px solid var(--navy-line);
+  width: fit-content;
+}
+.lang-btn {
+  font-family: 'Syne Mono', monospace;
+  font-size: 10px; letter-spacing: 0.14em;
+  padding: 7px 13px;
+  background: transparent; border: none;
+  color: var(--white-3);
+  cursor: pointer; transition: all 0.15s;
+}
+.lang-btn.active { background: var(--orange); color: #fff; }
+
+/* ecosystem portals */
+.sb-eco {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--navy-line);
+}
+.eco-label {
+  font-family: 'Syne Mono', monospace;
+  font-size: 9px; letter-spacing: 0.20em;
+  color: var(--white-3); text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.portal-link {
+  display: flex; align-items: center; gap: 10px;
+  padding: 9px 10px;
+  border: 1px solid rgba(255,255,255,0.08);
+  margin-bottom: 6px;
+  color: var(--white-3);
+  text-decoration: none;
+  font-family: 'Syne', sans-serif;
+  font-size: 10px; font-weight: 600;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  cursor: default; transition: all 0.15s;
+}
+.portal-link:hover { border-color: rgba(255,255,255,0.20); color: var(--white-2); }
+.portal-glyph { font-size: 13px; }
+.portal-soon {
+  margin-left: auto;
+  font-family: 'Syne Mono', monospace;
+  font-size: 8px; letter-spacing: 0.10em;
+  color: var(--white-3);
+  border: 1px solid rgba(255,255,255,0.10);
+  padding: 2px 5px;
+}
+
+/* ============================================================
+   MAIN — offset, blueprint grid visible
+   ============================================================ */
+.main {
+  margin-left: var(--sidebar);
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  /* Blueprint grid lives HERE, not in body */
+  background-image:
+    linear-gradient(var(--light-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--light-grid) 1px, transparent 1px);
+  background-size: var(--tile) var(--tile);
+  background-color: var(--light-bg);
+}
+
+/* ============================================================
+   HERO — navy field, De Stijl contrast
+   ============================================================ */
+#hero {
+  background: var(--navy-deep);
+  padding: 100px 80px 100px 72px;
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 3px solid var(--orange);
+}
+
+/* Mondrian grid overlay on hero — structural lines */
+#hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: var(--tile) var(--tile);
+  pointer-events: none;
+}
+
+/* Orange Mondrian block — bottom right corner accent */
+#hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0; right: 0;
+  width: 177px; /* 3 × 59px */
+  height: 59px;
+  background: var(--orange);
+  opacity: 0.85;
+}
+
+.hero-text { position: relative; z-index: 2; }
+
+.hero-eyebrow {
+  font-family: 'Syne Mono', monospace;
+  font-size: 10px; letter-spacing: 0.22em;
+  color: var(--orange-lt); text-transform: uppercase;
+  margin-bottom: 24px;
+  display: flex; align-items: center; gap: 14px;
+}
+.hero-eyebrow::before {
+  content: '';
+  display: block; width: 32px; height: 2px;
+  background: var(--orange);
+}
+
+h1.hero-title {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-weight: 700;
+  font-size: clamp(46px, 5.5vw, 76px);
+  line-height: 1.02;
+  color: var(--white-1);
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
+}
+
+.hero-sub {
+  font-family: 'Spectral', serif;
+  font-size: 18px; font-style: italic; font-weight: 300;
+  color: var(--white-2); line-height: 1.65;
+}
+
+/* Etymology panel — white card on navy */
+.hero-aside {
+  position: relative; z-index: 2;
+  border-left: 4px solid var(--orange);
+  padding-left: 32px;
+}
+.hero-aside blockquote {
+  font-family: 'Spectral', serif;
+  font-size: 20px; font-style: italic; font-weight: 300;
+  color: var(--white-1); line-height: 1.55;
+  margin-bottom: 16px;
+}
+.hero-aside-src {
+  font-family: 'Syne Mono', monospace;
+  font-size: 9px; letter-spacing: 0.16em;
+  color: var(--white-3); text-transform: uppercase;
+  margin-bottom: 28px;
+}
+.word-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 22px 24px;
+}
+.word-title {
+  /* same bold as h1 — Edna's note */
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--orange-lt);
+  letter-spacing: -0.01em;
+  margin-bottom: 4px;
+}
+.word-etym {
+  font-family: 'Syne Mono', monospace;
+  font-size: 9px; letter-spacing: 0.16em;
+  color: var(--white-3); text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.word-card p {
+  font-size: 15px; color: var(--white-2); line-height: 1.65;
+}
+
+/* ============================================================
+   SECTIONS — on the light/grid side
+   ============================================================ */
+.section {
+  padding: 120px 80px 160px 72px;
+  border-bottom: 1px solid var(--light-line);
+  position: relative;
+}
+
+.section-lbl {
+  font-family: 'Syne Mono', monospace;
+  font-size: 9px; letter-spacing: 0.24em;
+  color: var(--ink-3); text-transform: uppercase;
+  display: flex; align-items: center; gap: 16px;
+  margin-bottom: 48px;
+}
+.section-lbl::after {
+  content: ''; height: 1px; width: 59px;
+  background: var(--light-grid);
+}
+
+.section h2 {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-weight: 700;
+  font-size: clamp(28px, 3vw, 44px);
+  line-height: 1.08; color: var(--navy-deep);
+  margin-bottom: 36px;
+}
+
+/* Mondrian accent bar under section title */
+.section h2 + .accent-bar {
+  width: 59px; height: 4px;
+  background: var(--orange);
+  margin-bottom: 40px;
+  display: block;
+}
+
+/* ============================================================
+   VISION
+   ============================================================ */
+#vision { background: var(--light-bg); }
+
+.vision-layout {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 80px; align-items: start;
+}
+.vision-body p {
+  font-size: 17px; color: var(--ink-2);
+  line-height: 1.78; margin-bottom: 20px;
+}
+.vision-body strong { color: var(--ink-1); }
+
+.vision-stat {
+  display: flex; align-items: flex-start; gap: 0;
+  margin-top: 36px;
+  border-left: 4px solid var(--orange);
+  padding: 16px 20px;
+  background: var(--light-card);
+}
+.stat-text {
+  font-family: 'Syne', sans-serif;
+  font-size: 13px; font-weight: 700;
+  color: var(--navy-deep); line-height: 1.5;
+}
+
+.vision-aside {}
+.aside-lbl {
+  font-family: 'Syne Mono', monospace;
+  font-size: 9px; letter-spacing: 0.18em;
+  color: var(--ink-3); text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.aside-block {
+  background: var(--navy-deep);
+  padding: 28px 26px;
+  color: var(--white-2);
+}
+.aside-block p {
+  font-size: 15px; line-height: 1.7; margin-bottom: 14px;
+}
+.aside-block p:last-child { margin-bottom: 0; }
+.aside-block strong { color: var(--white-1); }
+
+/* ============================================================
+   ROLE
+   ============================================================ */
+#role { background: var(--light-card); }
+
+.role-lead {
+  font-size: 17px; color: var(--ink-2); line-height: 1.75;
+  margin-bottom: 56px;
+}
+
+.do-dont {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 2px;
+}
+/* 2px gap = De Stijl black border between blocks */
+
+.do-col, .dont-col {
+  padding: 36px 32px 40px;
+  background: var(--light-bg);
+}
+/* Orange top stripe on do; Navy top stripe on dont */
+.do-col   { border-top: 4px solid var(--navy-deep); }
+.dont-col { border-top: 4px solid var(--orange); }
+
+.col-hdr {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700; font-size: 11px;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  padding-bottom: 18px; margin-bottom: 22px;
+  border-bottom: 1px solid var(--light-line);
+  color: var(--ink-1);
+}
+
+.col-list {
+  list-style: none; display: flex; flex-direction: column; gap: 12px;
+}
+.col-list li {
+  display: flex; align-items: baseline; gap: 12px;
+  font-size: 15px; color: var(--ink-2); line-height: 1.55;
+}
+.do-col   .col-list li::before { content:'→'; color: var(--navy-mid); font-family:'Syne Mono',monospace; font-size:12px; flex-shrink:0; }
+.dont-col .col-list li::before { content:'✕'; color: var(--orange); font-family:'Syne Mono',monospace; font-size:12px; flex-shrink:0; }
+
+/* ============================================================
+   TRINITY
+   ============================================================ */
+#trinity { background: var(--light-bg); }
+
+.trinity-intro {
+  font-size: 17px; color: var(--ink-2); line-height: 1.75;
+  margin-bottom: 56px;
+}
+
+.t-cards {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 2px; /* De Stijl gap */
+  margin-bottom: 2px;
+}
+
+.t-card {
+  padding: 32px 28px 28px;
+  background: var(--light-card);
+  position: relative;
+  border-top: 4px solid transparent;
+}
+.t-card.sy { border-top-color: var(--navy-deep); }
+.t-card.po { border-top-color: var(--orange-dk); }
+.t-card.of { border-top-color: var(--orange); }
+
+.t-glyph { font-size: 22px; margin-bottom: 16px; display: block; }
+.t-name {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-weight: 700; font-size: 17px; color: var(--ink-1);
+  margin-bottom: 5px;
+}
+.t-role {
+  font-family: 'Syne Mono', monospace;
+  font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.t-card.sy .t-role { color: var(--navy-lift); }
+.t-card.po .t-role { color: var(--orange-dk); }
+.t-card.of .t-role { color: var(--orange); }
+
+.t-desc { font-size: 14px; color: var(--ink-2); line-height: 1.65; margin-bottom: 20px; }
+.t-badge {
+  display: inline-block;
+  font-family: 'Syne Mono', monospace;
+  font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--ink-3); border: 1px solid var(--light-line);
+  padding: 3px 8px;
+}
+
+/* flow strip — navy block */
+.t-flow {
+  background: var(--navy-deep);
+  display: grid; grid-template-columns: repeat(3, 1fr);
+}
+.flow-item {
+  padding: 22px 28px;
+  border-right: 1px solid rgba(255,255,255,0.08);
+}
+.flow-item:last-child { border-right: none; }
+.flow-entity {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700; font-size: 12px;
+  letter-spacing: 0.10em; text-transform: uppercase;
+  margin-bottom: 7px;
+}
+.flow-item.sy .flow-entity { color: rgba(255,255,255,0.80); }
+.flow-item.po .flow-entity { color: var(--orange-lt); }
+.flow-item.of .flow-entity { color: var(--orange-lt); }
+.flow-gives { font-size: 13px; color: var(--white-3); line-height: 1.5; }
+
+/* ============================================================
+   WHO
+   ============================================================ */
+#who { background: var(--light-card); }
+
+.who-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 2px;
+}
+.who-col { padding: 36px 32px 40px; background: var(--light-bg); }
+.who-col.for    { border-top: 4px solid var(--navy-deep); }
+.who-col.notfor { border-top: 4px solid var(--orange); }
+
+.who-col h3 {
+  font-family: 'Syne Mono', monospace;
+  font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+  padding-bottom: 16px; margin-bottom: 22px;
+  border-bottom: 1px solid var(--light-line);
+  color: var(--ink-1);
+}
+.who-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.who-list li {
+  font-size: 15px; color: var(--ink-2); line-height: 1.55;
+  display: flex; align-items: baseline; gap: 12px;
+}
+.who-col.for    .who-list li::before { content:'◆'; font-size:7px; color:var(--navy-deep); flex-shrink:0; position:relative; top:-1px; }
+.who-col.notfor .who-list li::before { content:'◇'; font-size:7px; color:var(--orange); flex-shrink:0; position:relative; top:-1px; }
+
+/* ============================================================
+   CONTACT
+   ============================================================ */
+#contact { background: var(--light-bg); }
+
+.contact-intro {
+  font-size: 17px; color: var(--ink-2); line-height: 1.75;
+  margin-bottom: 56px;
+}
+
+.c-tracks {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 2px; margin-bottom: 2px;
+}
+.c-track {
+  padding: 28px 26px 32px;
+  background: var(--light-card);
+  border-top: 4px solid var(--light-line);
+}
+.c-entity { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.c-glyph { font-size: 18px; }
+.c-name {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-weight: 700; font-size: 15px; color: var(--ink-1);
+}
+.c-purpose { font-size: 13px; color: var(--ink-3); line-height: 1.6; margin-bottom: 20px; }
+.c-cta {
+  font-family: 'Syne Mono', monospace;
+  font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--navy-deep);
+  border: 1px solid var(--light-line);
+  padding: 8px 14px; display: inline-block; cursor: default;
+  transition: all 0.15s;
+}
+.c-cta:hover { background: var(--navy-deep); color: white; }
+
+/* join block — navy field */
+.join-block {
+  background: var(--navy-deep);
+  padding: 48px 52px;
+  display: grid; grid-template-columns: 1fr auto;
+  gap: 48px; align-items: center;
+  border-left: 6px solid var(--orange);
+}
+.join-block h3 {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-weight: 700; font-size: 24px; color: var(--white-1);
+  margin-bottom: 10px;
+}
+.join-block p { font-size: 15px; color: var(--white-2); line-height: 1.65; }
+.primary-cta {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700; font-size: 12px; letter-spacing: 0.10em; text-transform: uppercase;
+  background: var(--orange); color: #fff;
+  padding: 16px 32px; border: none;
+  cursor: default; white-space: nowrap;
+  transition: background 0.15s;
+}
+.primary-cta:hover { background: var(--orange-lt); }
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer {
+  background: var(--navy-deep);
+  padding: 40px 80px 40px 72px;
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 20px;
+  border-top: 3px solid var(--orange);
+}
+.footer-brand {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-weight: 700; font-size: 17px; color: var(--white-2);
+}
+.footer-legal {
+  font-family: 'Syne Mono', monospace;
+  font-size: 9px; letter-spacing: 0.10em;
+  color: var(--white-3); text-align: right; line-height: 1.9;
+}
+.footer-legal a { color: var(--white-3); text-decoration: none; }
+.footer-legal a:hover { color: var(--white-2); }
+
+/* ============================================================
+   SCROLL REVEAL
+   ============================================================ */
+.reveal {
+  opacity: 0; transform: translateY(16px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.reveal.in { opacity: 1; transform: none; }
+
+/* scrollbar */
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: var(--light-bg); }
+::-webkit-scrollbar-thumb { background: var(--navy-lift); }
+</style>
+</head>
+<body>
+
+<!-- SIDEBAR — solid navy, geometric pillars -->
+<aside class="sidebar">
+  <div class="sb-pillars">
+    <div class="sb-pillar"><div class="sb-pillar-cap"></div></div>
+    <div class="sb-pillar"><div class="sb-pillar-cap"></div></div>
+    <div class="sb-pillar"><div class="sb-pillar-cap"></div></div>
+  </div>
+  <div class="sb-bar"></div>
+  <div class="sb-bar"></div>
+
+  <div class="sb-inner">
+    <div class="sb-brand">
+      <div class="sb-name">Syntonie</div>
+      <div class="sb-sub">ASBL · Bruxelles</div>
+    </div>
+
+    <nav class="sb-nav">
+      <a href="#hero"><span class="nav-num">00</span>Accueil</a>
+      <a href="#vision"><span class="nav-num">01</span>Vision</a>
+      <a href="#role"><span class="nav-num">02</span>Notre rôle</a>
+      <a href="#trinity"><span class="nav-num">03</span>La Trinity</a>
+      <a href="#who"><span class="nav-num">04</span>Pour qui</a>
+      <a href="#contact"><span class="nav-num">05</span>Contact</a>
+    </nav>
+
+    <div class="lang-toggle">
+      <button class="lang-btn active">FR</button>
+      <button class="lang-btn">EN</button>
+    </div>
+
+    <div class="sb-eco">
+      <div class="eco-label">Écosystème</div>
+      <a class="portal-link">
+        <span class="portal-glyph">🫰</span>Politype
+        <span class="portal-soon">bientôt</span>
+      </a>
+      <a class="portal-link">
+        <span class="portal-glyph">🧰</span>OpenFab
+        <span class="portal-soon">bientôt</span>
+      </a>
+    </div>
+  </div>
+</aside>
+
+<!-- MAIN — blueprint grid, light side -->
+<main class="main">
+
+  <!-- HERO — dark navy field -->
+  <section id="hero">
+    <div class="hero-text">
+      <div class="hero-eyebrow">Bruxelles · ASBL · Fondée 2012</div>
+      <h1 class="hero-title">Être en<br>résonance.</h1>
+      <p class="hero-sub">Démocratie, technologie, et faire — non pas comme des mondes séparés, mais comme pratique vivante.</p>
+    </div>
+    <div class="hero-aside">
+      <blockquote>« Syntonie — être en résonance. Vibrer ensemble. »</blockquote>
+      <div class="hero-aside-src">Étymologie · Grec syntonia</div>
+      <div class="word-card">
+        <div class="word-title">syn·to·nie</div>
+        <div class="word-etym">nom féminin · du grec</div>
+        <p>État d'accord entre systèmes oscillants. En harmonie avec son environnement. Ce que nous cherchons à rendre possible.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISION -->
+  <section id="vision" class="section reveal">
+    <div class="section-lbl">01 — Vision</div>
+    <h2>La relation entre humains, technologie, et environnement se brisait.</h2>
+    <span class="accent-bar"></span>
+    <div class="vision-layout">
+      <div class="vision-body">
+        <p>Syntonie a été créée pour être le pont : ni une entreprise, ni une ONG traditionnelle, mais une ASBL qui tient l'espace pour des expériences émergentes sur notre façon de vivre ensemble.</p>
+        <p>Les défis de notre époque — polarisation, capitalisme de surveillance, érosion démocratique — ne seront pas résolus par une seule discipline. Ils exigent <strong>une nouvelle écologie</strong> : penseurs, bâtisseurs et expérimentateurs en concert.</p>
+        <div class="vision-stat">
+          <span class="stat-text">Syntonie tient l'espace pour que les autres puissent exister et prospérer.</span>
+        </div>
+      </div>
+      <div class="vision-aside">
+        <div class="aside-lbl">Contexte · 2012 → aujourd'hui</div>
+        <div class="aside-block">
+          <p>Fondée à Ixelles il y a plus de dix ans, Syntonie n'est pas un prestataire de services — c'est une <strong>infrastructure de confiance</strong>.</p>
+          <p>Elle détient les actifs. Elle signe les contrats. Elle maintient la cohérence là où les autres entités expérimentent librement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROLE -->
+  <section id="role" class="section reveal">
+    <div class="section-lbl">02 — Notre rôle</div>
+    <h2>La tête. Le parapluie. Le gardien de la vision.</h2>
+    <span class="accent-bar"></span>
+    <p class="role-lead">Syntonie possède les actifs, signe les contrats, assure la conformité et maintient la cohérence stratégique de l'écosystème. Elle n'opère pas au quotidien — elle permet.</p>
+    <div class="do-dont">
+      <div class="do-col">
+        <div class="col-hdr">✓ &nbsp;Ce que nous faisons</div>
+        <ul class="col-list">
+          <li>Penser à long terme</li>
+          <li>Maintenir la conformité légale</li>
+          <li>Posséder les actifs au nom de l'écosystème</li>
+          <li>Connecter partenaires et financeurs</li>
+          <li>Assurer la cohérence entre entités</li>
+          <li>Permettre aux sous-entités d'exister et de prospérer</li>
+        </ul>
+      </div>
+      <div class="dont-col">
+        <div class="col-hdr">✕ &nbsp;Ce que nous ne faisons pas</div>
+        <ul class="col-list">
+          <li>Gérer les opérations quotidiennes</li>
+          <li>Animer des ateliers directement</li>
+          <li>Fabriquer des choses <em>(c'est OpenFab)</em></li>
+          <li>Prototyper la gouvernance <em>(c'est Politype)</em></li>
+          <li>Microgérer les sous-entités</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRINITY -->
+  <section id="trinity" class="section reveal">
+    <div class="section-lbl">03 — La Trinity</div>
+    <h2>Trois entités. Un écosystème.</h2>
+    <span class="accent-bar"></span>
+    <p class="trinity-intro">Des rôles distincts, un but partagé. Tête, Cœur, Mains — l'organisme complet où la séparation des missions est une force.</p>
+    <div class="t-cards">
+      <div class="t-card sy">
+        <span class="t-glyph">☂️</span>
+        <div class="t-name">Syntonie</div>
+        <div class="t-role">La Tête · Gouvernance</div>
+        <p class="t-desc">Vision, structure légale, actifs. L'entité qui tient l'espace pour que les autres existent.</p>
+        <span class="t-badge">Vous êtes ici</span>
+      </div>
+      <div class="t-card po">
+        <span class="t-glyph">🫰</span>
+        <div class="t-name">Politype</div>
+        <div class="t-role">Le Cœur · Démocratie</div>
+        <p class="t-desc">Prototypage de la gouvernance, jeux civiques, outils de participation démocratique.</p>
+        <span class="t-badge">Site à venir</span>
+      </div>
+      <div class="t-card of">
+        <span class="t-glyph">🧰</span>
+        <div class="t-name">OpenFab</div>
+        <div class="t-role">Les Mains · Fabrication</div>
+        <p class="t-desc">L'espace maker : outils, ateliers, communauté. Les idées deviennent réalité.</p>
+        <span class="t-badge">Site à venir</span>
+      </div>
+    </div>
+    <div class="t-flow">
+      <div class="flow-item sy">
+        <div class="flow-entity">☂️ Syntonie</div>
+        <div class="flow-gives">Structure légale, financement, actifs — le toit commun</div>
+      </div>
+      <div class="flow-item po">
+        <div class="flow-entity">🫰 Politype</div>
+        <div class="flow-gives">Outils de gouvernance, méthodologie participative</div>
+      </div>
+      <div class="flow-item of">
+        <div class="flow-entity">🧰 OpenFab</div>
+        <div class="flow-gives">Espace physique, outils, expertise maker</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO -->
+  <section id="who" class="section reveal">
+    <div class="section-lbl">04 — Pour qui</div>
+    <h2>Ce projet est fait pour vous si…</h2>
+    <span class="accent-bar"></span>
+    <div class="who-grid">
+      <div class="who-col for">
+        <h3>Vous êtes au bon endroit</h3>
+        <ul class="who-list">
+          <li>Vous croyez que la démocratie peut être meilleure — et vous voulez la <em>construire</em></li>
+          <li>Vous voulez faire des choses, pas seulement en parler</li>
+          <li>Vous voyez la gouvernance comme du design, pas de la bureaucratie</li>
+          <li>Vous êtes fatigué de devoir choisir entre "penseurs" et "faiseurs"</li>
+          <li>Vous croyez que l'accès aux outils devrait être universel</li>
+        </ul>
+      </div>
+      <div class="who-col notfor">
+        <h3>Ce n'est pas pour vous si</h3>
+        <ul class="who-list">
+          <li>Vous voulez défendre un parti politique spécifique</li>
+          <li>Vous cherchez un emploi traditionnel</li>
+          <li>Vous pensez que la gouvernance est le problème de quelqu'un d'autre</li>
+          <li>Vous voulez posséder des choses</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section reveal">
+    <div class="section-lbl">05 — Contact</div>
+    <h2>Entrons en contact.</h2>
+    <span class="accent-bar"></span>
+    <p class="contact-intro">Trois entités, trois façons de s'engager. Choisissez la porte qui correspond à votre intention.</p>
+    <div class="c-tracks">
+      <div class="c-track">
+        <div class="c-entity"><span class="c-glyph">☂️</span><span class="c-name">Syntonie</span></div>
+        <p class="c-purpose">Partenariats, financement, questions légales, structure de l'écosystème.</p>
+        <span class="c-cta">Écrire →</span>
+      </div>
+      <div class="c-track">
+        <div class="c-entity"><span class="c-glyph">🫰</span><span class="c-name">Politype</span></div>
+        <p class="c-purpose">Expériences de gouvernance, outils civiques, prototypage démocratique.</p>
+        <span class="c-cta">Bientôt</span>
+      </div>
+      <div class="c-track">
+        <div class="c-entity"><span class="c-glyph">🧰</span><span class="c-name">OpenFab</span></div>
+        <p class="c-purpose">Accès makerspace, ateliers, utilisation des outils, communauté maker.</p>
+        <span class="c-cta">Bientôt</span>
+      </div>
+    </div>
+    <div class="join-block">
+      <div>
+        <h3>Rejoignez l'écosystème.</h3>
+        <p>Si ce document résonne, vous êtes au bon endroit. Membre actif, partenaire ou sympathisant — la première étape est la même.</p>
+      </div>
+      <button class="primary-cta">Nous rejoindre →</button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-brand">☂️ &nbsp;Syntonie ASBL</div>
+    <div class="footer-legal">
+      ASBL Syntonie · Ixelles, Bruxelles<br>
+      Numéro BCE : [placeholder]<br>
+      <a href="#">Mentions légales</a> · <a href="#">Confidentialité</a>
+    </div>
+  </footer>
+
+</main>
+
+<script>
+const obs = new IntersectionObserver(entries =>
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); }),
+  { threshold: 0.06 }
+);
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+document.querySelectorAll('.lang-btn').forEach(btn =>
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+  })
+);
+</script>
+</body>
+</html>

@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Syntonie ASBL — Être en résonance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Syne:wght@600;700;800&family=Syne+Mono&family=Spectral:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   TOKENS — light field, navy + orange
+   ============================================================ */
+:root {
+  --sidebar: 268px;
+  --tile: 59px;
+
+  /* Backgrounds — cool parchment, dusk-tinged */
+  --bg-page:    #E8EBF0;   /* cool parchment, blue-tinged */
+  --bg-section: #DFE3EA;   /* slightly deeper, dusk */
+  --bg-card:    #F5F7FA;
+  --bg-sidebar: #1B3352;   /* deep navy */
+
+  /* Navy scale */
+  --navy-1:     #1B3352;   /* darkest */
+  --navy-2:     #1E4A7A;
+  --navy-3:     #2667AA;
+  --navy-4:     #4A8BBF;   /* mid blue */
+  --navy-5:     #8BBAD9;   /* light steel */
+
+  /* Orange scale */
+  --orange-1:   #8B3A0A;   /* deep burnt */
+  --orange-2:   #B84E18;
+  --orange-3:   #C4621E;   /* primary */
+  --orange-4:   #D4804A;
+  --orange-5:   #E8A878;   /* light */
+
+  /* Ink */
+  --ink-1:      #111827;
+  --ink-2:      #374151;
+  --ink-3:      #6B7280;
+  --ink-4:      rgba(17,24,39,0.35);
+
+  /* Grid */
+  --grid-page:  rgba(74,109,142,0.08);   /* steel blue, not warm gray */
+  --grid-sb:    rgba(255,255,255,0.07);
+
+  /* Utility */
+  --border-light: 1px solid rgba(30,74,122,0.12);
+  --border-sb:    1px solid rgba(255,255,255,0.10);
+  --radius: 2px;
+}
+
+/* ============================================================
+   RESET
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  background: var(--bg-page);
+  color: var(--ink-1);
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  line-height: 1.7;
+}
+
+/* ============================================================
+   PAGE — dappled light through canopy + blueprint grid
+   ============================================================ */
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  /* Three overlapping light pools — filtered through canopy */
+  background:
+    radial-gradient(ellipse 700px 480px at 28% 22%, rgba(139,186,217,0.13) 0%, transparent 70%),
+    radial-gradient(ellipse 500px 360px at 72% 58%, rgba(139,186,217,0.10) 0%, transparent 65%),
+    radial-gradient(ellipse 600px 420px at 48% 85%, rgba(139,186,217,0.09) 0%, transparent 55%),
+    var(--bg-page);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Blueprint grid layer on top of dapple */
+body::after {
+  content: '';
+  position: fixed; inset: 0;
+  background-image:
+    linear-gradient(var(--grid-page) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-page) 1px, transparent 1px);
+  background-size: var(--tile) var(--tile);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ============================================================
+   SIDEBAR — fixed, deep navy
+   ============================================================ */
+.sidebar {
+  position: fixed;
+  top: 0; left: 0; bottom: 0;
+  width: var(--sidebar);
+  background: var(--bg-sidebar);
+  border-right: var(--border-sb);
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  overflow: hidden;
+}
+
+/* sidebar blueprint grid */
+.sidebar::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(var(--grid-sb) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-sb) 1px, transparent 1px);
+  background-size: var(--tile) var(--tile);
+  pointer-events: none;
+}
+
+/* overhead canopy structure — horizontal lines filtering down */
+.sidebar::after {
+  content: '';
+  position: absolute;
+  top: 28%; left: 0; right: 0; height: 22%;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent 0px,
+    transparent 11px,
+    rgba(255,255,255,0.035) 11px,
+    rgba(255,255,255,0.035) 12px
+  );
+  opacity: 0.8;
+  pointer-events: none;
+  mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);
+}
+
+/* pillar motif — bottom of sidebar */
+.sb-pillars {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 52%;
+  pointer-events: none;
+}
+.sb-pillar {
+  position: absolute; bottom: 0; width: 1px;
+  /* orange at base, fades into cool steel blue as it rises */
+  background: linear-gradient(
+    to top,
+    rgba(196,98,30,0.5)  0%,
+    rgba(196,98,30,0.3)  25%,
+    rgba(139,186,217,0.2) 55%,
+    transparent          100%
+  );
+  filter: blur(0.5px);
+  animation: breathe 8s ease-in-out infinite;
+}
+.sb-pillar:nth-child(1) { left: 22%; height: 90%; animation-delay: 0s; }
+.sb-pillar:nth-child(2) { left: 50%; height: 72%; animation-delay: 2s; }
+.sb-pillar:nth-child(3) { left: 78%; height: 83%; animation-delay: 1s; }
+.sb-pillar-cap {
+  position: absolute; top: 0;
+  width: 26px; height: 1px;
+  background: rgba(139,186,217,0.35);
+  transform: translateX(-50%); left: 50%;
+}
+
+/* Canopy — horizontal filtering lines above the pillars */
+.sb-pillars::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 42%;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent     0px,
+    transparent     8px,
+    rgba(255,255,255,0.04) 8px,
+    rgba(255,255,255,0.04) 9px
+  );
+  opacity: 0.7;
+  pointer-events: none;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.25) 0%,
+    transparent      100%
+  );
+}
+
+/* Canopy side fade */
+.sb-pillars::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 30%;
+  background: linear-gradient(
+    to bottom,
+    rgba(139,186,217,0.06) 0%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+@keyframes breathe {
+  0%,100% { opacity: 0.45; }
+  50%      { opacity: 0.9; }
+}
+
+/* sidebar content */
+.sb-inner {
+  position: relative; z-index: 2;
+  display: flex; flex-direction: column;
+  height: 100%;
+  padding: 28px 24px 28px;
+}
+
+/* brand */
+.sb-brand {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: var(--border-sb);
+}
+.sb-name {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  color: #FFFFFF;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  margin-bottom: 5px;
+}
+.sb-sub {
+  font-family: 'Syne Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  color: rgba(255,255,255,0.42);
+  text-transform: uppercase;
+}
+
+/* nav */
+.sb-nav { flex: 1; }
+.sb-nav a {
+  display: flex; align-items: center; gap: 10px;
+  padding: 11px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.60);
+  text-decoration: none;
+  font-family: 'Syne', sans-serif;
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  transition: color 0.2s, border-color 0.2s;
+}
+.sb-nav a:hover { color: #FFFFFF; border-color: rgba(255,255,255,0.22); }
+.nav-num {
+  font-family: 'Syne Mono', monospace;
+  font-size: 9px; color: rgba(255,255,255,0.28);
+  min-width: 16px;
+}
+
+/* lang toggle */
+.lang-toggle {
+  margin-top: 20px;
+  display: flex;
+  border: var(--border-sb);
+  width: fit-content;
+  overflow: hidden;
+}
+.lang-btn {
+  font-family: 'Syne Mono', monospace;
+  font-size: 10px; letter-spacing: 0.14em;
+  padding: 6px 12px;
+  background: transparent; border: none;
+  color: rgba(255,255,255,0.38);
+  cursor: pointer; transition: all 0.2s;
+}
+.lang-btn.active { background: var(--orange-3); color: #fff; }
+
+/* ecosystem portals */
+.sb-ecosystem {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: var(--border-sb);
+}
+.eco-label {
+  font-family: 'Syne Mono', monospace;
+  font-size: 9px; letter-spacing: 0.18em;
+  color: rgba(255,255,255,0.28);
+  text-transform: uppercase; margin-bottom: 10px;
+}
+.portal-link {
+  display: flex; align-items: center; gap: 8px;
+  padding: 8px 10px;
+  border: 1px solid rgba(255,255,255,0.07);
+  margin-bottom: 6px;
+  color: rgba(255,255,255,0.38);
+  text-decoration: none;
+  font-family: 'Syne', sans-serif;
+  font-size: 10px; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  cursor: default; transition: all 0.2s;
+  position: relative;
+}
+.portal-link:hover { border-color: rgba(255,255,255,0.18); color: rgba(255,255,255,0.6); }
+.portal-glyph { font-size: 12px; }
+.portal-soon {
+  margin-left: auto;
+  font-family: 'Syne Mono', monospace;
+  font-size: 8px; letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.28);
+  border: 1px solid rgba(255,255,255,0.10);
+  padding: 1px 5px;
+}
+
+/* ============================================================
+   MAIN — offset by sidebar only
+   ============================================================ */
+.main {
+  margin-left: var(--sidebar);   /* single offset, no grid confusion */
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+}
+
+/* ============================================================
+   SECTION BASE
+   ============================================================ */
+.section {
+  padding: 120px 80px 160px 72px;
+  border-bottom: var(--border-light);
+  position: relative;
+}
+.section:last-child { border-bottom: none; }
+
+.section-lbl {
+  font-family: 'Syne Mono', monospace;
+  font-size: 9px; letter-spacing: 0.22em;
+  color: var(--ink-3); text-transform: uppercase;
+  display: flex; align-items: center; gap: 14px;
+  margin-bottom: 36px;
+}
+.section-lbl::after {
+  content: ''; height: 1px; width: 72px;
+  background: var(--grid-page);
+}
+
+.section h2 {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-weight: 700;
+  font-size: clamp(26px, 2.8vw, 40px);
+  line-height: 1.12; color: var(--ink-1);
+  margin-bottom: 36px;
+}
+
+/* ============================================================
+   HERO — light, immediate, full width
+   ============================================================ */
+#hero {
+  background: var(--bg-page);
+  padding: 120px 80px 120px 72px;
+  border-bottom: var(--border-light);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  min-height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* orange accent line — top */
+#hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--orange-3) 0%, var(--navy-3) 60%, transparent 100%);
+}
+
+.hero-text {}
+
+.hero-eyebrow {
+  font-family: 'Syne Mono', monospace;
+  font-size: 10px; letter-spacing: 0.22em;
+  color: var(--navy-4); text-transform: uppercase;
+  margin-bottom: 24px;
+  display: flex; align-items: center; gap: 12px;
+}
+.hero-eyebrow::before {
+  content: '';
+  display: block; width: 28px; height: 1px;
+  background: var(--orange-3);
+}
+
+h1.hero-title {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-weight: 700;
+  font-size: clamp(42px, 5vw, 68px);
+  line-height: 1.03;
+  color: var(--navy-1);
+  letter-spacing: -0.01em;
+  margin-bottom: 20px;
+}
+
+.hero-sub {
+  font-family: 'Spectral', serif;
+  font-size: 18px; font-style: italic; font-weight: 300;
+  color: var(--ink-2); line-height: 1.65;
+}
+
+/* right side: etymology panel */
+.hero-aside {
+  border-left: 3px solid var(--orange-3);
+  padding-left: 32px;
+}
+.hero-aside blockquote {
+  font-family: 'Spectral', serif;
+  font-size: 20px; font-style: italic; font-weight: 300;
+  color: var(--navy-1); line-height: 1.55;
+  margin-bottom: 16px;
+}
+.hero-aside-src {
+  font-family: 'Syne Mono', monospace;
+  font-size: 9px; letter-spacing: 0.14em;
+  color: var(--ink-3); text-transform: uppercase;
+  margin-bottom: 28px;
+}
+.word-card {
+  border: var(--border-light);
+  padding: 20px 22px;
+  background: var(--bg-card);
+  box-shadow: 0 1px 4px rgba(30,74,122,0.07);
+}
+.word-title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800; font-size: 24px;
+  color: var(--navy-2); letter-spacing: -0.02em;
+  margin-bottom: 4px;
+}
+.word-etym {
+  font-family: 'Syne Mono', monospace;
+  font-size: 9px; letter-spacing: 0.14em;
+  color: var(--ink-3); text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.word-card p {
+  font-size: 14px; color: var(--ink-2); line-height: 1.65;
+}
+
+/* ============================================================
+   VISION
+   ============================================================ */
+#vision { background: var(--bg-section); }
+
+.vision-layout {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 72px; align-items: start;
+}
+.vision-body p {
+  font-size: 17px; color: var(--ink-2);
+  line-height: 1.78; margin-bottom: 18px;
+}
+.vision-body strong { color: var(--ink-1); }
+
+/* pull stat — orange accent */
+.vision-stat {
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px;
+  background: var(--bg-card);
+  border-left: 3px solid var(--orange-3);
+  margin-top: 24px;
+  box-shadow: 0 1px 4px rgba(30,74,122,0.06);
+}
+.stat-text {
+  font-family: 'Syne', sans-serif;
+  font-size: 13px; font-weight: 600;
+  color: var(--ink-1); line-height: 1.4;
+}
+.stat-glyph { font-size: 22px; }
+
+.vision-aside-panel {
+  padding-top: 6px;
+}
+.aside-annotation {
+  font-family: 'Syne Mono', monospace;
+  font-size: 9px; letter-spacing: 0.18em;
+  color: var(--ink-3); text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.aside-callout {
+  border: var(--border-light);
+  padding: 22px;
+  background: var(--bg-card);
+  box-shadow: 0 1px 4px rgba(30,74,122,0.06);
+}
+.aside-callout p {
+  font-size: 15px; color: var(--ink-2); line-height: 1.68;
+}
+.aside-callout p + p { margin-top: 14px; }
+
+/* ============================================================
+   ROLE
+   ============================================================ */
+#role { background: var(--bg-page); }
+
+.role-lead {
+  font-size: 17px; color: var(--ink-2); line-height: 1.75;
+  margin-bottom: 48px;
+}
+
+.do-dont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.do-col, .dont-col {
+  border: var(--border-light);
+  padding: 28px 28px 32px;
+  background: var(--bg-card);
+  box-shadow: 0 1px 4px rgba(30,74,122,0.05);
+}
+
+.col-hdr {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700; font-size: 11px;
+  letter-spacing: 0.15em; text-transform: uppercase;
+  padding-bottom: 16px; margin-bottom: 20px;
+  border-bottom: var(--border-light);
+}
+.do-col .col-hdr   { color: var(--navy-2); }
+.dont-col .col-hdr { color: var(--orange-2); }
+
+.col-list {
+  list-style: none; display: flex;
+  flex-direction: column; gap: 10px;
+}
+.col-list li {
+  display: flex; align-items: baseline; gap: 10px;
+  font-size: 15px; color: var(--ink-2); line-height: 1.55;
+}
+.do-col   .col-list li::before { content:'→'; color: var(--navy-3); font-family:'Syne Mono',monospace; font-size:11px; flex-shrink:0; }
+.dont-col .col-list li::before { content:'✕'; color: var(--orange-2); font-family:'Syne Mono',monospace; font-size:11px; flex-shrink:0; }
+
+/* ============================================================
+   TRINITY
+   ============================================================ */
+#trinity { background: var(--bg-section); }
+
+.trinity-intro {
+  font-size: 17px; color: var(--ink-2); line-height: 1.75;
+  margin-bottom: 48px;
+}
+
+.t-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; margin-bottom: 28px;
+}
+
+.t-card {
+  border: var(--border-light);
+  padding: 28px 24px 24px;
+  background: var(--bg-card);
+  box-shadow: 0 1px 4px rgba(30,74,122,0.05);
+  position: relative;
+}
+.t-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 3px;
+}
+.t-card.sy::before { background: var(--navy-2); }
+.t-card.po::before { background: var(--orange-2); }
+.t-card.of::before { background: var(--orange-3); }
+
+.t-glyph { font-size: 22px; margin-bottom: 14px; display: block; }
+.t-name {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-weight: 700; font-size: 16px; color: var(--ink-1);
+  margin-bottom: 4px;
+}
+.t-role {
+  font-family: 'Syne Mono', monospace;
+  font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.t-card.sy .t-role { color: var(--navy-3); }
+.t-card.po .t-role { color: var(--orange-2); }
+.t-card.of .t-role { color: var(--orange-3); }
+
+.t-desc { font-size: 14px; color: var(--ink-2); line-height: 1.65; margin-bottom: 20px; }
+.t-badge {
+  display: inline-block;
+  font-family: 'Syne Mono', monospace;
+  font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--ink-3);
+  border: var(--border-light);
+  padding: 3px 8px;
+}
+
+/* flow strip */
+.t-flow {
+  border: var(--border-light);
+  background: var(--bg-card);
+  box-shadow: 0 1px 4px rgba(30,74,122,0.05);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.flow-item {
+  padding: 20px 24px;
+  border-right: var(--border-light);
+}
+.flow-item:last-child { border-right: none; }
+.flow-entity {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700; font-size: 12px;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.flow-item.sy .flow-entity { color: var(--navy-2); }
+.flow-item.po .flow-entity { color: var(--orange-2); }
+.flow-item.of .flow-entity { color: var(--orange-3); }
+.flow-gives { font-size: 13px; color: var(--ink-3); line-height: 1.5; }
+
+/* ============================================================
+   WHO
+   ============================================================ */
+#who { background: var(--bg-page); }
+
+.who-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 28px;
+}
+.who-col {
+  border: var(--border-light); padding: 28px 28px 32px;
+  background: var(--bg-card);
+  box-shadow: 0 1px 4px rgba(30,74,122,0.05);
+}
+.who-col h3 {
+  font-family: 'Syne Mono', monospace;
+  font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+  padding-bottom: 14px; margin-bottom: 20px;
+  border-bottom: var(--border-light);
+}
+.who-col.for   h3 { color: var(--navy-2); }
+.who-col.notfor h3 { color: var(--orange-2); }
+.who-list { list-style: none; display: flex; flex-direction: column; gap: 11px; }
+.who-list li {
+  font-size: 15px; color: var(--ink-2); line-height: 1.55;
+  display: flex; align-items: baseline; gap: 10px;
+}
+.who-col.for    .who-list li::before { content:'◆'; font-size:7px; color:var(--navy-3); flex-shrink:0; position:relative; top:-1px; }
+.who-col.notfor .who-list li::before { content:'◇'; font-size:7px; color:var(--orange-2); flex-shrink:0; position:relative; top:-1px; }
+
+/* ============================================================
+   CONTACT
+   ============================================================ */
+#contact { background: var(--bg-section); }
+
+.contact-intro {
+  font-size: 17px; color: var(--ink-2); line-height: 1.75;
+  margin-bottom: 44px;
+}
+
+.c-tracks {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 20px; margin-bottom: 32px;
+}
+.c-track {
+  border: var(--border-light); padding: 24px 22px;
+  background: var(--bg-card);
+  box-shadow: 0 1px 4px rgba(30,74,122,0.05);
+}
+.c-entity { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+.c-glyph { font-size: 16px; }
+.c-name { font-weight: 700; font-size: 14px; color: var(--ink-1); }
+.c-purpose { font-size: 13px; color: var(--ink-3); line-height: 1.6; margin-bottom: 18px; }
+.c-cta {
+  font-family: 'Syne Mono', monospace;
+  font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--navy-2);
+  border: 1px solid rgba(30,74,122,0.3);
+  padding: 7px 12px; display: inline-block;
+  cursor: default; transition: all 0.2s;
+}
+.c-cta:hover { background: rgba(30,74,122,0.06); }
+
+/* CTA block */
+.join-block {
+  border: 2px solid var(--navy-2);
+  padding: 36px 40px;
+  background: var(--bg-card);
+  display: grid; grid-template-columns: 1fr auto;
+  gap: 40px; align-items: center;
+  box-shadow: 0 2px 8px rgba(30,74,122,0.08);
+}
+.join-block h3 {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-weight: 700; font-size: 22px; color: var(--navy-1);
+  margin-bottom: 8px;
+}
+.join-block p { font-size: 15px; color: var(--ink-2); line-height: 1.65; }
+.primary-cta {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;
+  background: var(--navy-1); color: #fff;
+  padding: 15px 28px; border: none;
+  cursor: default; white-space: nowrap;
+  transition: background 0.2s;
+}
+.primary-cta:hover { background: var(--navy-2); }
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer {
+  background: var(--navy-1);
+  padding: 40px 80px 40px 72px;
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 20px;
+}
+.footer-brand {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-weight: 700; font-size: 16px; color: rgba(255,255,255,0.6);
+  display: flex; align-items: center; gap: 8px;
+}
+.footer-legal {
+  font-family: 'Syne Mono', monospace;
+  font-size: 9px; letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.35);
+  text-align: right; line-height: 1.9;
+}
+.footer-legal a { color: rgba(255,255,255,0.35); text-decoration: none; }
+.footer-legal a:hover { color: rgba(255,255,255,0.6); }
+
+/* ============================================================
+   SCROLL REVEAL
+   ============================================================ */
+.reveal {
+  opacity: 0; transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.in { opacity: 1; transform: none; }
+
+/* scrollbar */
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: var(--bg-page); }
+::-webkit-scrollbar-thumb { background: var(--navy-5); }
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     SIDEBAR
+     ============================================================ -->
+<aside class="sidebar">
+  <div class="sb-pillars">
+    <div class="sb-pillar"><div class="sb-pillar-cap"></div></div>
+    <div class="sb-pillar"><div class="sb-pillar-cap"></div></div>
+    <div class="sb-pillar"><div class="sb-pillar-cap"></div></div>
+  </div>
+  <div class="sb-inner">
+    <div class="sb-brand">
+      <div class="sb-name">Syntonie</div>
+      <div class="sb-sub">ASBL · Bruxelles</div>
+    </div>
+
+    <nav class="sb-nav">
+      <a href="#hero"><span class="nav-num">00</span>Accueil</a>
+      <a href="#vision"><span class="nav-num">01</span>Vision</a>
+      <a href="#role"><span class="nav-num">02</span>Notre rôle</a>
+      <a href="#trinity"><span class="nav-num">03</span>La Trinity</a>
+      <a href="#who"><span class="nav-num">04</span>Pour qui</a>
+      <a href="#contact"><span class="nav-num">05</span>Contact</a>
+    </nav>
+
+    <div class="lang-toggle">
+      <button class="lang-btn active">FR</button>
+      <button class="lang-btn">EN</button>
+    </div>
+
+    <div class="sb-ecosystem">
+      <div class="eco-label">Écosystème</div>
+      <a class="portal-link">
+        <span class="portal-glyph">🫰</span>
+        Politype
+        <span class="portal-soon">bientôt</span>
+      </a>
+      <a class="portal-link">
+        <span class="portal-glyph">🧰</span>
+        OpenFab
+        <span class="portal-soon">bientôt</span>
+      </a>
+    </div>
+  </div>
+</aside>
+
+<!-- ============================================================
+     MAIN — single margin-left, no grid double-offset
+     ============================================================ -->
+<main class="main">
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-text">
+      <div class="hero-eyebrow">Bruxelles · ASBL · Fondée 2012</div>
+      <h1 class="hero-title">Être en<br>résonance.</h1>
+      <p class="hero-sub">Démocratie, technologie, et faire — non pas comme des mondes séparés, mais comme pratique vivante.</p>
+    </div>
+
+    <div class="hero-aside">
+      <blockquote>« Syntonie — être en résonance. Vibrer ensemble. »</blockquote>
+      <div class="hero-aside-src">Étymologie · Grec syntonia</div>
+      <div class="word-card">
+        <div class="word-title">syn·to·nie</div>
+        <div class="word-etym">nom féminin · du grec</div>
+        <p>État d'accord entre systèmes oscillants. En harmonie avec son environnement. Ce que nous cherchons à rendre possible.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISION -->
+  <section id="vision" class="section reveal">
+    <div class="section-lbl">01 — Vision</div>
+    <div class="vision-layout">
+      <div class="vision-body">
+        <h2>La relation entre humains, technologie, et environnement se brisait.</h2>
+        <p>Syntonie a été créée pour être le pont : ni une entreprise, ni une ONG traditionnelle, mais une ASBL qui tient l'espace pour des expériences émergentes sur notre façon de vivre ensemble.</p>
+        <p>Les défis de notre époque — polarisation, capitalisme de surveillance, érosion démocratique — ne seront pas résolus par une seule discipline. Ils exigent <strong>une nouvelle écologie</strong> : penseurs, bâtisseurs et expérimentateurs en concert.</p>
+        <div class="vision-stat">
+          <span class="stat-glyph">☂️</span>
+          <span class="stat-text">Syntonie tient l'espace pour que les autres puissent exister et prospérer.</span>
+        </div>
+      </div>
+      <div class="vision-aside-panel">
+        <div class="aside-annotation">Contexte · 2012 → aujourd'hui</div>
+        <div class="aside-callout">
+          <p>Fondée à Ixelles il y a plus de dix ans, Syntonie n'est pas un prestataire de services — c'est une infrastructure de confiance.</p>
+          <p>Elle détient les actifs. Elle signe les contrats. Elle maintient la cohérence là où les autres entités expérimentent librement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROLE -->
+  <section id="role" class="section reveal">
+    <div class="section-lbl">02 — Notre rôle</div>
+    <h2>La tête. Le parapluie. Le gardien de la vision.</h2>
+    <p class="role-lead">Syntonie possède les actifs, signe les contrats, assure la conformité et maintient la cohérence stratégique de l'écosystème. Elle n'opère pas au quotidien — elle permet aux autres d'exister.</p>
+    <div class="do-dont">
+      <div class="do-col">
+        <div class="col-hdr">✓ &nbsp;Ce que nous faisons</div>
+        <ul class="col-list">
+          <li>Penser à long terme</li>
+          <li>Maintenir la conformité légale</li>
+          <li>Posséder les actifs au nom de l'écosystème</li>
+          <li>Connecter partenaires et financeurs</li>
+          <li>Assurer la cohérence entre entités</li>
+          <li>Permettre aux sous-entités d'exister et de prospérer</li>
+        </ul>
+      </div>
+      <div class="dont-col">
+        <div class="col-hdr">✕ &nbsp;Ce que nous ne faisons pas</div>
+        <ul class="col-list">
+          <li>Gérer les opérations quotidiennes</li>
+          <li>Animer des ateliers directement</li>
+          <li>Fabriquer des choses <em>(c'est OpenFab)</em></li>
+          <li>Prototyper la gouvernance <em>(c'est Politype)</em></li>
+          <li>Microgérer les sous-entités</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRINITY -->
+  <section id="trinity" class="section reveal">
+    <div class="section-lbl">03 — La Trinity</div>
+    <h2>Trois entités. Un écosystème.</h2>
+    <p class="trinity-intro">Des rôles distincts, un but partagé. Tête, Cœur, Mains — l'organisme complet où la séparation des missions est une force, pas une faiblesse.</p>
+    <div class="t-cards">
+      <div class="t-card sy">
+        <span class="t-glyph">☂️</span>
+        <div class="t-name">Syntonie</div>
+        <div class="t-role">La Tête · Gouvernance</div>
+        <p class="t-desc">Vision, structure légale, actifs. L'entité qui tient l'espace pour que les autres existent.</p>
+        <span class="t-badge">Vous êtes ici</span>
+      </div>
+      <div class="t-card po">
+        <span class="t-glyph">🫰</span>
+        <div class="t-name">Politype</div>
+        <div class="t-role">Le Cœur · Démocratie</div>
+        <p class="t-desc">Prototypage de la gouvernance, jeux civiques, outils de participation démocratique.</p>
+        <span class="t-badge">Site à venir</span>
+      </div>
+      <div class="t-card of">
+        <span class="t-glyph">🧰</span>
+        <div class="t-name">OpenFab</div>
+        <div class="t-role">Les Mains · Fabrication</div>
+        <p class="t-desc">L'espace maker : outils, ateliers, communauté. Les idées deviennent réalité physique.</p>
+        <span class="t-badge">Site à venir</span>
+      </div>
+    </div>
+    <div class="t-flow">
+      <div class="flow-item sy">
+        <div class="flow-entity">☂️ Syntonie</div>
+        <div class="flow-gives">Structure légale, financement, actifs — le toit commun</div>
+      </div>
+      <div class="flow-item po">
+        <div class="flow-entity">🫰 Politype</div>
+        <div class="flow-gives">Outils de gouvernance, méthodologie participative</div>
+      </div>
+      <div class="flow-item of">
+        <div class="flow-entity">🧰 OpenFab</div>
+        <div class="flow-gives">Espace physique, outils, expertise maker</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO -->
+  <section id="who" class="section reveal">
+    <div class="section-lbl">04 — Pour qui</div>
+    <h2>Ce projet est fait pour vous si…</h2>
+    <div class="who-grid">
+      <div class="who-col for">
+        <h3>Vous êtes au bon endroit</h3>
+        <ul class="who-list">
+          <li>Vous croyez que la démocratie peut être meilleure — et vous voulez la <em>construire</em></li>
+          <li>Vous voulez faire des choses, pas seulement en parler</li>
+          <li>Vous voyez la gouvernance comme du design, pas de la bureaucratie</li>
+          <li>Vous êtes fatigué de devoir choisir entre "penseurs" et "faiseurs"</li>
+          <li>Vous croyez que l'accès aux outils devrait être universel</li>
+        </ul>
+      </div>
+      <div class="who-col notfor">
+        <h3>Ce n'est pas pour vous si</h3>
+        <ul class="who-list">
+          <li>Vous voulez défendre un parti politique spécifique</li>
+          <li>Vous cherchez un emploi traditionnel</li>
+          <li>Vous pensez que la gouvernance est le problème de quelqu'un d'autre</li>
+          <li>Vous voulez posséder des choses</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section reveal">
+    <div class="section-lbl">05 — Contact</div>
+    <h2>Entrons en contact.</h2>
+    <p class="contact-intro">Trois entités, trois façons de s'engager. Choisissez la porte qui correspond à votre intention.</p>
+    <div class="c-tracks">
+      <div class="c-track">
+        <div class="c-entity"><span class="c-glyph">☂️</span><span class="c-name">Syntonie</span></div>
+        <p class="c-purpose">Partenariats, financement, questions légales, structure de l'écosystème.</p>
+        <span class="c-cta">Écrire →</span>
+      </div>
+      <div class="c-track">
+        <div class="c-entity"><span class="c-glyph">🫰</span><span class="c-name">Politype</span></div>
+        <p class="c-purpose">Expériences de gouvernance, outils civiques, prototypage démocratique.</p>
+        <span class="c-cta">Bientôt</span>
+      </div>
+      <div class="c-track">
+        <div class="c-entity"><span class="c-glyph">🧰</span><span class="c-name">OpenFab</span></div>
+        <p class="c-purpose">Accès makerspace, ateliers, utilisation des outils, communauté maker.</p>
+        <span class="c-cta">Bientôt</span>
+      </div>
+    </div>
+    <div class="join-block">
+      <div>
+        <h3>Rejoignez l'écosystème.</h3>
+        <p>Si ce document résonne, vous êtes au bon endroit. Membre actif, partenaire ou sympathisant — la première étape est la même.</p>
+      </div>
+      <button class="primary-cta">Nous rejoindre →</button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-brand">☂️ Syntonie ASBL</div>
+    <div class="footer-legal">
+      ASBL Syntonie · Ixelles, Bruxelles<br>
+      Numéro BCE : [placeholder]<br>
+      <a href="#">Mentions légales</a> · <a href="#">Confidentialité</a>
+    </div>
+  </footer>
+
+</main>
+
+<script>
+const obs = new IntersectionObserver(entries =>
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); }),
+  { threshold: 0.07 }
+);
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+document.querySelectorAll('.lang-btn').forEach(btn =>
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+  })
+);
+</script>
+</body>
+</html>
