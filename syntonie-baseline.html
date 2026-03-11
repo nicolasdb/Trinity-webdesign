@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Syntonie ASBL — Être en résonance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Syne:wght@600;700;800&family=Syne+Mono&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   SYNTONIE — Neutral palette
+   Umbrella governance: natural, balanced, structured
+   ============================================================ */
+:root {
+  --tile: 59px;
+  --sidebar-w: 236px; /* 4 × 59px */
+
+  /* Neutral dark palette */
+  --bg:          #0f1216;
+  --sidebar-bg:  #1a1e22;
+  --text-primary: #e8eaed;
+  --text-secondary: rgba(232,234,237,0.55);
+  --accent:      #4a7fa5; /* steel blue, neutral */
+  --accent-dim:  rgba(74,127,165,0.18);
+  --grid-color:  rgba(74,127,165,0.08);
+  --border:      rgba(232,234,237,0.1);
+  --nav-hover:   rgba(74,127,165,0.12);
+
+  --radius: 0px; /* De Stijl: no rounding */
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  height: 100%;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+}
+
+/* ============================================================
+   LAYOUT — Sidebar fixed + scrollable main
+   ============================================================ */
+.layout {
+  display: grid;
+  grid-template-columns: var(--sidebar-w) 1fr;
+  min-height: 100vh;
+}
+
+/* ============================================================
+   SIDEBAR
+   ============================================================ */
+.sidebar {
+  position: fixed;
+  top: 0; left: 0;
+  width: var(--sidebar-w);
+  height: 100vh;
+  background: var(--sidebar-bg);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.sidebar-top {
+  padding: calc(var(--tile) * 0.75) calc(var(--tile) * 0.5);
+  border-bottom: 1px solid var(--border);
+}
+
+.entity-name {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+
+.entity-sub {
+  font-family: 'Syne Mono', monospace;
+  font-size: 0.6rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* Nav */
+nav {
+  flex: 1;
+  padding: calc(var(--tile) * 0.5) 0;
+}
+
+.nav-item {
+  display: block;
+  padding: calc(var(--tile) * 0.3) calc(var(--tile) * 0.5);
+  font-family: 'Syne Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.nav-item:hover, .nav-item.active {
+  background: var(--nav-hover);
+  color: var(--text-primary);
+  border-left-color: var(--accent);
+}
+
+.nav-item .nav-num {
+  color: var(--accent);
+  margin-right: 0.6em;
+}
+
+/* Language toggle */
+.lang-toggle {
+  padding: calc(var(--tile) * 0.4) calc(var(--tile) * 0.5);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  gap: 0.75rem;
+}
+
+.lang-btn {
+  font-family: 'Syne Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  color: var(--text-secondary);
+  background: none;
+  border: 1px solid transparent;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.lang-btn.active {
+  color: var(--text-primary);
+  border-color: var(--border);
+}
+
+/* Ecosystem links */
+.ecosystem {
+  padding: calc(var(--tile) * 0.4) calc(var(--tile) * 0.5);
+}
+
+.ecosystem-label {
+  font-family: 'Syne Mono', monospace;
+  font-size: 0.55rem;
+  letter-spacing: 0.18em;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+
+.ecosystem-link {
+  display: block;
+  font-family: 'Syne Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 0.25rem 0;
+  text-transform: uppercase;
+  transition: color 0.15s;
+}
+
+.ecosystem-link:hover {
+  color: var(--accent);
+}
+
+/* ============================================================
+   MAIN CONTENT — grid background, visible low-opacity lines
+   ============================================================ */
+.main {
+  margin-left: var(--sidebar-w);
+  min-height: 100vh;
+  background-image:
+    linear-gradient(var(--grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+  background-size: var(--tile) var(--tile);
+  background-position: 0 0;
+}
+
+/* ============================================================
+   SECTIONS — each snapped to 59px vertical rhythm
+   ============================================================ */
+.section {
+  padding: calc(var(--tile) * 2) calc(var(--tile) * 1.5);
+  border-bottom: 1px solid var(--border);
+  min-height: calc(var(--tile) * 12); /* 708px */
+}
+
+/* Hero section — De Stijl: large text offset against definition card */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr calc(var(--tile) * 7);
+  gap: calc(var(--tile) * 2);
+  align-items: start;
+  min-height: calc(var(--tile) * 14);
+  padding-top: calc(var(--tile) * 3);
+}
+
+.hero-text {
+  padding-top: var(--tile);
+}
+
+.section-num {
+  font-family: 'Syne Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: calc(var(--tile) * 0.5);
+}
+
+h1 {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  font-weight: 800;
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: calc(var(--tile) * 0.75);
+}
+
+.hero-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  max-width: calc(var(--tile) * 10);
+}
+
+/* Definition card — offset block, De Stijl */
+.def-card {
+  background: var(--accent-dim);
+  border: 1px solid var(--accent);
+  border-left: 4px solid var(--accent);
+  padding: calc(var(--tile) * 0.75);
+  margin-top: calc(var(--tile) * 2);
+}
+
+.def-card .def-word {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.def-card .def-phonetic {
+  font-family: 'Syne Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+}
+
+.def-card .def-text {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* Content section — asymmetric layout */
+.content-section {
+  display: grid;
+  grid-template-columns: calc(var(--tile) * 5) 1fr;
+  gap: calc(var(--tile) * 2);
+  align-items: start;
+}
+
+.section-header {
+  position: sticky;
+  top: calc(var(--tile) * 2);
+}
+
+h2 {
+  font-family: 'Syne', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  line-height: 1.1;
+  margin-bottom: var(--tile);
+}
+
+.content-body {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--tile) * 1.5);
+}
+
+.content-block {
+  border-top: 1px solid var(--border);
+  padding-top: calc(var(--tile) * 0.75);
+}
+
+.block-label {
+  font-family: 'Syne Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.block-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+/* Geometric accent — De Stijl block */
+.geo-block {
+  background: var(--accent);
+  width: calc(var(--tile) * 2);
+  height: 4px;
+  margin-bottom: calc(var(--tile) * 0.5);
+}
+
+/* ============================================================
+   FOOTER ROW
+   ============================================================ */
+.footer-row {
+  padding: calc(var(--tile) * 1) calc(var(--tile) * 1.5);
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text {
+  font-family: 'Syne Mono', monospace;
+  font-size: 0.6rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+</style>
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- =========================================================
+       SIDEBAR
+       ========================================================= -->
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <div class="entity-name">Syntonie</div>
+      <div class="entity-sub">ASBL · Ixelles, Bruxelles</div>
+    </div>
+
+    <nav>
+      <a href="#accueil" class="nav-item active">
+        <span class="nav-num">00</span>Accueil
+      </a>
+      <a href="#mission" class="nav-item">
+        <span class="nav-num">01</span>Mission
+      </a>
+      <a href="#gouvernance" class="nav-item">
+        <span class="nav-num">02</span>Gouvernance
+      </a>
+      <a href="#projets" class="nav-item">
+        <span class="nav-num">03</span>Projets
+      </a>
+      <a href="#acteurs" class="nav-item">
+        <span class="nav-num">04</span>Acteurs
+      </a>
+      <a href="#contact" class="nav-item">
+        <span class="nav-num">05</span>Contact
+      </a>
+    </nav>
+
+    <div class="lang-toggle">
+      <button class="lang-btn active">FR</button>
+      <button class="lang-btn">EN</button>
+    </div>
+
+    <div class="ecosystem">
+      <div class="ecosystem-label">Écosystème</div>
+      <a href="politype-baseline.html" class="ecosystem-link">🫰 Politype</a>
+      <a href="openfab-baseline.html" class="ecosystem-link">🧰 OpenFab</a>
+    </div>
+  </aside>
+
+  <!-- =========================================================
+       MAIN CONTENT
+       ========================================================= -->
+  <main class="main">
+
+    <!-- HERO -->
+    <section class="section" id="accueil">
+      <div class="hero">
+        <div class="hero-text">
+          <span class="section-num">☂️ 00 — Accueil</span>
+          <div class="geo-block"></div>
+          <h1>Être en<br>résonance</h1>
+          <p class="hero-body">
+            Syntonie est l'ASBL qui fournit la structure légale et la vision stratégique
+            à l'écosystème Trinity. Elle tient l'ombrelle : actifs, gouvernance, cohérence.
+          </p>
+        </div>
+
+        <div class="def-card">
+          <div class="def-word">syntonie</div>
+          <div class="def-phonetic">/sɛ̃.tɔ.ni/</div>
+          <div class="def-text">
+            <em>n.f.</em> — En physique, état d'un circuit accordé sur une fréquence.
+            En psychiatrie, capacité à s'accorder à l'humeur d'autrui.
+            <br><br>
+            Ici : l'art de tenir ensemble des entités distinctes en résonance commune.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSION -->
+    <section class="section" id="mission">
+      <div class="content-section">
+        <div class="section-header">
+          <span class="section-num">01 — Mission</span>
+          <h2>La structure<br>qui permet</h2>
+        </div>
+
+        <div class="content-body">
+          <div class="content-block">
+            <div class="block-label">Gouvernance légale</div>
+            <p class="block-text">
+              Syntonie détient la personnalité morale de l'écosystème. Elle gère les actifs,
+              les contrats, les responsabilités formelles — pour que Politype et OpenFab
+              puissent expérimenter librement.
+            </p>
+          </div>
+
+          <div class="content-block">
+            <div class="block-label">Vision stratégique</div>
+            <p class="block-text">
+              Chaque entité est autonome dans son rôle. Syntonie maintient la cohérence
+              d'ensemble : les valeurs partagées, les ressources communes, la direction long terme.
+            </p>
+          </div>
+
+          <div class="content-block">
+            <div class="block-label">Tête de l'écosystème</div>
+            <p class="block-text">
+              La tête pense. Le cœur ressent. Les mains font.
+              Syntonie est la tête — non pas le sommet d'une hiérarchie,
+              mais l'organe qui relie et oriente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GOUVERNANCE -->
+    <section class="section" id="gouvernance">
+      <div class="content-section">
+        <div class="section-header">
+          <span class="section-num">02 — Gouvernance</span>
+          <h2>Structure<br>sans rigidité</h2>
+        </div>
+
+        <div class="content-body">
+          <div class="content-block">
+            <div class="block-label">Statuts ASBL</div>
+            <p class="block-text">
+              Association Sans But Lucratif, enregistrée à Ixelles, Bruxelles.
+              Les statuts définissent le cadre ; la pratique le vivifie.
+            </p>
+          </div>
+
+          <div class="content-block">
+            <div class="block-label">Conseil d'administration</div>
+            <p class="block-text">
+              Composition en cours de finalisation.
+              Principe directeur : représentation équilibrée des trois entités,
+              décisions par consensus autant que possible.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section class="section" id="projets">
+      <div class="content-section">
+        <div class="section-header">
+          <span class="section-num">03 — Projets</span>
+          <h2>Ce qui<br>est en cours</h2>
+        </div>
+
+        <div class="content-body">
+          <div class="content-block">
+            <div class="block-label">Trinity Charter</div>
+            <p class="block-text">
+              Rédaction du document fondateur qui définit les rôles, les valeurs,
+              les mécanismes de gouvernance partagée de l'écosystème.
+            </p>
+          </div>
+
+          <div class="content-block">
+            <div class="block-label">Identité visuelle</div>
+            <p class="block-text">
+              Ce site lui-même — chaque choix typographique, chaque proportion de grille,
+              chaque température de couleur — est un acte de gouvernance identitaire.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="content-section">
+        <div class="section-header">
+          <span class="section-num">05 — Contact</span>
+          <h2>Entrer en<br>résonance</h2>
+        </div>
+
+        <div class="content-body">
+          <div class="content-block">
+            <div class="block-label">Adresse</div>
+            <p class="block-text">
+              Ixelles, Bruxelles<br>
+              Belgique
+            </p>
+          </div>
+
+          <div class="content-block">
+            <div class="block-label">Contact</div>
+            <p class="block-text">
+              En cours de configuration.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer-row">
+      <span class="footer-text">Syntonie ASBL — Ixelles, Bruxelles</span>
+      <span class="footer-text">Trinity Ecosystem · 2026</span>
+    </div>
+
+  </main>
+</div>
+
+</body>
+</html>

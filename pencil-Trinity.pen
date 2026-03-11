@@ -3,34 +3,21 @@
   "children": [
     {
       "type": "frame",
-      "id": "bi8Au",
-      "x": 0,
-      "y": 0,
-      "name": "Frame",
-      "enabled": false,
-      "clip": true,
-      "width": 800,
-      "height": 600,
-      "fill": "#FFFFFF",
-      "layout": "none"
-    },
-    {
-      "type": "frame",
       "id": "665dI",
       "x": 900,
       "y": 0,
       "name": "Syntonie — Cool Pavilion",
       "clip": true,
       "width": 1440,
-      "fill": "#0D1B2A",
+      "fill": "#0f1216",
       "children": [
         {
           "type": "frame",
           "id": "TjMQq",
           "name": "Sidebar",
-          "width": 280,
+          "width": 236,
           "height": 733,
-          "fill": "#0A1520",
+          "fill": "#0b0e12",
           "layout": "vertical",
           "padding": [
             36,
@@ -52,7 +39,7 @@
                   "type": "text",
                   "id": "5tuEW",
                   "name": "brandName",
-                  "fill": "#E8EDF5",
+                  "fill": "#e8eaed",
                   "content": "Syntonie",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 22,
@@ -72,7 +59,7 @@
                   "type": "text",
                   "id": "BJZz9",
                   "name": "brandTag",
-                  "fill": "#4A6A8A80",
+                  "fill": "#6a7a8a80",
                   "content": "ASBL · IXELLES, BRUXELLES",
                   "lineHeight": 1.5,
                   "fontFamily": "Atkinson Hyperlegible",
@@ -84,8 +71,7 @@
                   "type": "text",
                   "id": "j9Eqc",
                   "name": "brandTag2",
-                  "opacity": 0,
-                  "fill": "#4A6A8A80",
+                  "fill": "#6a7a8a80",
                   "content": "FONDÉE 2012",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 10,
@@ -110,7 +96,7 @@
                     "thickness": {
                       "bottom": 1
                     },
-                    "fill": "#B4D7F012"
+                    "fill": "#b4c8d812"
                   },
                   "gap": 10,
                   "padding": [
@@ -123,7 +109,7 @@
                       "type": "text",
                       "id": "LXVhx",
                       "name": "num0",
-                      "fill": "#4A6A8A80",
+                      "fill": "#6a7a8a80",
                       "content": "00",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 10,
@@ -134,7 +120,7 @@
                       "type": "text",
                       "id": "eRen3",
                       "name": "txt0",
-                      "fill": "#C8DCF0BF",
+                      "fill": "#c0ccd8bf",
                       "content": "ACCUEIL",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 12,
@@ -152,7 +138,7 @@
                     "thickness": {
                       "bottom": 1
                     },
-                    "fill": "#B4D7F012"
+                    "fill": "#b4c8d812"
                   },
                   "gap": 10,
                   "padding": [
@@ -164,7 +150,7 @@
                       "type": "text",
                       "id": "7sp2F",
                       "name": "nav1num",
-                      "fill": "#4A6A8A80",
+                      "fill": "#6a7a8a80",
                       "content": "01",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 10,
@@ -175,7 +161,7 @@
                       "type": "text",
                       "id": "spS6m",
                       "name": "nav1txt",
-                      "fill": "#C8DCF0BF",
+                      "fill": "#c0ccd8bf",
                       "content": "VISION",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 12,
@@ -193,7 +179,7 @@
                     "thickness": {
                       "bottom": 1
                     },
-                    "fill": "#B4D7F012"
+                    "fill": "#b4c8d812"
                   },
                   "gap": 10,
                   "padding": [
@@ -205,7 +191,7 @@
                       "type": "text",
                       "id": "prfdx",
                       "name": "nav2num",
-                      "fill": "#4A6A8A80",
+                      "fill": "#6a7a8a80",
                       "content": "02",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 10,
@@ -216,7 +202,7 @@
                       "type": "text",
                       "id": "DYFGI",
                       "name": "nav2txt",
-                      "fill": "#C8DCF0BF",
+                      "fill": "#c0ccd8bf",
                       "content": "NOTRE RÔLE",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 12,
@@ -234,7 +220,7 @@
                     "thickness": {
                       "bottom": 1
                     },
-                    "fill": "#B4D7F012"
+                    "fill": "#b4c8d812"
                   },
                   "gap": 10,
                   "padding": [
@@ -246,7 +232,7 @@
                       "type": "text",
                       "id": "AEFrS",
                       "name": "nav3num",
-                      "fill": "#4A6A8A80",
+                      "fill": "#6a7a8a80",
                       "content": "03",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 10,
@@ -257,49 +243,8 @@
                       "type": "text",
                       "id": "OSKcy",
                       "name": "nav3txt",
-                      "fill": "#C8DCF0BF",
+                      "fill": "#c0ccd8bf",
                       "content": "LA TRINITY",
-                      "fontFamily": "Atkinson Hyperlegible",
-                      "fontSize": 12,
-                      "fontWeight": "600",
-                      "letterSpacing": 1
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "6c1Vn",
-                  "name": "nav4",
-                  "width": "fill_container",
-                  "stroke": {
-                    "thickness": {
-                      "bottom": 1
-                    },
-                    "fill": "#B4D7F012"
-                  },
-                  "gap": 10,
-                  "padding": [
-                    9,
-                    0
-                  ],
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "cXLrB",
-                      "name": "nav4num",
-                      "fill": "#4A6A8A80",
-                      "content": "04",
-                      "fontFamily": "Atkinson Hyperlegible",
-                      "fontSize": 10,
-                      "fontWeight": "normal",
-                      "letterSpacing": 1
-                    },
-                    {
-                      "type": "text",
-                      "id": "3qQc3",
-                      "name": "nav4txt",
-                      "fill": "#C8DCF0BF",
-                      "content": "POUR QUI",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 12,
                       "fontWeight": "600",
@@ -316,7 +261,7 @@
                     "thickness": {
                       "bottom": 1
                     },
-                    "fill": "#B4D7F012"
+                    "fill": "#b4c8d812"
                   },
                   "gap": 10,
                   "padding": [
@@ -328,7 +273,7 @@
                       "type": "text",
                       "id": "u3Io9",
                       "name": "nav5num",
-                      "fill": "#4A6A8A80",
+                      "fill": "#6a7a8a80",
                       "content": "05",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 10,
@@ -339,7 +284,7 @@
                       "type": "text",
                       "id": "XFhbq",
                       "name": "nav5txt",
-                      "fill": "#C8DCF0BF",
+                      "fill": "#c0ccd8bf",
                       "content": "CONTACT",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 12,
@@ -363,14 +308,14 @@
               "name": "Lang Toggle",
               "stroke": {
                 "thickness": 1,
-                "fill": "#B4D7F026"
+                "fill": "#b4c8d826"
               },
               "children": [
                 {
                   "type": "frame",
                   "id": "Nz3lz",
                   "name": "langFR",
-                  "fill": "#2A6A9A",
+                  "fill": "#1e2830",
                   "padding": [
                     5,
                     10
@@ -380,7 +325,7 @@
                       "type": "text",
                       "id": "YUVHa",
                       "name": "langFRtxt",
-                      "fill": "#E8EDF5",
+                      "fill": "#e8eaed",
                       "content": "FR",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 10,
@@ -402,7 +347,7 @@
                       "type": "text",
                       "id": "oTeZu",
                       "name": "langENtxt",
-                      "fill": "#4A6A8A80",
+                      "fill": "#6a7a8a80",
                       "content": "EN",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 10,
@@ -422,7 +367,7 @@
                 "thickness": {
                   "top": 1
                 },
-                "fill": "#B4D7F026"
+                "fill": "#b4c8d826"
               },
               "layout": "vertical",
               "gap": 6,
@@ -437,7 +382,7 @@
                   "type": "text",
                   "id": "ckFVZ",
                   "name": "portalLabel",
-                  "fill": "#4A6A8A80",
+                  "fill": "#6a7a8a80",
                   "content": "ÉCOSYSTÈME",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 9,
@@ -451,7 +396,7 @@
                   "width": "fill_container",
                   "stroke": {
                     "thickness": 1,
-                    "fill": "#B4D7F026"
+                    "fill": "#b4c8d826"
                   },
                   "gap": 8,
                   "padding": [
@@ -473,7 +418,7 @@
                       "type": "text",
                       "id": "vCyKF",
                       "name": "p1name",
-                      "fill": "#4A6A8A80",
+                      "fill": "#6a7a8a80",
                       "content": "POLITYPE",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 11,
@@ -489,7 +434,7 @@
                   "width": "fill_container",
                   "stroke": {
                     "thickness": 1,
-                    "fill": "#B4D7F026"
+                    "fill": "#b4c8d826"
                   },
                   "gap": 8,
                   "padding": [
@@ -511,7 +456,7 @@
                       "type": "text",
                       "id": "o8i4H",
                       "name": "p2name",
-                      "fill": "#4A6A8A80",
+                      "fill": "#6a7a8a80",
                       "content": "OPENFAB",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 11,
@@ -529,90 +474,153 @@
           "id": "pC7En",
           "name": "Main Content",
           "width": "fill_container",
-          "fill": "#0D1B2A",
+          "fill": "#0f1216",
           "layout": "vertical",
           "children": [
+            {
+              "type": "rectangle",
+              "id": "xwRUh",
+              "enabled": false,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./grid.png",
+                "mode": "fill"
+              },
+              "width": 1178,
+              "height": 737
+            },
             {
               "type": "frame",
               "id": "nbECT",
               "name": "Hero Section",
+              "clip": true,
               "width": "fill_container",
-              "height": 700,
-              "fill": "#3e82b5ff",
-              "layout": "vertical",
-              "gap": 20,
+              "height": 708,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "/home/nicolas/github/Trinity/images/Lucid_Origin_a_surreal_and_vibrant_cinematic_photo_of_A_mystic_1.jpg",
+                "mode": "fill"
+              },
+              "gap": 59,
               "padding": [
-                80,
-                80,
-                80,
-                72
+                118,
+                59,
+                59,
+                118
               ],
-              "justifyContent": "center",
               "children": [
                 {
-                  "type": "text",
-                  "id": "WlgKG",
-                  "name": "heroEyebrow",
-                  "fill": "#4A8DB8",
-                  "content": "SYNTONIE · ASBL · BRUXELLES",
-                  "fontFamily": "Atkinson Hyperlegible",
-                  "fontSize": 10,
-                  "fontWeight": "normal",
-                  "letterSpacing": 2.2
-                },
-                {
-                  "type": "text",
-                  "id": "pytgb",
-                  "name": "heroTitle",
-                  "fill": "#E8EDF5",
-                  "textGrowth": "fixed-width",
-                  "width": 640,
-                  "content": "Être en\nrésonance.",
-                  "lineHeight": 0.95,
-                  "fontFamily": "Atkinson Hyperlegible",
-                  "fontSize": 72,
-                  "fontWeight": "800",
-                  "letterSpacing": -2
-                },
-                {
-                  "type": "text",
-                  "id": "5ibJP",
-                  "name": "heroSub",
-                  "fill": "#C8DCF0BF",
-                  "textGrowth": "fixed-width",
-                  "width": 480,
-                  "content": "Démocratie, technologie, et faire appartiennent ensemble — comme pratique vivante.",
-                  "lineHeight": 1.6,
-                  "fontFamily": "Spectral",
-                  "fontSize": 20,
-                  "fontWeight": "300",
-                  "fontStyle": "italic"
-                },
-                {
                   "type": "frame",
-                  "id": "tFcMh",
-                  "name": "heroSince",
-                  "gap": 16,
-                  "alignItems": "center",
+                  "id": "CDu1M",
+                  "name": "heroLeft",
+                  "width": "fill_container",
+                  "height": 391,
+                  "fill": "#0f1216c0",
+                  "layout": "vertical",
+                  "gap": 32,
+                  "padding": [
+                    0,
+                    32,
+                    0,
+                    0
+                  ],
                   "children": [
                     {
                       "type": "rectangle",
-                      "id": "wcN6Z",
-                      "name": "sinceLine",
-                      "fill": "#4A6A8A80",
-                      "width": 32,
-                      "height": 1
+                      "id": "lArrV",
+                      "name": "heroAccent",
+                      "fill": "#c47a2a",
+                      "width": 6,
+                      "height": 76
                     },
                     {
                       "type": "text",
-                      "id": "rcT3A",
-                      "name": "sinceText",
-                      "fill": "#4A6A8A80",
-                      "content": "DEPUIS 2012 · IXELLES",
+                      "id": "pytgb",
+                      "name": "heroTitle",
+                      "fill": "#ffffff",
+                      "textGrowth": "fixed-width",
+                      "width": 640,
+                      "content": "Être en\nrésonance.",
+                      "lineHeight": 1,
                       "fontFamily": "Atkinson Hyperlegible",
-                      "fontSize": 10,
-                      "fontWeight": "normal",
-                      "letterSpacing": 1.6
+                      "fontSize": 80,
+                      "fontWeight": "800",
+                      "letterSpacing": -2
+                    },
+                    {
+                      "type": "text",
+                      "id": "5ibJP",
+                      "name": "heroSub",
+                      "fill": "#e8eaed",
+                      "textGrowth": "fixed-width",
+                      "width": 691,
+                      "content": "Démocratie, technologie, et faire appartiennent ensemble — comme pratique vivante.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Spectral",
+                      "fontSize": 20,
+                      "fontWeight": "300",
+                      "fontStyle": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zCOCq",
+                  "name": "heroDefCard",
+                  "width": 236,
+                  "height": 280,
+                  "fill": "#e8eaed",
+                  "stroke": {
+                    "thickness": 3,
+                    "fill": "#c47a2a"
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ibYLl",
+                      "name": "defWord",
+                      "fill": "#0f1216",
+                      "content": "syntonie",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 18,
+                      "fontWeight": "800",
+                      "letterSpacing": -0.3
+                    },
+                    {
+                      "type": "text",
+                      "id": "LzZzR",
+                      "name": "defPhon",
+                      "fill": "#4a7fa5",
+                      "content": "/sɛ̃.tɔ.ni/",
+                      "fontFamily": "Syne Mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "rR1e7",
+                      "name": "defSep",
+                      "fill": "#c47a2a",
+                      "width": "fill_container",
+                      "height": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "yPLrS",
+                      "name": "defTxt",
+                      "fill": "#1a2535",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "État de résonance harmonique entre deux systèmes. Par extension : accord profond entre soi et son environnement.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Spectral",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -623,19 +631,18 @@
               "id": "pegwj",
               "name": "Vision Section",
               "width": "fill_container",
-              "fill": "#112233",
+              "height": 708,
+              "fill": "#131619",
               "stroke": {
                 "thickness": {
                   "bottom": 1
                 },
-                "fill": "#B4D7F026"
+                "fill": "#b4c8d826"
               },
-              "gap": 64,
+              "gap": 59,
               "padding": [
-                100,
-                80,
-                100,
-                72
+                118,
+                59
               ],
               "children": [
                 {
@@ -650,8 +657,8 @@
                       "type": "text",
                       "id": "pEKVp",
                       "name": "vLabel",
-                      "fill": "#4A6A8A80",
-                      "content": "01 — VISION",
+                      "fill": "#6a7a8a80",
+                      "content": "01 · NOTRE ADN",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 9,
                       "fontWeight": "normal",
@@ -661,9 +668,9 @@
                       "type": "text",
                       "id": "KnUzs",
                       "name": "vTitle",
-                      "fill": "#E8EDF5",
+                      "fill": "#e8eaed",
                       "textGrowth": "fixed-width",
-                      "width": 480,
+                      "width": 291,
                       "content": "La relation entre humains, technologie, et environnement se brisait.",
                       "lineHeight": 1.1,
                       "fontFamily": "Atkinson Hyperlegible",
@@ -675,10 +682,10 @@
                       "type": "text",
                       "id": "lHf7F",
                       "name": "vP1",
-                      "fill": "#C8DCF0BF",
+                      "fill": "#c0ccd8bf",
                       "textGrowth": "fixed-width",
                       "width": 460,
-                      "content": "Syntonie a été créée pour être le pont : ni une entreprise, ni une ONG traditionnelle, mais une ASBL qui tient l'espace pour des expériences émergentes.",
+                      "content": "En 2012, nous avons fondé Syntonie — du grec syntonia, \"être en résonance.\" Ni entreprise, ni ONG traditionnelle : une ASBL-pont qui tient l'espace pour des expériences émergentes. Pendant 14 ans, cette structure a permis à des communautés de makers, de chercheurs et de citoyens de prototyper ensemble.",
                       "lineHeight": 1.75,
                       "fontFamily": "Spectral",
                       "fontSize": 17,
@@ -688,10 +695,10 @@
                       "type": "frame",
                       "id": "uD9GL",
                       "name": "vBadge",
-                      "fill": "#2A6A9A14",
+                      "fill": "#c47a2a14",
                       "stroke": {
                         "thickness": 1,
-                        "fill": "#2A6A9A66"
+                        "fill": "#c47a2a66"
                       },
                       "gap": 12,
                       "padding": [
@@ -704,8 +711,8 @@
                           "type": "text",
                           "id": "bdp5B",
                           "name": "vBadgeTxt",
-                          "fill": "#4A8DB8",
-                          "content": "☂️  Syntonie tient. Les autres créent.",
+                          "fill": "#4a7fa5",
+                          "content": "En 2020, la communauté s'est auto-organisée : 1500 visières, 4500 masques produits en réponse à la crise.",
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 11,
                           "fontWeight": "normal",
@@ -719,12 +726,12 @@
                   "type": "frame",
                   "id": "zl5sU",
                   "name": "vPull",
-                  "width": "fill_container",
+                  "width": 320,
                   "stroke": {
                     "thickness": {
-                      "left": 2
+                      "left": 5
                     },
-                    "fill": "#2A6A9A"
+                    "fill": "#c47a2a"
                   },
                   "layout": "vertical",
                   "gap": 16,
@@ -739,26 +746,50 @@
                       "type": "text",
                       "id": "uBDWo",
                       "name": "vQuote",
-                      "fill": "#E8EDF5",
+                      "fill": "#e8eaed",
                       "textGrowth": "fixed-width",
-                      "width": 340,
-                      "content": "« Le mot lui-même — syntonie — signifie \"être en résonance.\" Vibrer ensemble. »",
+                      "width": "fill_container",
+                      "content": "« Syntonie ne fait pas — elle permet. »",
                       "lineHeight": 1.55,
                       "fontFamily": "Spectral",
-                      "fontSize": 22,
-                      "fontWeight": "300",
+                      "fontSize": 26,
                       "fontStyle": "italic"
                     },
                     {
                       "type": "text",
                       "id": "DN5es",
                       "name": "vAnnot",
-                      "fill": "#4A6A8A80",
-                      "content": "ORIGINE · GREC SYNTONIA",
+                      "fill": "#6a7a8a80",
+                      "content": "PRINCIPE FONDATEUR",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 10,
                       "fontWeight": "normal",
                       "letterSpacing": 1.4
+                    },
+                    {
+                      "type": "frame",
+                      "id": "FM3aT",
+                      "name": "vPhotoPlaceholder",
+                      "width": "fill_container",
+                      "height": 140,
+                      "fill": "#1a1e2280",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#4a7fa540"
+                      },
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "E0JGb",
+                          "name": "imgLabel",
+                          "fill": "#6a7a8a80",
+                          "content": "📷 Photo: Production de crise 2020 — visières & masques",
+                          "fontFamily": "Atkinson Hyperlegible",
+                          "fontSize": 10,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.8
+                        }
+                      ]
                     }
                   ]
                 }
@@ -769,28 +800,27 @@
               "id": "sRb4o",
               "name": "Role Section",
               "width": "fill_container",
-              "fill": "#162B3E",
+              "height": 1062,
+              "fill": "#181c20",
               "stroke": {
                 "thickness": {
                   "bottom": 1
                 },
-                "fill": "#B4D7F026"
+                "fill": "#b4c8d826"
               },
               "layout": "vertical",
-              "gap": 40,
+              "gap": 59,
               "padding": [
-                100,
-                80,
-                100,
-                72
+                118,
+                59
               ],
               "children": [
                 {
                   "type": "text",
                   "id": "REadB",
                   "name": "rLabel",
-                  "fill": "#4A6A8A80",
-                  "content": "02 — NOTRE RÔLE",
+                  "fill": "#6a7a8a80",
+                  "content": "02 · GAMELAB",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 9,
                   "fontWeight": "normal",
@@ -800,7 +830,7 @@
                   "type": "text",
                   "id": "h14mk",
                   "name": "rTitle",
-                  "fill": "#E8EDF5",
+                  "fill": "#e8eaed",
                   "textGrowth": "fixed-width",
                   "width": 560,
                   "content": "La tête. Le parapluie.\nLe gardien de la vision.",
@@ -814,10 +844,10 @@
                   "type": "text",
                   "id": "xCBh6",
                   "name": "rLead",
-                  "fill": "#C8DCF0BF",
+                  "fill": "#c0ccd8bf",
                   "textGrowth": "fixed-width",
                   "width": 560,
-                  "content": "Syntonie possède les actifs, signe les contrats, assure la conformité et maintient la cohérence stratégique. Elle n'opère pas au quotidien — elle permet.",
+                  "content": "Depuis 2017, Syntonie développe une expertise unique : le jeu comme outil de gouvernance et d'engagement. Du Passeport Maker (2017) à L'Enigmaker (Maker Faire 2023) jusqu'à SALANBAYOU — la recherche en game design civique est notre spécialité.",
                   "lineHeight": 1.7,
                   "fontFamily": "Spectral",
                   "fontSize": 18,
@@ -828,16 +858,17 @@
                   "id": "55T0L",
                   "name": "rCols",
                   "width": "fill_container",
-                  "gap": 32,
+                  "gap": 59,
                   "children": [
                     {
                       "type": "frame",
                       "id": "ArBei",
                       "name": "doCol",
                       "width": "fill_container",
+                      "fill": "#2D7D7910",
                       "stroke": {
                         "thickness": 1,
-                        "fill": "#B4D7F026"
+                        "fill": "#b4c8d826"
                       },
                       "layout": "vertical",
                       "gap": 10,
@@ -858,7 +889,7 @@
                           "type": "rectangle",
                           "id": "w4Spl",
                           "name": "doSep",
-                          "fill": "#B4D7F026",
+                          "fill": "#b4c8d826",
                           "width": "fill_container",
                           "height": 1
                         },
@@ -866,7 +897,7 @@
                           "type": "text",
                           "id": "SxXzw",
                           "name": "do1",
-                          "fill": "#C8DCF0BF",
+                          "fill": "#c0ccd8bf",
                           "content": "→ Penser à long terme",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
@@ -877,8 +908,8 @@
                           "type": "text",
                           "id": "JIMfY",
                           "name": "do2",
-                          "fill": "#C8DCF0BF",
-                          "content": "→ Maintenir la conformité légale",
+                          "fill": "#c0ccd8bf",
+                          "content": "→ Rechercher les modèles de gouvernance par le jeu",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
@@ -888,8 +919,8 @@
                           "type": "text",
                           "id": "xtrVe",
                           "name": "do3",
-                          "fill": "#C8DCF0BF",
-                          "content": "→ Posséder les actifs pour l'écosystème",
+                          "fill": "#c0ccd8bf",
+                          "content": "→ Développer le Passeport Maker comme portfolio vivant",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
@@ -899,8 +930,8 @@
                           "type": "text",
                           "id": "3NzD9",
                           "name": "do4",
-                          "fill": "#C8DCF0BF",
-                          "content": "→ Connecter partenaires et financeurs",
+                          "fill": "#c0ccd8bf",
+                          "content": "→ Ancrer les partenariats européens (Vulca, CHIC2.0, Erasmus+)",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
@@ -910,8 +941,8 @@
                           "type": "text",
                           "id": "OxZFe",
                           "name": "do5",
-                          "fill": "#C8DCF0BF",
-                          "content": "→ Assurer la cohérence entre entités",
+                          "fill": "#c0ccd8bf",
+                          "content": "→ Permettre aux sous-entités d'exister et prospérer",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
@@ -924,9 +955,10 @@
                       "id": "A5PmE",
                       "name": "dontCol",
                       "width": "fill_container",
+                      "fill": "#8B3A3A10",
                       "stroke": {
                         "thickness": 1,
-                        "fill": "#B4D7F026"
+                        "fill": "#b4c8d826"
                       },
                       "layout": "vertical",
                       "gap": 10,
@@ -947,7 +979,7 @@
                           "type": "rectangle",
                           "id": "Ip4DH",
                           "name": "dontSep",
-                          "fill": "#B4D7F026",
+                          "fill": "#b4c8d826",
                           "width": "fill_container",
                           "height": 1
                         },
@@ -955,7 +987,7 @@
                           "type": "text",
                           "id": "aUa8d",
                           "name": "dont1",
-                          "fill": "#C8DCF0BF",
+                          "fill": "#c0ccd8bf",
                           "content": "✕ Gérer les opérations quotidiennes",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
@@ -966,7 +998,7 @@
                           "type": "text",
                           "id": "FrZF1",
                           "name": "dont2",
-                          "fill": "#C8DCF0BF",
+                          "fill": "#c0ccd8bf",
                           "content": "✕ Animer des ateliers directement",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
@@ -977,7 +1009,7 @@
                           "type": "text",
                           "id": "8KXFn",
                           "name": "dont3",
-                          "fill": "#C8DCF0BF",
+                          "fill": "#c0ccd8bf",
                           "content": "✕ Fabriquer des choses (c'est OpenFab)",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
@@ -988,7 +1020,7 @@
                           "type": "text",
                           "id": "ut6Is",
                           "name": "dont4",
-                          "fill": "#C8DCF0BF",
+                          "fill": "#c0ccd8bf",
                           "content": "✕ Prototyper la gouvernance (c'est Politype)",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
@@ -999,12 +1031,77 @@
                           "type": "text",
                           "id": "P4x5G",
                           "name": "dont5",
-                          "fill": "#C8DCF0BF",
+                          "fill": "#c0ccd8bf",
                           "content": "✕ Microgérer les sous-entités",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
                           "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ExJTA",
+                  "name": "rImageRow",
+                  "width": "fill_container",
+                  "gap": 59,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "2rBso",
+                      "name": "rPhotoEnigmaker",
+                      "width": "fill_container",
+                      "height": 140,
+                      "fill": "#1a1e2280",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#4a7fa540"
+                      },
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "qTwjp",
+                          "name": "img1Label",
+                          "fill": "#6a7a8a80",
+                          "content": "📷 L'Enigmaker — Maker Faire 2023",
+                          "fontFamily": "Atkinson Hyperlegible",
+                          "fontSize": 10,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.8
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "HChCH",
+                      "name": "rPhotoSalanbayou",
+                      "width": "fill_container",
+                      "height": 140,
+                      "fill": "#1a1e2280",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#4a7fa540"
+                      },
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "eJJCA",
+                          "name": "img2Label",
+                          "fill": "#6a7a8a80",
+                          "content": "📷 SALANBAYOU — Game design civique",
+                          "fontFamily": "Atkinson Hyperlegible",
+                          "fontSize": 10,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.8
                         }
                       ]
                     }
@@ -1017,28 +1114,27 @@
               "id": "aDQsE",
               "name": "Trinity Section",
               "width": "fill_container",
-              "fill": "#112233",
+              "height": 826,
+              "fill": "#131619",
               "stroke": {
                 "thickness": {
                   "bottom": 1
                 },
-                "fill": "#B4D7F026"
+                "fill": "#b4c8d826"
               },
               "layout": "vertical",
-              "gap": 40,
+              "gap": 59,
               "padding": [
-                100,
-                80,
-                100,
-                72
+                118,
+                59
               ],
               "children": [
                 {
                   "type": "text",
                   "id": "M8FHW",
                   "name": "tLabel",
-                  "fill": "#4A6A8A80",
-                  "content": "03 — LA TRINITY",
+                  "fill": "#6a7a8a80",
+                  "content": "03 · LA TRINITY",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 9,
                   "fontWeight": "normal",
@@ -1048,7 +1144,7 @@
                   "type": "text",
                   "id": "tSOPD",
                   "name": "tTitle",
-                  "fill": "#E8EDF5",
+                  "fill": "#e8eaed",
                   "content": "Trois entités. Un écosystème.",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 32,
@@ -1059,10 +1155,10 @@
                   "type": "text",
                   "id": "nO14M",
                   "name": "tIntro",
-                  "fill": "#C8DCF0BF",
+                  "fill": "#c0ccd8bf",
                   "textGrowth": "fixed-width",
                   "width": 520,
-                  "content": "Des rôles distincts, un but partagé. Tête, Cœur, Mains — l'organisme complet.",
+                  "content": "Des rôles distincts, un but partagé. La recherche avait besoin de mains — et les mains avaient besoin de gouvernance.",
                   "lineHeight": 1.7,
                   "fontFamily": "Spectral",
                   "fontSize": 18,
@@ -1073,22 +1169,22 @@
                   "id": "LGFsj",
                   "name": "tCards",
                   "width": "fill_container",
-                  "gap": 24,
+                  "gap": 59,
                   "children": [
                     {
                       "type": "frame",
-                      "id": "IYAve",
-                      "name": "card1",
+                      "id": "bVHDs",
+                      "name": "ofCard",
                       "width": "fill_container",
-                      "fill": "#0A1520",
+                      "fill": "#0e1a28",
                       "stroke": {
                         "thickness": {
-                          "top": 2
+                          "top": 4
                         },
-                        "fill": "#2A6A9A"
+                        "fill": "#2d6a9f"
                       },
                       "layout": "vertical",
-                      "gap": 12,
+                      "gap": 16,
                       "padding": [
                         32,
                         28
@@ -1096,74 +1192,83 @@
                       "children": [
                         {
                           "type": "text",
-                          "id": "JZHbH",
-                          "name": "c1glyph",
-                          "content": "☂️",
-                          "fontFamily": "Inter",
-                          "fontSize": 28,
-                          "fontWeight": "normal"
-                        },
-                        {
-                          "type": "text",
-                          "id": "3hkqj",
-                          "name": "c1name",
-                          "fill": "#E8EDF5",
-                          "content": "Syntonie",
+                          "id": "uXK46",
+                          "name": "ofTitle",
+                          "fill": "#e8eaed",
+                          "content": "Nos recherches avaient besoin de mains.",
+                          "lineHeight": 1.2,
                           "fontFamily": "Atkinson Hyperlegible",
-                          "fontSize": 16,
+                          "fontSize": 22,
                           "fontWeight": "700"
                         },
                         {
                           "type": "text",
-                          "id": "9ZjuF",
-                          "name": "c1role",
-                          "fill": "#4A8DB8",
-                          "content": "LA TÊTE · GOUVERNANCE",
-                          "fontFamily": "Atkinson Hyperlegible",
-                          "fontSize": 10,
-                          "fontWeight": "normal",
-                          "letterSpacing": 1.4
-                        },
-                        {
-                          "type": "text",
-                          "id": "F1CSn",
-                          "name": "c1desc",
-                          "fill": "#C8DCF0BF",
+                          "id": "WQrhR",
+                          "name": "ofBody",
+                          "fill": "#c0ccd8bf",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "Vision, structure légale, actifs. L'entité qui tient l'espace pour que les autres puissent exister.",
-                          "lineHeight": 1.65,
+                          "content": "OpenFab est le bras exécutif de l'écosystème. Fabmobile (2017-18, Innoviris), FabÉcole (2019), 13 000 jeunes touchés, une communauté de 250+ makers. L'espace où les idées deviennent réalité physique.",
+                          "lineHeight": 1.7,
                           "fontFamily": "Spectral",
-                          "fontSize": 14,
+                          "fontSize": 15,
                           "fontWeight": "normal"
                         },
                         {
                           "type": "text",
-                          "id": "6Sdoc",
-                          "name": "c1tag",
-                          "fill": "#4A6A8A80",
-                          "content": "VOUS ÊTES ICI",
+                          "id": "mf1JJ",
+                          "name": "ofCta",
+                          "fill": "#2d6a9f",
+                          "content": "DÉCOUVRIR OPENFAB →",
                           "fontFamily": "Atkinson Hyperlegible",
-                          "fontSize": 9,
-                          "fontWeight": "normal",
-                          "letterSpacing": 1.2
+                          "fontSize": 11,
+                          "fontWeight": "700",
+                          "letterSpacing": 1.4
+                        },
+                        {
+                          "type": "frame",
+                          "id": "hIgoH",
+                          "name": "ofPhotoPlaceholder",
+                          "width": "fill_container",
+                          "height": 120,
+                          "fill": "#0a152080",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "#2d6a9f40"
+                          },
+                          "layout": "vertical",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "rzv5G",
+                              "name": "ofImgLabel",
+                              "fill": "#6a7a8a80",
+                              "content": "📷 Fabmobile / FabÉcole en action",
+                              "fontFamily": "Atkinson Hyperlegible",
+                              "fontSize": 10,
+                              "fontWeight": "normal",
+                              "letterSpacing": 0.8
+                            }
+                          ]
                         }
                       ]
                     },
                     {
                       "type": "frame",
-                      "id": "NVJSw",
-                      "name": "card2",
+                      "id": "Ifoh2",
+                      "name": "ptCard",
                       "width": "fill_container",
-                      "fill": "#0A1520",
+                      "fill": "#1a0e08",
                       "stroke": {
                         "thickness": {
-                          "top": 2
+                          "top": 4
                         },
-                        "fill": "#E63946"
+                        "fill": "#c47a2a"
                       },
                       "layout": "vertical",
-                      "gap": 12,
+                      "gap": 16,
                       "padding": [
                         32,
                         28
@@ -1171,132 +1276,66 @@
                       "children": [
                         {
                           "type": "text",
-                          "id": "PYTos",
-                          "name": "c2glyph",
-                          "content": "🫰",
-                          "fontFamily": "Inter",
-                          "fontSize": 28,
-                          "fontWeight": "normal"
-                        },
-                        {
-                          "type": "text",
-                          "id": "NqrE1",
-                          "name": "c2name",
-                          "fill": "#E8EDF5",
-                          "content": "Politype",
+                          "id": "tOQ0I",
+                          "name": "ptTitle",
+                          "fill": "#e8eaed",
+                          "content": "Mais il manquait un maillon : la gouvernance.",
+                          "lineHeight": 1.2,
                           "fontFamily": "Atkinson Hyperlegible",
-                          "fontSize": 16,
+                          "fontSize": 22,
                           "fontWeight": "700"
                         },
                         {
                           "type": "text",
-                          "id": "oZvwP",
-                          "name": "c2role",
-                          "fill": "#E68A8A",
-                          "content": "LE CŒUR · DÉMOCRATIE",
+                          "id": "fuPO8",
+                          "name": "ptBody",
+                          "fill": "#c0ccd8bf",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Le Council of Makers était un début. Mais la mise à l'échelle a révélé un vide de gouvernance. La démocratie comme problème de design — à 900m du Parlement européen.",
+                          "lineHeight": 1.7,
+                          "fontFamily": "Spectral",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "RXTka",
+                          "name": "ptCta",
+                          "fill": "#c47a2a",
+                          "content": "DÉCOUVRIR POLITYPE →",
                           "fontFamily": "Atkinson Hyperlegible",
-                          "fontSize": 10,
-                          "fontWeight": "normal",
+                          "fontSize": 11,
+                          "fontWeight": "700",
                           "letterSpacing": 1.4
                         },
                         {
-                          "type": "text",
-                          "id": "nwYs3",
-                          "name": "c2desc",
-                          "fill": "#C8DCF0BF",
-                          "textGrowth": "fixed-width",
+                          "type": "frame",
+                          "id": "Zrt42",
+                          "name": "ptPhotoPlaceholder",
                           "width": "fill_container",
-                          "content": "Prototypage de la gouvernance, jeux civiques, outils de participation. La démocratie comme problème de design.",
-                          "lineHeight": 1.65,
-                          "fontFamily": "Spectral",
-                          "fontSize": 14,
-                          "fontWeight": "normal"
-                        },
-                        {
-                          "type": "text",
-                          "id": "ZbiIy",
-                          "name": "c2tag",
-                          "fill": "#4A6A8A80",
-                          "content": "SITE À VENIR",
-                          "fontFamily": "Atkinson Hyperlegible",
-                          "fontSize": 9,
-                          "fontWeight": "normal",
-                          "letterSpacing": 1.2
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "p3rLq",
-                      "name": "card3",
-                      "width": "fill_container",
-                      "fill": "#0A1520",
-                      "stroke": {
-                        "thickness": {
-                          "top": 2
-                        },
-                        "fill": "#C84B31"
-                      },
-                      "layout": "vertical",
-                      "gap": 12,
-                      "padding": [
-                        32,
-                        28
-                      ],
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "l065o",
-                          "name": "c3glyph",
-                          "content": "🧰",
-                          "fontFamily": "Inter",
-                          "fontSize": 28,
-                          "fontWeight": "normal"
-                        },
-                        {
-                          "type": "text",
-                          "id": "uVWTH",
-                          "name": "c3name",
-                          "fill": "#E8EDF5",
-                          "content": "OpenFab",
-                          "fontFamily": "Atkinson Hyperlegible",
-                          "fontSize": 16,
-                          "fontWeight": "700"
-                        },
-                        {
-                          "type": "text",
-                          "id": "y86Ue",
-                          "name": "c3role",
-                          "fill": "#D4916A",
-                          "content": "LES MAINS · FABRICATION",
-                          "fontFamily": "Atkinson Hyperlegible",
-                          "fontSize": 10,
-                          "fontWeight": "normal",
-                          "letterSpacing": 1.4
-                        },
-                        {
-                          "type": "text",
-                          "id": "tTns0",
-                          "name": "c3desc",
-                          "fill": "#C8DCF0BF",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "L'espace maker : outils, ateliers, communauté. Là où les idées deviennent réalité physique.",
-                          "lineHeight": 1.65,
-                          "fontFamily": "Spectral",
-                          "fontSize": 14,
-                          "fontWeight": "normal"
-                        },
-                        {
-                          "type": "text",
-                          "id": "pvUvP",
-                          "name": "c3tag",
-                          "fill": "#4A6A8A80",
-                          "content": "SITE À VENIR",
-                          "fontFamily": "Atkinson Hyperlegible",
-                          "fontSize": 9,
-                          "fontWeight": "normal",
-                          "letterSpacing": 1.2
+                          "height": 120,
+                          "fill": "#150d0880",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "#c47a2a40"
+                          },
+                          "layout": "vertical",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "KNjAH",
+                              "name": "ptImgLabel",
+                              "fill": "#6a7a8a80",
+                              "content": "📷 Council of Makers / session de gouvernance",
+                              "fontFamily": "Atkinson Hyperlegible",
+                              "fontSize": 10,
+                              "fontWeight": "normal",
+                              "letterSpacing": 0.8
+                            }
+                          ]
                         }
                       ]
                     }
@@ -1309,27 +1348,26 @@
               "id": "B9AHb",
               "name": "Contact Section",
               "width": "fill_container",
-              "fill": "#0A1520",
+              "height": 708,
+              "fill": "#0b0e12",
               "stroke": {
                 "thickness": {
                   "bottom": 1
                 },
-                "fill": "#B4D7F026"
+                "fill": "#b4c8d826"
               },
               "layout": "vertical",
-              "gap": 40,
+              "gap": 59,
               "padding": [
-                100,
-                80,
-                100,
-                72
+                118,
+                59
               ],
               "children": [
                 {
                   "type": "text",
                   "id": "oVOUV",
                   "name": "ctLabel",
-                  "fill": "#4A6A8A80",
+                  "fill": "#6a7a8a80",
                   "content": "05 — CONTACT",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 9,
@@ -1340,7 +1378,7 @@
                   "type": "text",
                   "id": "pv1Au",
                   "name": "ctTitle",
-                  "fill": "#E8EDF5",
+                  "fill": "#e8eaed",
                   "content": "Entrons en contact.",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 32,
@@ -1351,10 +1389,10 @@
                   "type": "text",
                   "id": "qPYA0",
                   "name": "ctLead",
-                  "fill": "#C8DCF0BF",
+                  "fill": "#c0ccd8bf",
                   "textGrowth": "fixed-width",
                   "width": 480,
-                  "content": "Trois entités, trois façons de s'engager. Choisissez la porte qui correspond à votre intention.",
+                  "content": "Penseurs stratégiques. Esprits juridiques. Bâtisseurs de partenariats. Des personnes qui voient le long terme.",
                   "lineHeight": 1.7,
                   "fontFamily": "Spectral",
                   "fontSize": 17,
@@ -1365,17 +1403,17 @@
                   "id": "i6PVD",
                   "name": "ctTracks",
                   "width": "fill_container",
-                  "gap": 20,
+                  "gap": 30,
                   "children": [
                     {
                       "type": "frame",
                       "id": "PewwT",
                       "name": "tr1",
                       "width": "fill_container",
-                      "fill": "#112233",
+                      "fill": "#131619",
                       "stroke": {
                         "thickness": 1,
-                        "fill": "#B4D7F026"
+                        "fill": "#b4c8d826"
                       },
                       "layout": "vertical",
                       "gap": 14,
@@ -1388,8 +1426,8 @@
                           "type": "text",
                           "id": "ZOqjJ",
                           "name": "tr1head",
-                          "fill": "#E8EDF5",
-                          "content": "☂️ Syntonie",
+                          "fill": "#e8eaed",
+                          "content": "☂️ Gouvernance & Vision",
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 13,
                           "fontWeight": "700"
@@ -1398,10 +1436,10 @@
                           "type": "text",
                           "id": "fhNIE",
                           "name": "tr1desc",
-                          "fill": "#4A6A8A80",
+                          "fill": "#6a7a8a80",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "Partenariats, financement, questions légales.",
+                          "content": "Partenariats stratégiques, financement, cadre légal, vision long terme.",
                           "lineHeight": 1.6,
                           "fontFamily": "Spectral",
                           "fontSize": 13,
@@ -1411,7 +1449,7 @@
                           "type": "text",
                           "id": "UnFnK",
                           "name": "tr1cta",
-                          "fill": "#4A8DB8",
+                          "fill": "#4a7fa5",
                           "content": "ÉCRIRE →",
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 10,
@@ -1425,10 +1463,10 @@
                       "id": "6pBQz",
                       "name": "tr2",
                       "width": "fill_container",
-                      "fill": "#112233",
+                      "fill": "#131619",
                       "stroke": {
                         "thickness": 1,
-                        "fill": "#B4D7F026"
+                        "fill": "#b4c8d826"
                       },
                       "layout": "vertical",
                       "gap": 14,
@@ -1441,8 +1479,8 @@
                           "type": "text",
                           "id": "ubcQF",
                           "name": "tr2head",
-                          "fill": "#E8EDF5",
-                          "content": "🫰 Politype",
+                          "fill": "#e8eaed",
+                          "content": "🫰 Démocratie & Jeux",
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 13,
                           "fontWeight": "700"
@@ -1451,10 +1489,10 @@
                           "type": "text",
                           "id": "bd2ia",
                           "name": "tr2desc",
-                          "fill": "#4A6A8A80",
+                          "fill": "#6a7a8a80",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "Expériences de gouvernance, outils civiques.",
+                          "content": "Game design civique, outils de participation, recherche en gouvernance.",
                           "lineHeight": 1.6,
                           "fontFamily": "Spectral",
                           "fontSize": 13,
@@ -1464,7 +1502,7 @@
                           "type": "text",
                           "id": "ppCNs",
                           "name": "tr2cta",
-                          "fill": "#4A6A8A80",
+                          "fill": "#6a7a8a80",
                           "content": "BIENTÔT",
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 10,
@@ -1478,10 +1516,10 @@
                       "id": "5DMby",
                       "name": "tr3",
                       "width": "fill_container",
-                      "fill": "#112233",
+                      "fill": "#131619",
                       "stroke": {
                         "thickness": 1,
-                        "fill": "#B4D7F026"
+                        "fill": "#b4c8d826"
                       },
                       "layout": "vertical",
                       "gap": 14,
@@ -1494,8 +1532,8 @@
                           "type": "text",
                           "id": "LnZHU",
                           "name": "tr3head",
-                          "fill": "#E8EDF5",
-                          "content": "🧰 OpenFab",
+                          "fill": "#e8eaed",
+                          "content": "🧰 Faire & Communauté",
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 13,
                           "fontWeight": "700"
@@ -1504,10 +1542,10 @@
                           "type": "text",
                           "id": "nKYTQ",
                           "name": "tr3desc",
-                          "fill": "#4A6A8A80",
+                          "fill": "#6a7a8a80",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "Accès makerspace, ateliers, communauté maker.",
+                          "content": "Makerspace, ateliers, fabrication, communauté de makers.",
                           "lineHeight": 1.6,
                           "fontFamily": "Spectral",
                           "fontSize": 13,
@@ -1517,7 +1555,7 @@
                           "type": "text",
                           "id": "IGJFF",
                           "name": "tr3cta",
-                          "fill": "#4A6A8A80",
+                          "fill": "#6a7a8a80",
                           "content": "BIENTÔT",
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 10,
@@ -1527,6 +1565,18 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": "text",
+                  "id": "ZqRA4",
+                  "name": "ctClosing",
+                  "fill": "#c47a2a",
+                  "content": "Si ça résonne, vous êtes au bon endroit.",
+                  "lineHeight": 1.4,
+                  "fontFamily": "Spectral",
+                  "fontSize": 22,
+                  "fontWeight": "300",
+                  "fontStyle": "italic"
                 }
               ]
             },
@@ -1535,19 +1585,14 @@
               "id": "pWN0I",
               "name": "Footer",
               "width": "fill_container",
-              "fill": "#070E14",
+              "fill": "#080b0e",
               "stroke": {
                 "thickness": {
                   "top": 1
                 },
-                "fill": "#B4D7F026"
+                "fill": "#b4c8d826"
               },
-              "padding": [
-                48,
-                80,
-                48,
-                72
-              ],
+              "padding": 59,
               "justifyContent": "space_between",
               "alignItems": "center",
               "children": [
@@ -1555,7 +1600,7 @@
                   "type": "text",
                   "id": "PCubV",
                   "name": "fBrand",
-                  "fill": "#4A6A8A80",
+                  "fill": "#6a7a8a80",
                   "content": "☂️ Syntonie",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 18,
@@ -1565,7 +1610,7 @@
                   "type": "text",
                   "id": "xrWoV",
                   "name": "fLegal",
-                  "fill": "#4A6A8A80",
+                  "fill": "#6a7a8a80",
                   "textGrowth": "fixed-width",
                   "width": 320,
                   "content": "ASBL Syntonie · Ixelles, Bruxelles\nMentions légales · Politique de confidentialité",
@@ -1590,20 +1635,20 @@
       "name": "OpenFab — Warm Workshop",
       "clip": true,
       "width": 1440,
-      "fill": "#1A1008",
+      "fill": "#0c1520",
       "children": [
         {
           "type": "frame",
           "id": "6YmEC",
           "name": "OF Sidebar",
-          "width": 280,
+          "width": 236,
           "height": "fill_container",
-          "fill": "#1A1208",
+          "fill": "#0e1a28",
           "stroke": {
             "thickness": {
               "right": 1
             },
-            "fill": "#D4A37326"
+            "fill": "#4a8ab826"
           },
           "layout": "vertical",
           "padding": [
@@ -1612,6 +1657,7 @@
             32,
             28
           ],
+          "justifyContent": "space_between",
           "children": [
             {
               "type": "frame",
@@ -1625,7 +1671,7 @@
                   "type": "text",
                   "id": "dfAhS",
                   "name": "ofBrandName",
-                  "fill": "#F5E6D0",
+                  "fill": "#c8d8e8",
                   "content": "OpenFab",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 22,
@@ -1645,7 +1691,7 @@
                   "type": "text",
                   "id": "XGkxc",
                   "name": "ofBrandTag",
-                  "fill": "#8A6A4A80",
+                  "fill": "#6a8aaa80",
                   "content": "MAKERSPACE · IXELLES",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 10,
@@ -1656,7 +1702,7 @@
                   "type": "text",
                   "id": "ZsrA8",
                   "name": "ofBrandTag2",
-                  "fill": "#8A6A4A80",
+                  "fill": "#6a8aaa80",
                   "content": "DEPUIS 2012",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 10,
@@ -1674,6 +1720,47 @@
               "children": [
                 {
                   "type": "frame",
+                  "id": "LYKed",
+                  "name": "ofN0",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "#4a8ab812"
+                  },
+                  "gap": 10,
+                  "padding": [
+                    9,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "d4zqJ",
+                      "name": "ofN0num",
+                      "fill": "#6a8aaa80",
+                      "content": "00",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "K3nVK",
+                      "name": "ofN0txt",
+                      "fill": "#6a9abfbf",
+                      "content": "ACCUEIL",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
                   "id": "k7BP9",
                   "name": "ofN1",
                   "width": "fill_container",
@@ -1681,7 +1768,7 @@
                     "thickness": {
                       "bottom": 1
                     },
-                    "fill": "#D4A37312"
+                    "fill": "#4a8ab812"
                   },
                   "gap": 10,
                   "padding": [
@@ -1693,7 +1780,7 @@
                       "type": "text",
                       "id": "7cVY9",
                       "name": "ofN1n",
-                      "fill": "#8A6A4A80",
+                      "fill": "#6a8aaa80",
                       "content": "01",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 10,
@@ -1704,7 +1791,7 @@
                       "type": "text",
                       "id": "zCt9b",
                       "name": "ofN1t",
-                      "fill": "#D4A373BF",
+                      "fill": "#6a9abfbf",
                       "content": "L'ATELIER",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 12,
@@ -1722,7 +1809,7 @@
                     "thickness": {
                       "bottom": 1
                     },
-                    "fill": "#D4A37312"
+                    "fill": "#4a8ab812"
                   },
                   "gap": 10,
                   "padding": [
@@ -1734,7 +1821,7 @@
                       "type": "text",
                       "id": "XDiNM",
                       "name": "ofN2n",
-                      "fill": "#8A6A4A80",
+                      "fill": "#6a8aaa80",
                       "content": "02",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 10,
@@ -1745,7 +1832,7 @@
                       "type": "text",
                       "id": "ykx1D",
                       "name": "ofN2t",
-                      "fill": "#D4A373BF",
+                      "fill": "#6a9abfbf",
                       "content": "CE QU'ON FAIT",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 12,
@@ -1763,7 +1850,7 @@
                     "thickness": {
                       "bottom": 1
                     },
-                    "fill": "#D4A37312"
+                    "fill": "#4a8ab812"
                   },
                   "gap": 10,
                   "padding": [
@@ -1775,7 +1862,7 @@
                       "type": "text",
                       "id": "8vxbV",
                       "name": "ofN3n",
-                      "fill": "#8A6A4A80",
+                      "fill": "#6a8aaa80",
                       "content": "03",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 10,
@@ -1786,7 +1873,7 @@
                       "type": "text",
                       "id": "Hopsk",
                       "name": "ofN3t",
-                      "fill": "#D4A373BF",
+                      "fill": "#6a9abfbf",
                       "content": "LA TRINITY",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 12,
@@ -1804,7 +1891,7 @@
                     "thickness": {
                       "bottom": 1
                     },
-                    "fill": "#D4A37312"
+                    "fill": "#4a8ab812"
                   },
                   "gap": 10,
                   "padding": [
@@ -1816,8 +1903,8 @@
                       "type": "text",
                       "id": "nGOmf",
                       "name": "ofN4n",
-                      "fill": "#8A6A4A80",
-                      "content": "04",
+                      "fill": "#6a8aaa80",
+                      "content": "05",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 10,
                       "fontWeight": "normal",
@@ -1827,12 +1914,184 @@
                       "type": "text",
                       "id": "MiBpR",
                       "name": "ofN4t",
-                      "fill": "#D4A373BF",
+                      "fill": "#6a9abfbf",
                       "content": "CONTACT",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 12,
                       "fontWeight": "600",
                       "letterSpacing": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "3NQgQ",
+              "name": "spacer",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "frame",
+              "id": "Tf3gI",
+              "name": "OF Lang Toggle",
+              "stroke": {
+                "thickness": 1,
+                "fill": "#4a8ab826"
+              },
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "lCT66",
+                  "name": "ofLangFR",
+                  "fill": "#1e2830",
+                  "padding": [
+                    5,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "bdTtL",
+                      "name": "ofLangFRtxt",
+                      "fill": "#c8d8e8",
+                      "content": "FR",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1.2
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "8bZrj",
+                  "name": "ofLangEN",
+                  "padding": [
+                    5,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "m44cL",
+                      "name": "ofLangENtxt",
+                      "fill": "#6a8aaa80",
+                      "content": "EN",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1.2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Y9Zq8",
+              "name": "OF Portals",
+              "width": "fill_container",
+              "stroke": {
+                "thickness": {
+                  "top": 1
+                },
+                "fill": "#4a8ab826"
+              },
+              "layout": "vertical",
+              "gap": 6,
+              "padding": [
+                20,
+                0,
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "zmfeC",
+                  "name": "ofPortLabel",
+                  "fill": "#6a8aaa80",
+                  "content": "ÉCOSYSTÈME",
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 9,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.6
+                },
+                {
+                  "type": "frame",
+                  "id": "I0sLL",
+                  "name": "ofPortal1",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#4a8ab826"
+                  },
+                  "gap": 8,
+                  "padding": [
+                    8,
+                    10
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "q9Qjw",
+                      "name": "ofP1glyph",
+                      "content": "☂️",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "idTGy",
+                      "name": "ofP1name",
+                      "fill": "#6a8aaa80",
+                      "content": "SYNTONIE",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.8
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "wTf5d",
+                  "name": "ofPortal2",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#4a8ab826"
+                  },
+                  "gap": 8,
+                  "padding": [
+                    8,
+                    10
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "xr3oM",
+                      "name": "ofP2glyph",
+                      "content": "🫰",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "F6pUY",
+                      "name": "ofP2name",
+                      "fill": "#6a8aaa80",
+                      "content": "POLITYPE",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.8
                     }
                   ]
                 }
@@ -1845,15 +2104,29 @@
           "id": "Xzllg",
           "name": "OF Main",
           "width": "fill_container",
-          "fill": "#1A1008",
+          "fill": "#0c1520",
           "layout": "vertical",
           "children": [
+            {
+              "type": "rectangle",
+              "id": "orfIE",
+              "name": "Grid 59px Overlay",
+              "opacity": 0.12,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1773080910448.png",
+                "mode": "fill"
+              },
+              "width": "fill_container",
+              "height": "fill_container"
+            },
             {
               "type": "frame",
               "id": "1T6vF",
               "name": "OF Hero",
               "width": "fill_container",
-              "height": 700,
+              "height": 708,
               "fill": {
                 "type": "gradient",
                 "gradientType": "linear",
@@ -1864,11 +2137,11 @@
                 },
                 "colors": [
                   {
-                    "color": "#2A1A08",
+                    "color": "#0e1a28",
                     "position": 0
                   },
                   {
-                    "color": "#1A1008",
+                    "color": "#0c1520",
                     "position": 1
                   }
                 ]
@@ -1876,10 +2149,10 @@
               "layout": "vertical",
               "gap": 20,
               "padding": [
-                80,
-                80,
-                80,
-                72
+                118,
+                59,
+                59,
+                118
               ],
               "justifyContent": "center",
               "children": [
@@ -1887,7 +2160,7 @@
                   "type": "text",
                   "id": "e4IYI",
                   "name": "ofHeroEye",
-                  "fill": "#C84B31",
+                  "fill": "#2d6a9f",
                   "content": "OPENFAB · MAKERSPACE · BRUXELLES",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 10,
@@ -1898,7 +2171,7 @@
                   "type": "text",
                   "id": "c88Gd",
                   "name": "ofHeroTitle",
-                  "fill": "#F5E6D0",
+                  "fill": "#c8d8e8",
                   "textGrowth": "fixed-width",
                   "width": 640,
                   "content": "Là où les idées\ndeviennent réelles.",
@@ -1912,7 +2185,7 @@
                   "type": "text",
                   "id": "Rwqcg",
                   "name": "ofHeroSub",
-                  "fill": "#D4A373BF",
+                  "fill": "#6a9abfbf",
                   "textGrowth": "fixed-width",
                   "width": 480,
                   "content": "Un espace maker ouvert à tous. Outils, ateliers, communauté — le pont entre l'idée et la réalité.",
@@ -1933,7 +2206,7 @@
                       "type": "rectangle",
                       "id": "Fga4T",
                       "name": "ofSinceLine",
-                      "fill": "#8A6A4A80",
+                      "fill": "#4a6a9080",
                       "width": 32,
                       "height": 1
                     },
@@ -1941,7 +2214,7 @@
                       "type": "text",
                       "id": "4RMOV",
                       "name": "ofSinceTxt",
-                      "fill": "#8A6A4A80",
+                      "fill": "#6a8aaa80",
                       "content": "DEPUIS 2012 · IXELLES",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 10,
@@ -1957,27 +2230,26 @@
               "id": "N8kH6",
               "name": "OF Workshop",
               "width": "fill_container",
-              "fill": "#221A0E",
+              "height": 590,
+              "fill": "#121e2e",
               "stroke": {
                 "thickness": {
                   "bottom": 1
                 },
-                "fill": "#D4A37326"
+                "fill": "#4a8ab826"
               },
               "layout": "vertical",
-              "gap": 40,
+              "gap": 59,
               "padding": [
-                100,
-                80,
-                100,
-                72
+                118,
+                59
               ],
               "children": [
                 {
                   "type": "text",
                   "id": "YN37q",
                   "name": "ofWLabel",
-                  "fill": "#8A6A4A80",
+                  "fill": "#6a8aaa80",
                   "content": "01 — L'ATELIER",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 9,
@@ -1988,7 +2260,7 @@
                   "type": "text",
                   "id": "hMs6K",
                   "name": "ofWTitle",
-                  "fill": "#F5E6D0",
+                  "fill": "#c8d8e8",
                   "textGrowth": "fixed-width",
                   "width": 560,
                   "content": "Un atelier ouvert.\nDes outils pour tous.",
@@ -2002,7 +2274,7 @@
                   "type": "text",
                   "id": "XfwPw",
                   "name": "ofWLead",
-                  "fill": "#D4A373BF",
+                  "fill": "#6a9abfbf",
                   "textGrowth": "fixed-width",
                   "width": 560,
                   "content": "OpenFab opère l'espace maker : outils, espace, ateliers, communauté. Pendant que Syntonie pense et Politype expérimente, OpenFab construit.",
@@ -2023,10 +2295,10 @@
                       "id": "FgmDk",
                       "name": "tool1",
                       "width": "fill_container",
-                      "fill": "#1A1008",
+                      "fill": "#0c1520",
                       "stroke": {
                         "thickness": 1,
-                        "fill": "#D4A37326"
+                        "fill": "#4a8ab826"
                       },
                       "layout": "vertical",
                       "gap": 12,
@@ -2043,13 +2315,13 @@
                           "height": 32,
                           "iconFontName": "wrench",
                           "iconFontFamily": "lucide",
-                          "fill": "#C84B31"
+                          "fill": "#2d6a9f"
                         },
                         {
                           "type": "text",
                           "id": "pDcjv",
                           "name": "t1name",
-                          "fill": "#F5E6D0",
+                          "fill": "#c8d8e8",
                           "content": "Accès aux outils",
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 16,
@@ -2059,7 +2331,7 @@
                           "type": "text",
                           "id": "LYQpu",
                           "name": "t1desc",
-                          "fill": "#D4A37380",
+                          "fill": "#6a9abf80",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Impression 3D, découpe laser, CNC, électronique, couture, bois.",
@@ -2075,10 +2347,10 @@
                       "id": "ivzDG",
                       "name": "tool2",
                       "width": "fill_container",
-                      "fill": "#1A1008",
+                      "fill": "#0c1520",
                       "stroke": {
                         "thickness": 1,
-                        "fill": "#D4A37326"
+                        "fill": "#4a8ab826"
                       },
                       "layout": "vertical",
                       "gap": 12,
@@ -2095,13 +2367,13 @@
                           "height": 32,
                           "iconFontName": "users",
                           "iconFontFamily": "lucide",
-                          "fill": "#C84B31"
+                          "fill": "#2d6a9f"
                         },
                         {
                           "type": "text",
                           "id": "HAIN3",
                           "name": "t2name",
-                          "fill": "#F5E6D0",
+                          "fill": "#c8d8e8",
                           "content": "Ateliers & formation",
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 16,
@@ -2111,7 +2383,7 @@
                           "type": "text",
                           "id": "lspf4",
                           "name": "t2desc",
-                          "fill": "#D4A37380",
+                          "fill": "#6a9abf80",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Apprentissage informel, formation à la sécurité, workshops communautaires.",
@@ -2127,10 +2399,10 @@
                       "id": "R9tQi",
                       "name": "tool3",
                       "width": "fill_container",
-                      "fill": "#1A1008",
+                      "fill": "#0c1520",
                       "stroke": {
                         "thickness": 1,
-                        "fill": "#D4A37326"
+                        "fill": "#4a8ab826"
                       },
                       "layout": "vertical",
                       "gap": 12,
@@ -2147,13 +2419,13 @@
                           "height": 32,
                           "iconFontName": "heart",
                           "iconFontFamily": "lucide",
-                          "fill": "#C84B31"
+                          "fill": "#2d6a9f"
                         },
                         {
                           "type": "text",
                           "id": "Dz4R6",
                           "name": "t3name",
-                          "fill": "#F5E6D0",
+                          "fill": "#c8d8e8",
                           "content": "Communauté maker",
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 16,
@@ -2163,7 +2435,7 @@
                           "type": "text",
                           "id": "3s5Nr",
                           "name": "t3desc",
-                          "fill": "#D4A37380",
+                          "fill": "#6a9abf80",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Neurodiversité bienvenue. Accès universel aux outils. Faire ensemble.",
@@ -2183,27 +2455,26 @@
               "id": "BEWyV",
               "name": "OF Role",
               "width": "fill_container",
-              "fill": "#2A1A0E",
+              "height": 590,
+              "fill": "#162436",
               "stroke": {
                 "thickness": {
                   "bottom": 1
                 },
-                "fill": "#D4A37326"
+                "fill": "#4a8ab826"
               },
               "layout": "vertical",
-              "gap": 40,
+              "gap": 59,
               "padding": [
-                100,
-                80,
-                100,
-                72
+                118,
+                59
               ],
               "children": [
                 {
                   "type": "text",
                   "id": "oYGK1",
                   "name": "ofRLabel",
-                  "fill": "#8A6A4A80",
+                  "fill": "#6a8aaa80",
                   "content": "02 — CE QU'ON FAIT",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 9,
@@ -2214,7 +2485,7 @@
                   "type": "text",
                   "id": "dx3C2",
                   "name": "ofRTitle",
-                  "fill": "#F5E6D0",
+                  "fill": "#c8d8e8",
                   "textGrowth": "fixed-width",
                   "width": 560,
                   "content": "Les mains. L'atelier.\nL'expression physique.",
@@ -2238,7 +2509,7 @@
                       "width": "fill_container",
                       "stroke": {
                         "thickness": 1,
-                        "fill": "#D4A37326"
+                        "fill": "#4a8ab826"
                       },
                       "layout": "vertical",
                       "gap": 10,
@@ -2248,7 +2519,7 @@
                           "type": "text",
                           "id": "XV8O4",
                           "name": "ofDoH",
-                          "fill": "#C84B31",
+                          "fill": "#2d6a9f",
                           "content": "✓  CE QUE NOUS FAISONS",
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 12,
@@ -2259,7 +2530,7 @@
                           "type": "rectangle",
                           "id": "11Bx9",
                           "name": "ofDoSep",
-                          "fill": "#D4A37326",
+                          "fill": "#4a8ab826",
                           "width": "fill_container",
                           "height": 1
                         },
@@ -2267,7 +2538,7 @@
                           "type": "text",
                           "id": "LrR8H",
                           "name": "ofDo1",
-                          "fill": "#D4A373BF",
+                          "fill": "#6a9abfbf",
                           "content": "→ Fournir les outils (propriété Syntonie)",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
@@ -2278,7 +2549,7 @@
                           "type": "text",
                           "id": "P9yOV",
                           "name": "ofDo2",
-                          "fill": "#D4A373BF",
+                          "fill": "#6a9abfbf",
                           "content": "→ Organiser événements et ateliers",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
@@ -2289,7 +2560,7 @@
                           "type": "text",
                           "id": "bmdoL",
                           "name": "ofDo3",
-                          "fill": "#D4A373BF",
+                          "fill": "#6a9abfbf",
                           "content": "→ Enseigner le faire",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
@@ -2300,7 +2571,7 @@
                           "type": "text",
                           "id": "4WBTK",
                           "name": "ofDo4",
-                          "fill": "#D4A373BF",
+                          "fill": "#6a9abfbf",
                           "content": "→ Accueillir la neurodiversité",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
@@ -2311,7 +2582,7 @@
                           "type": "text",
                           "id": "WKZJI",
                           "name": "ofDo5",
-                          "fill": "#D4A373BF",
+                          "fill": "#6a9abfbf",
                           "content": "→ Construire la communauté",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
@@ -2327,7 +2598,7 @@
                       "width": "fill_container",
                       "stroke": {
                         "thickness": 1,
-                        "fill": "#D4A37326"
+                        "fill": "#4a8ab826"
                       },
                       "layout": "vertical",
                       "gap": 10,
@@ -2348,7 +2619,7 @@
                           "type": "rectangle",
                           "id": "DQCs8",
                           "name": "ofDontSep",
-                          "fill": "#D4A37326",
+                          "fill": "#4a8ab826",
                           "width": "fill_container",
                           "height": 1
                         },
@@ -2356,7 +2627,7 @@
                           "type": "text",
                           "id": "bBoCH",
                           "name": "ofDont1",
-                          "fill": "#D4A373BF",
+                          "fill": "#6a9abfbf",
                           "content": "✕ Définir la stratégie légale (Syntonie)",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
@@ -2367,7 +2638,7 @@
                           "type": "text",
                           "id": "TMA3O",
                           "name": "ofDont2",
-                          "fill": "#D4A373BF",
+                          "fill": "#6a9abfbf",
                           "content": "✕ Mener des expériences de gouvernance (Politype)",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
@@ -2378,7 +2649,7 @@
                           "type": "text",
                           "id": "WxOsT",
                           "name": "ofDont3",
-                          "fill": "#D4A373BF",
+                          "fill": "#6a9abfbf",
                           "content": "✕ Posséder les actifs",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
@@ -2396,12 +2667,12 @@
               "id": "ugILq",
               "name": "OF Footer",
               "width": "fill_container",
-              "fill": "#0F0A04",
+              "fill": "#080f18",
               "stroke": {
                 "thickness": {
                   "top": 1
                 },
-                "fill": "#D4A37326"
+                "fill": "#4a8ab826"
               },
               "padding": [
                 48,
@@ -2416,7 +2687,7 @@
                   "type": "text",
                   "id": "IJkx7",
                   "name": "ofFBrand",
-                  "fill": "#8A6A4A80",
+                  "fill": "#6a8aaa80",
                   "content": "🧰 OpenFab",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 18,
@@ -2426,7 +2697,7 @@
                   "type": "text",
                   "id": "9NoRO",
                   "name": "ofFLegal",
-                  "fill": "#8A6A4A80",
+                  "fill": "#6a8aaa80",
                   "textGrowth": "fixed-width",
                   "width": 280,
                   "content": "OpenFab · Ixelles, Bruxelles\nUn projet Syntonie ASBL",
@@ -2451,20 +2722,20 @@
       "name": "Politype — Balanced Horizon",
       "clip": true,
       "width": 1440,
-      "fill": "#0F1419",
+      "fill": "#150d08",
       "children": [
         {
           "type": "frame",
           "id": "SIaRl",
           "name": "PO Sidebar",
-          "width": 280,
+          "width": 236,
           "height": "fill_container",
-          "fill": "#0F1218",
+          "fill": "#130c08",
           "stroke": {
             "thickness": {
               "right": 1
             },
-            "fill": "#E6394626"
+            "fill": "#c47a2a26"
           },
           "layout": "vertical",
           "padding": [
@@ -2473,6 +2744,7 @@
             32,
             28
           ],
+          "justifyContent": "space_between",
           "children": [
             {
               "type": "frame",
@@ -2506,7 +2778,7 @@
                   "type": "text",
                   "id": "gSZaA",
                   "name": "poBrandTag",
-                  "fill": "#E6394680",
+                  "fill": "#c47a2a80",
                   "content": "DÉMOCRATIE · PROTOTYPAGE",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 10,
@@ -2517,7 +2789,7 @@
                   "type": "text",
                   "id": "PVUcA",
                   "name": "poBrandTag2",
-                  "fill": "#E6394680",
+                  "fill": "#c47a2a80",
                   "content": "900M DU PARLEMENT EU",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 10,
@@ -2535,6 +2807,47 @@
               "children": [
                 {
                   "type": "frame",
+                  "id": "sAlxP",
+                  "name": "poN0",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "#c47a2a12"
+                  },
+                  "gap": 10,
+                  "padding": [
+                    9,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dRZCE",
+                      "name": "poN0num",
+                      "fill": "#c47a2a80",
+                      "content": "00",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "U7yMT",
+                      "name": "poN0txt",
+                      "fill": "#d4916abf",
+                      "content": "ACCUEIL",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
                   "id": "ZyGaM",
                   "name": "poN1",
                   "width": "fill_container",
@@ -2542,7 +2855,7 @@
                     "thickness": {
                       "bottom": 1
                     },
-                    "fill": "#E6394612"
+                    "fill": "#c47a2a12"
                   },
                   "gap": 10,
                   "padding": [
@@ -2554,7 +2867,7 @@
                       "type": "text",
                       "id": "VOdfs",
                       "name": "poN1n",
-                      "fill": "#E6394680",
+                      "fill": "#c47a2a80",
                       "content": "01",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 10,
@@ -2565,7 +2878,7 @@
                       "type": "text",
                       "id": "7ONw7",
                       "name": "poN1t",
-                      "fill": "#E68A8ABF",
+                      "fill": "#d4916abf",
                       "content": "VISION",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 12,
@@ -2583,7 +2896,7 @@
                     "thickness": {
                       "bottom": 1
                     },
-                    "fill": "#E6394612"
+                    "fill": "#c47a2a12"
                   },
                   "gap": 10,
                   "padding": [
@@ -2595,7 +2908,7 @@
                       "type": "text",
                       "id": "MdM09",
                       "name": "poN2n",
-                      "fill": "#E6394680",
+                      "fill": "#c47a2a80",
                       "content": "02",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 10,
@@ -2606,7 +2919,7 @@
                       "type": "text",
                       "id": "3W9uQ",
                       "name": "poN2t",
-                      "fill": "#E68A8ABF",
+                      "fill": "#d4916abf",
                       "content": "MÉTHODOLOGIE",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 12,
@@ -2624,7 +2937,7 @@
                     "thickness": {
                       "bottom": 1
                     },
-                    "fill": "#E6394612"
+                    "fill": "#c47a2a12"
                   },
                   "gap": 10,
                   "padding": [
@@ -2636,7 +2949,7 @@
                       "type": "text",
                       "id": "EXi2m",
                       "name": "poN3n",
-                      "fill": "#E6394680",
+                      "fill": "#c47a2a80",
                       "content": "03",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 10,
@@ -2647,7 +2960,7 @@
                       "type": "text",
                       "id": "apwbd",
                       "name": "poN3t",
-                      "fill": "#E68A8ABF",
+                      "fill": "#d4916abf",
                       "content": "LA TRINITY",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 12,
@@ -2665,7 +2978,7 @@
                     "thickness": {
                       "bottom": 1
                     },
-                    "fill": "#E6394612"
+                    "fill": "#c47a2a12"
                   },
                   "gap": 10,
                   "padding": [
@@ -2677,8 +2990,8 @@
                       "type": "text",
                       "id": "eVcZa",
                       "name": "poN4n",
-                      "fill": "#E6394680",
-                      "content": "04",
+                      "fill": "#c47a2a80",
+                      "content": "05",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 10,
                       "fontWeight": "normal",
@@ -2688,12 +3001,75 @@
                       "type": "text",
                       "id": "VIwfO",
                       "name": "poN4t",
-                      "fill": "#E68A8ABF",
+                      "fill": "#d4916abf",
                       "content": "CONTACT",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 12,
                       "fontWeight": "600",
                       "letterSpacing": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "aCjFn",
+              "name": "spacer",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "frame",
+              "id": "udBOS",
+              "name": "PO Lang Toggle",
+              "stroke": {
+                "thickness": 1,
+                "fill": "#c47a2a26"
+              },
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "V63R4",
+                  "name": "poLangFR",
+                  "fill": "#261a10",
+                  "padding": [
+                    5,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "1Yxfn",
+                      "name": "poLangFRtxt",
+                      "fill": "#F0E8E0",
+                      "content": "FR",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1.2
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "sUyYn",
+                  "name": "poLangEN",
+                  "padding": [
+                    5,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "gX1dV",
+                      "name": "poLangENtxt",
+                      "fill": "#c47a2a80",
+                      "content": "EN",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1.2
                     }
                   ]
                 }
@@ -2708,7 +3084,7 @@
                 "thickness": {
                   "top": 1
                 },
-                "fill": "#E6394626"
+                "fill": "#c47a2a26"
               },
               "layout": "vertical",
               "gap": 6,
@@ -2723,7 +3099,7 @@
                   "type": "text",
                   "id": "jZpT0",
                   "name": "poPortalLabel",
-                  "fill": "#E6394680",
+                  "fill": "#c47a2a80",
                   "content": "ÉCOSYSTÈME",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 9,
@@ -2737,7 +3113,7 @@
                   "width": "fill_container",
                   "stroke": {
                     "thickness": 1,
-                    "fill": "#E6394626"
+                    "fill": "#c47a2a26"
                   },
                   "gap": 8,
                   "padding": [
@@ -2759,7 +3135,7 @@
                       "type": "text",
                       "id": "VCd6X",
                       "name": "poP1n",
-                      "fill": "#E6394680",
+                      "fill": "#c47a2a80",
                       "content": "SYNTONIE",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 11,
@@ -2775,7 +3151,7 @@
                   "width": "fill_container",
                   "stroke": {
                     "thickness": 1,
-                    "fill": "#E6394626"
+                    "fill": "#c47a2a26"
                   },
                   "gap": 8,
                   "padding": [
@@ -2797,7 +3173,7 @@
                       "type": "text",
                       "id": "JuBRx",
                       "name": "poP2n",
-                      "fill": "#E6394680",
+                      "fill": "#c47a2a80",
                       "content": "OPENFAB",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 11,
@@ -2815,34 +3191,48 @@
           "id": "4hUvq",
           "name": "PO Main",
           "width": "fill_container",
-          "fill": "#0F1419",
+          "fill": "#150d08",
           "layout": "vertical",
           "children": [
+            {
+              "type": "rectangle",
+              "id": "4O3eD",
+              "name": "Grid 59px Overlay",
+              "opacity": 0.12,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1773080937970.png",
+                "mode": "fill"
+              },
+              "width": "fill_container",
+              "height": "fill_container"
+            },
             {
               "type": "frame",
               "id": "rKfAl",
               "name": "PO Hero",
               "width": "fill_container",
-              "height": 700,
+              "height": 708,
               "fill": {
                 "type": "gradient",
                 "gradientType": "linear",
                 "enabled": true,
-                "rotation": 180,
+                "rotation": 135,
                 "size": {
                   "height": 1
                 },
                 "colors": [
                   {
-                    "color": "#1A1420",
+                    "color": "#1e1208",
                     "position": 0
                   },
                   {
-                    "color": "#0F1419",
-                    "position": 0.6
+                    "color": "#150d06",
+                    "position": 0.5
                   },
                   {
-                    "color": "#141A20",
+                    "color": "#1a1008",
                     "position": 1
                   }
                 ]
@@ -2850,10 +3240,10 @@
               "layout": "vertical",
               "gap": 20,
               "padding": [
-                80,
-                80,
-                80,
-                72
+                118,
+                59,
+                59,
+                118
               ],
               "justifyContent": "center",
               "children": [
@@ -2861,7 +3251,7 @@
                   "type": "text",
                   "id": "2q8tH",
                   "name": "poHeroEye",
-                  "fill": "#E63946",
+                  "fill": "#c47a2a",
                   "content": "POLITYPE · DÉMOCRATIE · BRUXELLES",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 10,
@@ -2886,7 +3276,7 @@
                   "type": "text",
                   "id": "PfT7R",
                   "name": "poHeroSub",
-                  "fill": "#E68A8ABF",
+                  "fill": "#d4916abf",
                   "textGrowth": "fixed-width",
                   "width": 500,
                   "content": "Et si on traitait la gouvernance comme du logiciel open-source ? Prototyper. Tester. Itérer. Casser. Reconstruire.",
@@ -2907,7 +3297,7 @@
                       "type": "rectangle",
                       "id": "YAeVA",
                       "name": "poSinceLine",
-                      "fill": "#E6394680",
+                      "fill": "#c47a2a80",
                       "width": 32,
                       "height": 1
                     },
@@ -2915,7 +3305,7 @@
                       "type": "text",
                       "id": "OHC11",
                       "name": "poSinceTxt",
-                      "fill": "#E6394680",
+                      "fill": "#c47a2a80",
                       "content": "900M DU PARLEMENT EUROPÉEN",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 10,
@@ -2931,19 +3321,18 @@
               "id": "sJh3y",
               "name": "PO Vision",
               "width": "fill_container",
-              "fill": "#141820",
+              "height": 590,
+              "fill": "#1a1208",
               "stroke": {
                 "thickness": {
                   "bottom": 1
                 },
-                "fill": "#E6394626"
+                "fill": "#c47a2a26"
               },
-              "gap": 64,
+              "gap": 59,
               "padding": [
-                100,
-                80,
-                100,
-                72
+                118,
+                59
               ],
               "children": [
                 {
@@ -2958,7 +3347,7 @@
                       "type": "text",
                       "id": "VhDsI",
                       "name": "poVLabel",
-                      "fill": "#E6394680",
+                      "fill": "#c47a2a80",
                       "content": "01 — VISION",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 9,
@@ -2983,7 +3372,7 @@
                       "type": "text",
                       "id": "5b5X6",
                       "name": "poVP1",
-                      "fill": "#E68A8ABF",
+                      "fill": "#d4916abf",
                       "textGrowth": "fixed-width",
                       "width": 460,
                       "content": "Le nom vient de polity (organisation politique) + type (prototype, archétype). Types multiples de gouvernance dans un seul cadre.",
@@ -2996,10 +3385,10 @@
                       "type": "frame",
                       "id": "kgNER",
                       "name": "poVBadge",
-                      "fill": "#E6394614",
+                      "fill": "#c47a2a14",
                       "stroke": {
                         "thickness": 1,
-                        "fill": "#E6394666"
+                        "fill": "#c47a2a66"
                       },
                       "gap": 12,
                       "padding": [
@@ -3012,7 +3401,7 @@
                           "type": "text",
                           "id": "QRtQ9",
                           "name": "poVBadgeTxt",
-                          "fill": "#E68A8A",
+                          "fill": "#d4916a",
                           "content": "🫰  Là où Plurality rencontre la pratique.",
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 11,
@@ -3032,7 +3421,7 @@
                     "thickness": {
                       "left": 2
                     },
-                    "fill": "#E63946"
+                    "fill": "#c47a2a"
                   },
                   "layout": "vertical",
                   "gap": 16,
@@ -3061,7 +3450,7 @@
                       "type": "text",
                       "id": "VS2PY",
                       "name": "poVAnnot",
-                      "fill": "#E6394680",
+                      "fill": "#c47a2a80",
                       "content": "POLITY + TYPE = POLITYPE",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 10,
@@ -3077,27 +3466,26 @@
               "id": "0yPUy",
               "name": "PO Methodology",
               "width": "fill_container",
-              "fill": "#181C24",
+              "height": 590,
+              "fill": "#1e1510",
               "stroke": {
                 "thickness": {
                   "bottom": 1
                 },
-                "fill": "#E6394626"
+                "fill": "#c47a2a26"
               },
               "layout": "vertical",
-              "gap": 40,
+              "gap": 59,
               "padding": [
-                100,
-                80,
-                100,
-                72
+                118,
+                59
               ],
               "children": [
                 {
                   "type": "text",
                   "id": "AW2EW",
                   "name": "poMLabel",
-                  "fill": "#E6394680",
+                  "fill": "#c47a2a80",
                   "content": "02 — MÉTHODOLOGIE",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 9,
@@ -3130,10 +3518,10 @@
                       "id": "yEyUd",
                       "name": "poMC1",
                       "width": "fill_container",
-                      "fill": "#0F1218",
+                      "fill": "#130c08",
                       "stroke": {
                         "thickness": 1,
-                        "fill": "#E6394626"
+                        "fill": "#c47a2a26"
                       },
                       "layout": "vertical",
                       "gap": 12,
@@ -3150,7 +3538,7 @@
                           "height": 32,
                           "iconFontName": "gamepad-2",
                           "iconFontFamily": "lucide",
-                          "fill": "#E63946"
+                          "fill": "#c47a2a"
                         },
                         {
                           "type": "text",
@@ -3166,7 +3554,7 @@
                           "type": "text",
                           "id": "RKUJJ",
                           "name": "poMC1d",
-                          "fill": "#E68A8A80",
+                          "fill": "#d4916a80",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Prise de décision basée sur le jeu. Simplifier la complexité par le play.",
@@ -3182,10 +3570,10 @@
                       "id": "rySaD",
                       "name": "poMC2",
                       "width": "fill_container",
-                      "fill": "#0F1218",
+                      "fill": "#130c08",
                       "stroke": {
                         "thickness": 1,
-                        "fill": "#E6394626"
+                        "fill": "#c47a2a26"
                       },
                       "layout": "vertical",
                       "gap": 12,
@@ -3202,7 +3590,7 @@
                           "height": 32,
                           "iconFontName": "brain",
                           "iconFontFamily": "lucide",
-                          "fill": "#E63946"
+                          "fill": "#c47a2a"
                         },
                         {
                           "type": "text",
@@ -3218,7 +3606,7 @@
                           "type": "text",
                           "id": "ndj12",
                           "name": "poMC2d",
-                          "fill": "#E68A8A80",
+                          "fill": "#d4916a80",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Participation accessible à toutes les formes de pensée et d'expression.",
@@ -3234,10 +3622,10 @@
                       "id": "ZvCJL",
                       "name": "poMC3",
                       "width": "fill_container",
-                      "fill": "#0F1218",
+                      "fill": "#130c08",
                       "stroke": {
                         "thickness": 1,
-                        "fill": "#E6394626"
+                        "fill": "#c47a2a26"
                       },
                       "layout": "vertical",
                       "gap": 12,
@@ -3254,7 +3642,7 @@
                           "height": 32,
                           "iconFontName": "rotate-ccw",
                           "iconFontFamily": "lucide",
-                          "fill": "#E63946"
+                          "fill": "#c47a2a"
                         },
                         {
                           "type": "text",
@@ -3270,7 +3658,7 @@
                           "type": "text",
                           "id": "Ey2qX",
                           "name": "poMC3d",
-                          "fill": "#E68A8A80",
+                          "fill": "#d4916a80",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Tester, itérer, casser, reconstruire. La démocratie comme processus vivant.",
@@ -3290,27 +3678,26 @@
               "id": "wY6jD",
               "name": "PO Do-Dont",
               "width": "fill_container",
-              "fill": "#141820",
+              "height": 590,
+              "fill": "#1a1208",
               "stroke": {
                 "thickness": {
                   "bottom": 1
                 },
-                "fill": "#E6394626"
+                "fill": "#c47a2a26"
               },
               "layout": "vertical",
-              "gap": 40,
+              "gap": 59,
               "padding": [
-                100,
-                80,
-                100,
-                72
+                118,
+                59
               ],
               "children": [
                 {
                   "type": "text",
                   "id": "XNFCt",
                   "name": "poRLabel",
-                  "fill": "#E6394680",
+                  "fill": "#c47a2a80",
                   "content": "03 — NOTRE RÔLE",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 9,
@@ -3345,7 +3732,7 @@
                       "width": "fill_container",
                       "stroke": {
                         "thickness": 1,
-                        "fill": "#E6394626"
+                        "fill": "#c47a2a26"
                       },
                       "layout": "vertical",
                       "gap": 10,
@@ -3355,7 +3742,7 @@
                           "type": "text",
                           "id": "X83Td",
                           "name": "poDoH",
-                          "fill": "#E63946",
+                          "fill": "#c47a2a",
                           "content": "✓  CE QUE NOUS FAISONS",
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 12,
@@ -3366,7 +3753,7 @@
                           "type": "rectangle",
                           "id": "ZIJJ7",
                           "name": "poDoSep",
-                          "fill": "#E6394626",
+                          "fill": "#c47a2a26",
                           "width": "fill_container",
                           "height": 1
                         },
@@ -3374,7 +3761,7 @@
                           "type": "text",
                           "id": "c9nZj",
                           "name": "poDo1",
-                          "fill": "#E68A8ABF",
+                          "fill": "#d4916abf",
                           "content": "→ Designer des jeux de gouvernance",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
@@ -3385,7 +3772,7 @@
                           "type": "text",
                           "id": "QLeiO",
                           "name": "poDo2",
-                          "fill": "#E68A8ABF",
+                          "fill": "#d4916abf",
                           "content": "→ Prototyper des outils démocratiques",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
@@ -3396,7 +3783,7 @@
                           "type": "text",
                           "id": "oAGfT",
                           "name": "poDo3",
-                          "fill": "#E68A8ABF",
+                          "fill": "#d4916abf",
                           "content": "→ Animer des ateliers civiques",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
@@ -3407,7 +3794,7 @@
                           "type": "text",
                           "id": "P9Fsb",
                           "name": "poDo4",
-                          "fill": "#E68A8ABF",
+                          "fill": "#d4916abf",
                           "content": "→ Simplifier les systèmes complexes",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
@@ -3418,7 +3805,7 @@
                           "type": "text",
                           "id": "P85xt",
                           "name": "poDo5",
-                          "fill": "#E68A8ABF",
+                          "fill": "#d4916abf",
                           "content": "→ Rendre la participation jouable",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
@@ -3434,7 +3821,7 @@
                       "width": "fill_container",
                       "stroke": {
                         "thickness": 1,
-                        "fill": "#E6394626"
+                        "fill": "#c47a2a26"
                       },
                       "layout": "vertical",
                       "gap": 10,
@@ -3455,7 +3842,7 @@
                           "type": "rectangle",
                           "id": "P2nmp",
                           "name": "poDontSep",
-                          "fill": "#E6394626",
+                          "fill": "#c47a2a26",
                           "width": "fill_container",
                           "height": 1
                         },
@@ -3463,7 +3850,7 @@
                           "type": "text",
                           "id": "zrynH",
                           "name": "poDont1",
-                          "fill": "#E68A8ABF",
+                          "fill": "#d4916abf",
                           "content": "✕ Être un makerspace généraliste",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
@@ -3474,7 +3861,7 @@
                           "type": "text",
                           "id": "bAVlb",
                           "name": "poDont2",
-                          "fill": "#E68A8ABF",
+                          "fill": "#d4916abf",
                           "content": "✕ Faire de la gamification corporate",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
@@ -3485,7 +3872,7 @@
                           "type": "text",
                           "id": "8Zo5W",
                           "name": "poDont3",
-                          "fill": "#E68A8ABF",
+                          "fill": "#d4916abf",
                           "content": "✕ Défendre un parti politique",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
@@ -3496,7 +3883,7 @@
                           "type": "text",
                           "id": "oKUXH",
                           "name": "poDont4",
-                          "fill": "#E68A8ABF",
+                          "fill": "#d4916abf",
                           "content": "✕ Prendre des positions idéologiques",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
@@ -3514,12 +3901,12 @@
               "id": "37TCX",
               "name": "PO Footer",
               "width": "fill_container",
-              "fill": "#0A0D12",
+              "fill": "#0f0a06",
               "stroke": {
                 "thickness": {
                   "top": 1
                 },
-                "fill": "#E6394626"
+                "fill": "#c47a2a26"
               },
               "padding": [
                 48,
@@ -3534,7 +3921,7 @@
                   "type": "text",
                   "id": "I4w4C",
                   "name": "poFBrand",
-                  "fill": "#E6394680",
+                  "fill": "#c47a2a80",
                   "content": "🫰 Politype",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 18,
@@ -3544,7 +3931,7 @@
                   "type": "text",
                   "id": "j3ymb",
                   "name": "poFLegal",
-                  "fill": "#E6394680",
+                  "fill": "#c47a2a80",
                   "textGrowth": "fixed-width",
                   "width": 280,
                   "content": "Politype · Bruxelles\nUn projet Syntonie ASBL",
@@ -3560,6 +3947,26 @@
           ]
         }
       ]
+    },
+    {
+      "type": "context",
+      "id": "Y45rV",
+      "x": 1852,
+      "y": -372,
+      "enabled": false,
+      "width": 488,
+      "height": 184,
+      "content": "GRID: CSS background-image with linear-gradient, 59px repeat.\nSee: assets/grid-59px-balanced.svg for reference pattern.\n\nTHEME_COLOR: \n\tsyntonie: natural white #F5F5F0\n\topenfab: cold white #F7FBFF\n\tpolitype: warm white #FDF4DC\n\nALL SPACING: Multiples of 59px (59, 118, 177, 236).\nBlocks snap to grid intersections — De Stijl canvas."
+    },
+    {
+      "type": "context",
+      "id": "JgnKx",
+      "x": 434,
+      "y": 110,
+      "enabled": false,
+      "width": 412,
+      "height": 197,
+      "content": "SIDEBAR: position:fixed; height:100vh; width:280px;\nMAIN: margin-left:280px; overflow-y:auto;\nNAV: Anchor links to section IDs (magnetic scroll-snap)."
     }
   ]
 }

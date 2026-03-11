@@ -45,31 +45,75 @@ This shapes everything: color temperature, grid expression, figure presence, spa
 
 ### Per-Entity Visual Identity
 
-**OpenFab — The Warm Workshop:**
-- Temperature: Golden sunset (amber-shifted primaries)
-- Grid: Visible but softened (warm gray, subtle)
-- Sidebar texture: Tool-wall outline aesthetic
-- Key motif: Wireframe project ghosts at 0.3 opacity
-- Space feel: Vast, breathable, threshold-like
-- Color base: wheat → sand → warm gray gradient
+> **CRITICAL — Palette assignment corrected 2026-03-11. Do not revert.**
 
-**Syntonie — The Cool Pavilion:**
-- Temperature: Blue-green cool (evening-shifted primaries)
+**Syntonie — The Neutral Pavilion:** *(canonical reference artboard)*
+- Temperature: Neutral/natural steel blue
+- BG: `#0f1216` / Sidebar BG: `#0b0e12` / Accent: `#4a7fa5` (steel blue)
 - Grid: Visible blueprint aesthetic (technical white lines)
 - Sidebar texture: Clean vertical pillars with animation
 - Key motif: Pillars receding, negative space as light
 - Space feel: Embracing, rhythmic, permissive
-- Color base: lapis lazuli → teal → dusk gradient
 - **Pillar animation locked:** `@keyframes breathe { 0%,100%: opacity 0.3, blur 1px; 50%: opacity 0.95, blur 0 }` (staggered 0s, 2s, 1s delays)
 - **Logo direction:** H-bridge motif (blue pillars + interlocking orange/brown ribbons)
 
-**Politype — The Balanced Horizon:**
-- Temperature: Sunset-meets-sea (pure, unshifted primaries)
+**OpenFab — The Cold Workshop:**
+- Temperature: Cold/blue
+- BG: `#0c1520` / Sidebar BG: `#0e1a28` / Accent: `#2d6a9f` (cold blue)
+- Grid: Visible but softened (cold gray, subtle)
+- Sidebar texture: Tool-wall outline aesthetic
+- Key motif: Wireframe project ghosts at 0.3 opacity
+- Space feel: Vast, breathable, threshold-like
+
+**Politype — The Warm Horizon:**
+- Temperature: Warm amber
+- BG: `#150d08` / Sidebar BG: `#130c08` / Accent: `#c47a2a` (amber)
 - Grid: Checkerboard receding to infinity (perspective effect)
 - Sidebar texture: Balance symbol, dialogue invitation
 - Key motif: Two figures in geometric dialogue, heart-in-ice-cube
 - Space feel: The space *between*, invitation to movement
-- Color base: sunset gold → sea silver gradient
+
+## Current Implementation State — `pencil-Trinity.pen`
+
+### Artboard Node IDs
+| Artboard | Node ID | Status |
+|----------|---------|--------|
+| Syntonie — Cool Pavilion | `665dI` | **Canonical reference — approved** |
+| OpenFab — Warm Workshop | `8Hu7D` | Propagated from Syntonie |
+| Politype — Balanced Horizon | `qLhKi` | Propagated from Syntonie |
+
+### Syntonie Key Nodes (`665dI`)
+| Section | Node ID | Height |
+|---------|---------|--------|
+| Sidebar | `TjMQq` | full-height |
+| Main Content | `pC7En` | — |
+| Hero | `nbECT` | 708px (12×59) |
+| Vision | `pegwj` | 590px (10×59) |
+| Role | `sRb4o` | 590px (10×59) |
+| Trinity | `aDQsE` | 708px (12×59) |
+| Contact | `B9AHb` | 472px (8×59) |
+
+### Locked Sidebar Structure (All Three Artboards)
+```
+Sidebar (236px wide, padding [36,28,32,28], vertical, justifyContent: space_between)
+  ├── Brand (name + glyph + tag + tag2)
+  ├── Nav  (5 items: 00 ACCUEIL / 01 / 02 / 03 LA TRINITY / 05 CONTACT)
+  ├── Spacer (fill_container — pushes bottom content down)
+  ├── Lang Toggle (FR active / EN muted)
+  └── Ecosystem Portals (two sibling entities, labeled ÉCOSYSTÈME)
+```
+
+### Section Padding Standard (All Three Artboards)
+- **Hero**: `[118, 59, 59, 118]` — asymmetric (extra left indent)
+- **Content sections**: `[118, 59]` — 2×59 top/bottom, 1×59 sides
+- **Gap between section children**: `59px`
+
+### De Stijl Composition (Implemented in Syntonie, reference for others)
+- Hero: 2-column horizontal — left (accent bar + eyebrow + title + sub) + right (definition card 236px)
+- Vision: 2-column horizontal — body (fill) + pull quote (320px with left accent border)
+- Role: vertical stack — label + title + lead + 2-column do/don't (gap 59px)
+- Trinity: 3 cards (gap 59px) — card 2 (Politype) drops 30px vertical stagger
+- Contact: label + title + lead + 3 horizontal tracks
 
 ## Key Files & Their Purpose
 
@@ -136,32 +180,30 @@ The design decisions log (v1-v5 iterations) documents what was tried and why it 
 
 ## Open Questions (For Future Sessions)
 
-These decisions need to be made before full implementation:
-
 | Question | Entity | Impact | Status |
 |----------|--------|--------|--------|
-| Exact hex codes for warm/cool palettes? | All | Color implementation | TBD |
-| Wireframe animation? (subtle float/float) | OpenFab | Motion design | TBD |
+| Wireframe animation? (subtle float) | OpenFab | Motion design | TBD |
 | Mobile adaptation: sidebar becomes...? | All | Responsive behavior | TBD |
 | Scroll-snap sections? | All | Navigation behavior | TBD |
-| Pillar animation direction: bottom-up only? | Syntonie | Animation sequence | Mostly decided |
 | Grid opacity levels per entity? | All | Subtle vs. prominent balance | TBD |
+| Hero 2-column layout for OpenFab/Politype? | OF, PO | De Stijl composition | TBD — only done for Syntonie so far |
+| Definition card content for OF/PO heroes? | OF, PO | Hero right column | TBD |
+| Trinity cards in OF/PO: accent colors correct? | OF, PO | Cross-entity refs | Verify next session |
 
-## Approach to Implementation
+## Next Steps (Prioritized)
 
-1. **Start with one entity** (suggest: OpenFab first — foundation)
-2. **Build a single-page prototype** before multi-page system
-3. **Use CSS Grid + Grid background pattern** for layout and grid
-4. **Keep structure semantic** — HTML reflects the spatial hierarchy
-5. **Test for contrast** — WCAG standards are baked into the design philosophy, not separate
+1. **Apply De Stijl hero restructure to OpenFab and Politype** — 2-column with entity-specific right card
+2. **Add geometric figures** — wireframe ghosts (OpenFab), pillar animation (Syntonie), dialogue figures (Politype)
+3. **Verify Trinity section cards** in OF and PO artboards — accent colors should match entity palette
+4. **Export HTML prototypes** from approved .pen layouts
 
 ## Key Constraints
 
-- **No content yet** — Mockups use Lorem Ipsum; focus on visual structure
-- **Fixed sidebar** — Must never collapse or disappear
-- **59px grid** — Non-negotiable unit across all sites (physical space metaphor)
+- **Fixed sidebar** — 236px, never collapses, never hidden
+- **59px grid** — Non-negotiable unit (section heights, padding, gaps must be multiples of 59)
 - **Geometric figures only** — No photographs, no realistic rendering
-- **Separate palettes** — Don't mix warm (OpenFab) with cool (Syntonie) on same page
+- **Separate palettes** — Don't mix temperatures across artboards
+- **Syntonie is the canonical reference** — When in doubt, match its structure/rhythm
 
 ---
 
