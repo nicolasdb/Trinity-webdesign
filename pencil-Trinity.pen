@@ -1535,7 +1535,7 @@
     {
       "type": "frame",
       "id": "8Hu7D",
-      "x": 2500,
+      "x": 2501,
       "y": 0,
       "name": "OpenFab — clean Workshop",
       "clip": true,
@@ -4355,6 +4355,3033 @@
       "width": 740,
       "height": 470,
       "content": "Polity Democracy Civic Engagement\n\n**Polity** refers to a system of government or a political order, encompassing the institutions, structures, and processes through which power is exercised and decisions are made. It is a broad term that can describe any form of governance, including democracies, autocracies, or monarchies.\n\n**Democracy** is a specific type of polity characterized by rule by the people, either directly or through elected representatives. Core elements include free and fair elections, protection of human rights, the rule of law, separation of powers, and political pluralism. In a democracy, citizens have the right and opportunity to participate in shaping public policy and holding leaders accountable.\n\n**Civic engagement** is the participation of individuals and groups in activities that address public concerns and contribute to the well-being of their communities. It includes both political actions—such as voting, protesting, or running for office—and non-political actions like volunteering, community organizing, or participating in local forums. While **democracy depends on civic engagement** to function effectively, civic engagement is broader in scope and includes all forms of community involvement that promote collective well-being and social responsibility. As noted by scholars, **democratic engagement is a key component of civic engagement**, focusing specifically on participation in democratic processes."
+    },
+    {
+      "type": "frame",
+      "id": "Hsdcf",
+      "x": -712,
+      "y": 0,
+      "name": "Syntonie — Fog of War",
+      "width": 1440,
+      "height": 900,
+      "fill": "#0f1216",
+      "children": [
+        {
+          "type": "frame",
+          "id": "ZKSA8",
+          "name": "sidebar",
+          "width": 236,
+          "height": "fill_container",
+          "fill": "#0b0e12",
+          "layout": "vertical",
+          "padding": [
+            36,
+            28,
+            32,
+            28
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "2cCoQ",
+              "name": "Brand",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jGQFP",
+                  "name": "brandName",
+                  "fill": "#e8eaed",
+                  "content": "Syntonie",
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 22,
+                  "fontWeight": "800",
+                  "letterSpacing": -0.4
+                },
+                {
+                  "type": "text",
+                  "id": "5Y40c",
+                  "name": "brandGlyph",
+                  "content": "☂️",
+                  "fontFamily": "Inter",
+                  "fontSize": 26,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "MJrPb",
+                  "name": "brandTag",
+                  "fill": "#6a7a8a80",
+                  "content": "ASBL · IXELLES, BRUXELLES",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 10,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.2
+                },
+                {
+                  "type": "text",
+                  "id": "F8Wn2",
+                  "name": "brandTag2",
+                  "fill": "#6a7a8a80",
+                  "content": "FONDÉE 2012",
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 10,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "oDVmL",
+              "name": "Nav",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "moZAS",
+                  "name": "accueil",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "#b4c8d812"
+                  },
+                  "gap": 10,
+                  "padding": [
+                    9,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "jdAMx",
+                      "name": "num0",
+                      "fill": "#6a7a8a80",
+                      "content": "00",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "9YbuB",
+                      "name": "txt0",
+                      "fill": "#c0ccd8bf",
+                      "content": "ACCUEIL",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "u638D",
+                  "name": "nav1",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "#b4c8d812"
+                  },
+                  "gap": 10,
+                  "padding": [
+                    9,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "m3CTy",
+                      "name": "nav1num",
+                      "fill": "#6a7a8a80",
+                      "content": "01",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "BK3Hr",
+                      "name": "nav1txt",
+                      "fill": "#c0ccd8bf",
+                      "content": "VISION",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "49AO4",
+                  "name": "nav2",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "#b4c8d812"
+                  },
+                  "gap": 10,
+                  "padding": [
+                    9,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "TFotB",
+                      "name": "nav2num",
+                      "fill": "#6a7a8a80",
+                      "content": "02",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "yLnlI",
+                      "name": "nav2txt",
+                      "fill": "#c0ccd8bf",
+                      "content": "NOTRE RÔLE",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "QE69T",
+                  "name": "nav3",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "#b4c8d812"
+                  },
+                  "gap": 10,
+                  "padding": [
+                    9,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "pi99G",
+                      "name": "nav3num",
+                      "fill": "#6a7a8a80",
+                      "content": "03",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "oVd3Z",
+                      "name": "nav3txt",
+                      "fill": "#c0ccd8bf",
+                      "content": "L'ÉCOSYSTÈME",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ee7f5",
+                  "name": "nav5",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "#b4c8d812"
+                  },
+                  "gap": 10,
+                  "padding": [
+                    9,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "BwgcL",
+                      "name": "nav5num",
+                      "fill": "#6a7a8a80",
+                      "content": "05",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "TQKmo",
+                      "name": "nav5txt",
+                      "fill": "#c0ccd8bf",
+                      "content": "CONTACT",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jhdbb",
+              "name": "spacer",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "frame",
+              "id": "KTpaA",
+              "name": "Lang Toggle",
+              "stroke": {
+                "thickness": 1,
+                "fill": "#b4c8d826"
+              },
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "D5TtS",
+                  "name": "langFR",
+                  "fill": "#1e2830",
+                  "padding": [
+                    5,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "RPP5G",
+                      "name": "langFRtxt",
+                      "fill": "#e8eaed",
+                      "content": "FR",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1.2
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "V8EkU",
+                  "name": "langEN",
+                  "padding": [
+                    5,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "3nWO9",
+                      "name": "langENtxt",
+                      "fill": "#6a7a8a80",
+                      "content": "EN",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1.2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "0Ee4t",
+              "name": "Ecosystem Portals",
+              "width": "fill_container",
+              "stroke": {
+                "thickness": {
+                  "top": 1
+                },
+                "fill": "#b4c8d826"
+              },
+              "layout": "vertical",
+              "gap": 6,
+              "padding": [
+                20,
+                0,
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "UBs0M",
+                  "name": "portalLabel",
+                  "fill": "#6a7a8a80",
+                  "content": "ÉCOSYSTÈME",
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 9,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.6
+                },
+                {
+                  "type": "frame",
+                  "id": "UtaG9",
+                  "name": "portal1",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#b4c8d826"
+                  },
+                  "gap": 8,
+                  "padding": [
+                    8,
+                    10
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Z7a8N",
+                      "name": "p1glyph",
+                      "content": "🫰",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mtNC7",
+                      "name": "p1name",
+                      "fill": "#6a7a8a80",
+                      "content": "POLITYPE",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.8
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ZAQr8",
+                  "name": "portal2",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#b4c8d826"
+                  },
+                  "gap": 8,
+                  "padding": [
+                    8,
+                    10
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "KH41D",
+                      "name": "p2glyph",
+                      "content": "🧰",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "WKb9m",
+                      "name": "p2name",
+                      "fill": "#6a7a8a80",
+                      "content": "OPENFAB",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.8
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "s8YTC",
+          "name": "main-content",
+          "clip": true,
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "Jxfu8",
+              "layoutPosition": "absolute",
+              "x": 0,
+              "y": 0,
+              "name": "dot-matrix",
+              "opacity": 0.12,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1774529254679.png",
+                "mode": "fill"
+              },
+              "width": 1204,
+              "height": 900
+            },
+            {
+              "type": "frame",
+              "id": "LjpOT",
+              "name": "top-spacer",
+              "width": "fill_container",
+              "height": 240
+            },
+            {
+              "type": "frame",
+              "id": "Ji9kA",
+              "name": "tuning-fork",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "bArAY",
+                  "name": "curiosity-trap",
+                  "width": 600,
+                  "height": 60,
+                  "fill": "#1a1e22",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": {
+                      "left": 2
+                    },
+                    "fill": "#E8831A"
+                  },
+                  "padding": [
+                    0,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Yk30b",
+                      "name": "inputText",
+                      "opacity": 0.3,
+                      "fill": "#ffffff",
+                      "content": "What brought you here?",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "nCem8",
+                  "name": "topics",
+                  "opacity": 0.55,
+                  "fill": "#5B9BD5",
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 0,
+                    "fill": "#5B9BD540"
+                  },
+                  "textGrowth": "fixed-width",
+                  "width": 600,
+                  "content": "neurodiversité  ·  fablab  ·  gouvernance  ·  making  ·  inclusion  ·  autonomie  ·  open source",
+                  "textAlign": "center",
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 12,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "utf55",
+              "name": "mid-gap",
+              "width": "fill_container",
+              "height": 120
+            },
+            {
+              "type": "frame",
+              "id": "hX5Sm",
+              "name": "values-fog",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 18,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ZADAL",
+                  "name": "vRow1",
+                  "opacity": 0.15,
+                  "fill": "#ffffff",
+                  "content": "Indépendant    ·    Innovant    ·    Belge",
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 11,
+                  "fontWeight": "normal",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "WjMuk",
+                  "name": "vRow2",
+                  "opacity": 0.15,
+                  "fill": "#ffffff",
+                  "content": "Imparfait    ·    Prospectif    ·    Open source",
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 11,
+                  "fontWeight": "normal",
+                  "letterSpacing": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "sQbxZ",
+      "x": -4563,
+      "y": 1995,
+      "name": "Syntonie — Fog of War · Light",
+      "width": 1440,
+      "height": 900,
+      "fill": "#faf8f4",
+      "children": [
+        {
+          "type": "frame",
+          "id": "D8bOL",
+          "name": "sbarL",
+          "width": 236,
+          "height": "fill_container",
+          "fill": "#0b0e12",
+          "layout": "vertical",
+          "padding": [
+            36,
+            28,
+            32,
+            28
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "oEpV7",
+              "name": "Brand",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "8duYd",
+                  "name": "brandName",
+                  "fill": "#e8eaed",
+                  "content": "Syntonie",
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 22,
+                  "fontWeight": "800",
+                  "letterSpacing": -0.4
+                },
+                {
+                  "type": "text",
+                  "id": "IvePW",
+                  "name": "brandGlyph",
+                  "content": "☂️",
+                  "fontFamily": "Inter",
+                  "fontSize": 26,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "kW9Sh",
+                  "name": "brandTag",
+                  "fill": "#6a7a8a80",
+                  "content": "ASBL · IXELLES, BRUXELLES",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 10,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.2
+                },
+                {
+                  "type": "text",
+                  "id": "ACaaU",
+                  "name": "brandTag2",
+                  "fill": "#6a7a8a80",
+                  "content": "FONDÉE 2012",
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 10,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "nOKpi",
+              "name": "Nav",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "iv9mK",
+                  "name": "accueil",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "#b4c8d812"
+                  },
+                  "gap": 10,
+                  "padding": [
+                    9,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Fr2Wb",
+                      "name": "num0",
+                      "fill": "#6a7a8a80",
+                      "content": "00",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "mF4Ku",
+                      "name": "txt0",
+                      "fill": "#c0ccd8bf",
+                      "content": "ACCUEIL",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "8Og0H",
+                  "name": "nav1",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "#b4c8d812"
+                  },
+                  "gap": 10,
+                  "padding": [
+                    9,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "3WmOP",
+                      "name": "nav1num",
+                      "fill": "#6a7a8a80",
+                      "content": "01",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "lRMho",
+                      "name": "nav1txt",
+                      "fill": "#c0ccd8bf",
+                      "content": "VISION",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "9WIKe",
+                  "name": "nav2",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "#b4c8d812"
+                  },
+                  "gap": 10,
+                  "padding": [
+                    9,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "NvQdS",
+                      "name": "nav2num",
+                      "fill": "#6a7a8a80",
+                      "content": "02",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "UvYm2",
+                      "name": "nav2txt",
+                      "fill": "#c0ccd8bf",
+                      "content": "NOTRE RÔLE",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "D8VEN",
+                  "name": "nav3",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "#b4c8d812"
+                  },
+                  "gap": 10,
+                  "padding": [
+                    9,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "eMquV",
+                      "name": "nav3num",
+                      "fill": "#6a7a8a80",
+                      "content": "03",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "mG61q",
+                      "name": "nav3txt",
+                      "fill": "#c0ccd8bf",
+                      "content": "L'ÉCOSYSTÈME",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "a0pxx",
+                  "name": "nav5",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "#b4c8d812"
+                  },
+                  "gap": 10,
+                  "padding": [
+                    9,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "DPN6K",
+                      "name": "nav5num",
+                      "fill": "#6a7a8a80",
+                      "content": "05",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "lS7c3",
+                      "name": "nav5txt",
+                      "fill": "#c0ccd8bf",
+                      "content": "CONTACT",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Ze1UI",
+              "name": "spacer",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "frame",
+              "id": "jEAcs",
+              "name": "Lang Toggle",
+              "stroke": {
+                "thickness": 1,
+                "fill": "#b4c8d826"
+              },
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "DAcxr",
+                  "name": "langFR",
+                  "fill": "#1e2830",
+                  "padding": [
+                    5,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "A1MGq",
+                      "name": "langFRtxt",
+                      "fill": "#e8eaed",
+                      "content": "FR",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1.2
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "qbxWu",
+                  "name": "langEN",
+                  "padding": [
+                    5,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "fmhnA",
+                      "name": "langENtxt",
+                      "fill": "#6a7a8a80",
+                      "content": "EN",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1.2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qYW0Q",
+              "name": "Ecosystem Portals",
+              "width": "fill_container",
+              "stroke": {
+                "thickness": {
+                  "top": 1
+                },
+                "fill": "#b4c8d826"
+              },
+              "layout": "vertical",
+              "gap": 6,
+              "padding": [
+                20,
+                0,
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "48Kc3",
+                  "name": "portalLabel",
+                  "fill": "#6a7a8a80",
+                  "content": "ÉCOSYSTÈME",
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 9,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.6
+                },
+                {
+                  "type": "frame",
+                  "id": "WX79m",
+                  "name": "portal1",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#b4c8d826"
+                  },
+                  "gap": 8,
+                  "padding": [
+                    8,
+                    10
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "BAe1l",
+                      "name": "p1glyph",
+                      "content": "🫰",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "526Ee",
+                      "name": "p1name",
+                      "fill": "#6a7a8a80",
+                      "content": "POLITYPE",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.8
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "M2fwg",
+                  "name": "portal2",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#b4c8d826"
+                  },
+                  "gap": 8,
+                  "padding": [
+                    8,
+                    10
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Q0goy",
+                      "name": "p2glyph",
+                      "content": "🧰",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Y3V16",
+                      "name": "p2name",
+                      "fill": "#6a7a8a80",
+                      "content": "OPENFAB",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.8
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "DswmR",
+          "name": "main-content",
+          "clip": true,
+          "width": "fill_container",
+          "height": "fill_container",
+          "fill": "#faf8f4",
+          "layout": "vertical",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "yOwOm",
+              "layoutPosition": "absolute",
+              "x": 0,
+              "y": 0,
+              "name": "dot-matrix",
+              "opacity": 0.18,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1774530290471.png",
+                "mode": "fill"
+              },
+              "width": 1204,
+              "height": 900
+            },
+            {
+              "type": "frame",
+              "id": "nOVv4",
+              "name": "topSp",
+              "width": "fill_container",
+              "height": 300
+            },
+            {
+              "type": "frame",
+              "id": "pN4dE",
+              "name": "tuning-fork",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 18,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "sweDf",
+                  "name": "curiosity-trap",
+                  "width": 600,
+                  "height": 60,
+                  "fill": "#ffffff",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": {
+                      "left": 3
+                    },
+                    "fill": "#E8831A"
+                  },
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000012",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 12
+                  },
+                  "padding": [
+                    0,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Af7Tb",
+                      "name": "inpTxt",
+                      "fill": "#6b5b4e",
+                      "content": "What brought you here?",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "AXx76",
+                  "name": "topTxt",
+                  "fill": "#5B9BD5",
+                  "textGrowth": "fixed-width",
+                  "width": 600,
+                  "content": "neurodiversité  ·  fablab  ·  gouvernance  ·  making  ·  inclusion  ·  autonomie  ·  open source",
+                  "textAlign": "center",
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 12,
+                  "fontWeight": "normal",
+                  "letterSpacing": 0.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "aG18F",
+      "x": -2903,
+      "y": 1995,
+      "name": "Syntonie — Revealed · Gouvernance",
+      "width": 1440,
+      "height": 1500,
+      "fill": "#faf8f4",
+      "children": [
+        {
+          "type": "frame",
+          "id": "nRdY4",
+          "name": "sbarR",
+          "width": 236,
+          "height": "fill_container",
+          "fill": "#0b0e12",
+          "layout": "vertical",
+          "padding": [
+            36,
+            28,
+            32,
+            28
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "h6x6K",
+              "name": "Brand",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "aCCT3",
+                  "name": "brandName",
+                  "fill": "#e8eaed",
+                  "content": "Syntonie",
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 22,
+                  "fontWeight": "800",
+                  "letterSpacing": -0.4
+                },
+                {
+                  "type": "text",
+                  "id": "jg29q",
+                  "name": "brandGlyph",
+                  "content": "☂️",
+                  "fontFamily": "Inter",
+                  "fontSize": 26,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "bpY5C",
+                  "name": "brandTag",
+                  "fill": "#6a7a8a80",
+                  "content": "ASBL · IXELLES, BRUXELLES",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 10,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.2
+                },
+                {
+                  "type": "text",
+                  "id": "mw94U",
+                  "name": "brandTag2",
+                  "fill": "#6a7a8a80",
+                  "content": "FONDÉE 2012",
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 10,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "3c87w",
+              "name": "Nav",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "caF8h",
+                  "name": "accueil",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "#b4c8d812"
+                  },
+                  "gap": 10,
+                  "padding": [
+                    9,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qOuts",
+                      "name": "num0",
+                      "fill": "#6a7a8a80",
+                      "content": "00",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "HPCg2",
+                      "name": "txt0",
+                      "fill": "#c0ccd8bf",
+                      "content": "ACCUEIL",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Pnx8i",
+                  "name": "nav1",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "#b4c8d812"
+                  },
+                  "gap": 10,
+                  "padding": [
+                    9,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "xT8uH",
+                      "name": "nav1num",
+                      "fill": "#6a7a8a80",
+                      "content": "01",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "fP0cH",
+                      "name": "nav1txt",
+                      "fill": "#c0ccd8bf",
+                      "content": "VISION",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "9mAs9",
+                  "name": "nav2",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "#b4c8d812"
+                  },
+                  "gap": 10,
+                  "padding": [
+                    9,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "blp39",
+                      "name": "nav2num",
+                      "fill": "#6a7a8a80",
+                      "content": "02",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "0hH0N",
+                      "name": "nav2txt",
+                      "fill": "#c0ccd8bf",
+                      "content": "NOTRE RÔLE",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "90NpD",
+                  "name": "nav3",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "#b4c8d812"
+                  },
+                  "gap": 10,
+                  "padding": [
+                    9,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "b9BiO",
+                      "name": "nav3num",
+                      "fill": "#6a7a8a80",
+                      "content": "03",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "dsSfA",
+                      "name": "nav3txt",
+                      "fill": "#c0ccd8bf",
+                      "content": "L'ÉCOSYSTÈME",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "YUXGH",
+                  "name": "nav5",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "#b4c8d812"
+                  },
+                  "gap": 10,
+                  "padding": [
+                    9,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "E3a3j",
+                      "name": "nav5num",
+                      "fill": "#6a7a8a80",
+                      "content": "05",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "XZpYq",
+                      "name": "nav5txt",
+                      "fill": "#c0ccd8bf",
+                      "content": "CONTACT",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "zp443",
+              "name": "spacer",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "frame",
+              "id": "kLwcj",
+              "name": "Lang Toggle",
+              "stroke": {
+                "thickness": 1,
+                "fill": "#b4c8d826"
+              },
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "bJQav",
+                  "name": "langFR",
+                  "fill": "#1e2830",
+                  "padding": [
+                    5,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "nnDjj",
+                      "name": "langFRtxt",
+                      "fill": "#e8eaed",
+                      "content": "FR",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1.2
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "uxxrS",
+                  "name": "langEN",
+                  "padding": [
+                    5,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "rfRI7",
+                      "name": "langENtxt",
+                      "fill": "#6a7a8a80",
+                      "content": "EN",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1.2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "w6ijU",
+              "name": "Ecosystem Portals",
+              "width": "fill_container",
+              "stroke": {
+                "thickness": {
+                  "top": 1
+                },
+                "fill": "#b4c8d826"
+              },
+              "layout": "vertical",
+              "gap": 6,
+              "padding": [
+                20,
+                0,
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "J4nhr",
+                  "name": "portalLabel",
+                  "fill": "#6a7a8a80",
+                  "content": "ÉCOSYSTÈME",
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 9,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.6
+                },
+                {
+                  "type": "frame",
+                  "id": "SrMx2",
+                  "name": "portal1",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#b4c8d826"
+                  },
+                  "gap": 8,
+                  "padding": [
+                    8,
+                    10
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wD3mD",
+                      "name": "p1glyph",
+                      "content": "🫰",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "zk0fD",
+                      "name": "p1name",
+                      "fill": "#6a7a8a80",
+                      "content": "POLITYPE",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.8
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "5Fc6p",
+                  "name": "portal2",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#b4c8d826"
+                  },
+                  "gap": 8,
+                  "padding": [
+                    8,
+                    10
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "AW5Dn",
+                      "name": "p2glyph",
+                      "content": "🧰",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "C4v1A",
+                      "name": "p2name",
+                      "fill": "#6a7a8a80",
+                      "content": "OPENFAB",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.8
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "GnpL9",
+          "name": "main-content",
+          "clip": true,
+          "width": "fill_container",
+          "height": "fill_container",
+          "fill": "#faf8f4",
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "OO8Fv",
+              "layoutPosition": "absolute",
+              "x": 0,
+              "y": 0,
+              "name": "dot-matrix",
+              "opacity": 0.15,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1774530744064.png",
+                "mode": "fill"
+              },
+              "width": 1204,
+              "height": 1500
+            },
+            {
+              "type": "frame",
+              "id": "c9sTF",
+              "name": "sp1",
+              "width": "fill_container",
+              "height": 120
+            },
+            {
+              "type": "frame",
+              "id": "UpuUv",
+              "name": "tuning-fork",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 18,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "UrXgz",
+                  "name": "curiosity-trap",
+                  "width": 600,
+                  "height": 60,
+                  "fill": "#ffffff",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": {
+                      "left": 3
+                    },
+                    "fill": "#E8831A"
+                  },
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000012",
+                    "offset": {
+                      "x": 0,
+                      "y": 2
+                    },
+                    "blur": 12
+                  },
+                  "padding": [
+                    0,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "lQpTP",
+                      "name": "inpTyped",
+                      "fill": "#1a1814",
+                      "content": "gouvernance",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "PvNWK",
+                  "name": "topR",
+                  "fill": "#5B9BD5",
+                  "textGrowth": "fixed-width",
+                  "width": 600,
+                  "content": "neurodiversité  ·  fablab  ·  gouvernance  ·  making  ·  inclusion  ·  autonomie  ·  open source",
+                  "textAlign": "center",
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 12,
+                  "fontWeight": "normal",
+                  "letterSpacing": 0.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "x8IIN",
+              "name": "sp2",
+              "width": "fill_container",
+              "height": 60
+            },
+            {
+              "type": "frame",
+              "id": "78JZa",
+              "name": "shelter-section",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 60,
+              "padding": [
+                0,
+                60
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "q2okD",
+                  "name": "header",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "nvKyH",
+                      "name": "eyebrowR",
+                      "fill": "#E8831A",
+                      "content": "01 · L'ÉCOSYSTÈME",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2.2
+                    },
+                    {
+                      "type": "text",
+                      "id": "bWmCg",
+                      "name": "titleR",
+                      "fill": "#1a1814",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "La structure est à nous.\nLe projet est à vous.",
+                      "lineHeight": 1.1,
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 36,
+                      "fontWeight": "800",
+                      "letterSpacing": -1
+                    },
+                    {
+                      "type": "text",
+                      "id": "JrTjA",
+                      "name": "leadR",
+                      "fill": "#1a1814",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Syntonie ASBL peut servir de cadre légal à votre projet — sans que vous en perdiez le contrôle créatif, opérationnel ou financier.",
+                      "fontFamily": "Spectral",
+                      "fontSize": 24,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "sqVYQ",
+                  "name": "ownership",
+                  "width": "fill_container",
+                  "gap": 60,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Wf2AU",
+                      "name": "shared",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "fyYku",
+                          "name": "ownLlabel",
+                          "fill": "#E8831A",
+                          "content": "CE QUI EST PARTAGÉ",
+                          "fontFamily": "Atkinson Hyperlegible",
+                          "fontSize": 9,
+                          "fontWeight": "normal",
+                          "letterSpacing": 1.5
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "gi7T5",
+                          "name": "ownLdiv",
+                          "opacity": 0.4,
+                          "fill": "#E8831A",
+                          "width": "fill_container",
+                          "height": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "rYgac",
+                          "name": "ownLitems",
+                          "fill": "#1a1814",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Siège social\nNuméro d'entreprise\nIBAN\nStatuts ASBL\nConseil d'administration",
+                          "lineHeight": 1.8,
+                          "fontFamily": "Spectral",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ljqd3",
+                      "name": "yours",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "G5LMy",
+                          "name": "ownRlabel",
+                          "fill": "#5B9BD5",
+                          "content": "CE QUI RESTE À VOUS",
+                          "fontFamily": "Atkinson Hyperlegible",
+                          "fontSize": 9,
+                          "fontWeight": "normal",
+                          "letterSpacing": 1.5
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "TIZYN",
+                          "name": "ownRdiv",
+                          "opacity": 0.4,
+                          "fill": "#5B9BD5",
+                          "width": "fill_container",
+                          "height": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "U6Hx4",
+                          "name": "ownRitems",
+                          "fill": "#1a1814",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Nom du projet\nDirection créative\nRevenus du projet\nIdentité publique\nDécisions opérationnelles",
+                          "lineHeight": 1.8,
+                          "fontFamily": "Spectral",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "wDpXj",
+                  "name": "precedents",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "S8zSQ",
+                      "name": "precLabel",
+                      "fill": "#E8831A",
+                      "content": "ILS ONT UTILISÉ SYNTONIE COMME CADRE",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 9,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1.5
+                    },
+                    {
+                      "type": "frame",
+                      "id": "RNhc3",
+                      "name": "cards-row1",
+                      "width": "fill_container",
+                      "gap": 24,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "MBPaB",
+                          "name": "speculoos",
+                          "width": "fill_container",
+                          "fill": "#ffffff",
+                          "stroke": {
+                            "align": "outside",
+                            "thickness": 1,
+                            "fill": "#e8d5c0"
+                          },
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": 20,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "t4VGd",
+                              "name": "c1name",
+                              "fill": "#1a1814",
+                              "content": "Speculoos",
+                              "fontFamily": "Atkinson Hyperlegible",
+                              "fontSize": 15,
+                              "fontWeight": "800"
+                            },
+                            {
+                              "type": "text",
+                              "id": "8PLr7",
+                              "name": "c1year",
+                              "fill": "#E8831A",
+                              "content": "2023",
+                              "fontFamily": "Atkinson Hyperlegible",
+                              "fontSize": 10,
+                              "fontWeight": "normal",
+                              "letterSpacing": 1
+                            },
+                            {
+                              "type": "text",
+                              "id": "WALss",
+                              "name": "c1desc",
+                              "fill": "#1a1814",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Équipement de production. Soutien à Kesho Kongo (RDC). Premier projet à utiliser explicitement le cadre légal de Syntonie.",
+                              "lineHeight": 1.5,
+                              "fontFamily": "Spectral",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "VEdD5",
+                          "name": "fabulous",
+                          "width": "fill_container",
+                          "fill": "#ffffff",
+                          "stroke": {
+                            "align": "outside",
+                            "thickness": 1,
+                            "fill": "#e8d5c0"
+                          },
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": 20,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "8MN0A",
+                              "name": "c2name",
+                              "fill": "#1a1814",
+                              "content": "Fabulous",
+                              "fontFamily": "Atkinson Hyperlegible",
+                              "fontSize": 15,
+                              "fontWeight": "800"
+                            },
+                            {
+                              "type": "text",
+                              "id": "NfSYv",
+                              "name": "c2year",
+                              "fill": "#E8831A",
+                              "content": "2022–2023",
+                              "fontFamily": "Atkinson Hyperlegible",
+                              "fontSize": 10,
+                              "fontWeight": "normal",
+                              "letterSpacing": 1
+                            },
+                            {
+                              "type": "text",
+                              "id": "iZMWz",
+                              "name": "c2desc",
+                              "fill": "#1a1814",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Collectif de 16 makers, production coopérative. Évolué en Fabulous 2.0 — modèles éducatifs pour musées.",
+                              "lineHeight": 1.5,
+                              "fontFamily": "Spectral",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tDDwt",
+                      "name": "cards-row2",
+                      "width": "fill_container",
+                      "gap": 24,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "xk3pz",
+                          "name": "cabinet",
+                          "width": "fill_container",
+                          "fill": "#ffffff",
+                          "stroke": {
+                            "align": "outside",
+                            "thickness": 1,
+                            "fill": "#e8d5c0"
+                          },
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": 20,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "YiDil",
+                              "name": "c3name",
+                              "fill": "#1a1814",
+                              "content": "Cabinet de l'Étrange",
+                              "fontFamily": "Atkinson Hyperlegible",
+                              "fontSize": 15,
+                              "fontWeight": "800"
+                            },
+                            {
+                              "type": "text",
+                              "id": "qOzsv",
+                              "name": "c3year",
+                              "fill": "#E8831A",
+                              "content": "2022–2023",
+                              "fontFamily": "Atkinson Hyperlegible",
+                              "fontSize": 10,
+                              "fontWeight": "normal",
+                              "letterSpacing": 1
+                            },
+                            {
+                              "type": "text",
+                              "id": "zSfE9",
+                              "name": "c3desc",
+                              "fill": "#1a1814",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Escape room hybride. Incubé à OpenFab, soutenu par ILES + Seed & Bloom.",
+                              "lineHeight": 1.5,
+                              "fontFamily": "Spectral",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "d4v68",
+                          "name": "enigmaker",
+                          "width": "fill_container",
+                          "fill": "#ffffff",
+                          "stroke": {
+                            "align": "outside",
+                            "thickness": 1,
+                            "fill": "#e8d5c0"
+                          },
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": 20,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Lqj2E",
+                              "name": "c4name",
+                              "fill": "#1a1814",
+                              "content": "Enigmaker",
+                              "fontFamily": "Atkinson Hyperlegible",
+                              "fontSize": 15,
+                              "fontWeight": "800"
+                            },
+                            {
+                              "type": "text",
+                              "id": "u3xm2",
+                              "name": "c4year",
+                              "fill": "#E8831A",
+                              "content": "2023",
+                              "fontFamily": "Atkinson Hyperlegible",
+                              "fontSize": 10,
+                              "fontWeight": "normal",
+                              "letterSpacing": 1
+                            },
+                            {
+                              "type": "text",
+                              "id": "0mY4b",
+                              "name": "c4desc",
+                              "fill": "#1a1814",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Créé au Maker Faire Brussels 2023. Répliqué à Ljubljana, en tournée sur le Vulca Maker Tour Europe.",
+                              "lineHeight": 1.5,
+                              "fontFamily": "Spectral",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "0mzYc",
+                  "name": "cta",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 18,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "0OxyY",
+                      "name": "ctaDiv",
+                      "opacity": 0.12,
+                      "fill": "#1a1814",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "Pekt4",
+                      "name": "ctaText",
+                      "fill": "#1a1814",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Si votre projet résonne avec ce que vous lisez ici, la prochaine étape est humaine.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Spectral",
+                      "fontSize": 18,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    },
+                    {
+                      "type": "text",
+                      "id": "sBmHI",
+                      "name": "ctaEmail",
+                      "fill": "#5B9BD5",
+                      "content": "→ contact@syntonie.be",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 15,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.3
+                    },
+                    {
+                      "type": "text",
+                      "id": "f0RUj",
+                      "name": "ctaNote",
+                      "fill": "#6b5b4e",
+                      "content": "Pas de formulaire. Juste un message.",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 12,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.5
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "RGbnV",
+      "x": 7400,
+      "y": 0,
+      "name": "Pantry — Syntonie Components",
+      "width": 1300,
+      "fill": "#ede9e3",
+      "layout": "vertical",
+      "gap": 60,
+      "padding": [
+        80,
+        108
+      ],
+      "children": [
+        {
+          "type": "text",
+          "id": "krlku",
+          "name": "pantryTitle",
+          "fill": "#6b5b4e",
+          "content": "PANTRY — COMPOSANTS SYNTONIE.BE",
+          "fontFamily": "Atkinson Hyperlegible",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "letterSpacing": 2
+        },
+        {
+          "type": "frame",
+          "id": "r6eWg",
+          "name": "comp/A · shelter-header",
+          "reusable": true,
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 18,
+          "children": [
+            {
+              "type": "text",
+              "id": "hNDEA",
+              "name": "eyebrowR",
+              "fill": "#E8831A",
+              "content": "01 · L'ÉCOSYSTÈME",
+              "fontFamily": "Atkinson Hyperlegible",
+              "fontSize": 10,
+              "fontWeight": "normal",
+              "letterSpacing": 2.2
+            },
+            {
+              "type": "text",
+              "id": "QrJVi",
+              "name": "titleR",
+              "fill": "#1a1814",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "La structure est à nous.\nLe projet est à vous.",
+              "lineHeight": 1.1,
+              "fontFamily": "Atkinson Hyperlegible",
+              "fontSize": 36,
+              "fontWeight": "800",
+              "letterSpacing": -1
+            },
+            {
+              "type": "text",
+              "id": "ZK73H",
+              "name": "leadR",
+              "fill": "#1a1814",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Syntonie ASBL peut servir de cadre légal à votre projet — sans que vous en perdiez le contrôle créatif, opérationnel ou financier.",
+              "fontFamily": "Spectral",
+              "fontSize": 24,
+              "fontWeight": "normal",
+              "fontStyle": "italic"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "V8kj5",
+          "name": "comp/B · ownership-split",
+          "reusable": true,
+          "width": "fill_container",
+          "gap": 60,
+          "children": [
+            {
+              "type": "frame",
+              "id": "iLx6Y",
+              "name": "shared",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "gLHSc",
+                  "name": "ownLlabel",
+                  "fill": "#E8831A",
+                  "content": "CE QUI EST PARTAGÉ",
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 9,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "rectangle",
+                  "id": "9UrmF",
+                  "name": "ownLdiv",
+                  "opacity": 0.4,
+                  "fill": "#E8831A",
+                  "width": "fill_container",
+                  "height": 1
+                },
+                {
+                  "type": "text",
+                  "id": "ZKLX5",
+                  "name": "ownLitems",
+                  "fill": "#1a1814",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Siège social\nNuméro d'entreprise\nIBAN\nStatuts ASBL\nConseil d'administration",
+                  "lineHeight": 1.8,
+                  "fontFamily": "Spectral",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "G6MRb",
+              "name": "yours",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "18jKX",
+                  "name": "ownRlabel",
+                  "fill": "#5B9BD5",
+                  "content": "CE QUI RESTE À VOUS",
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 9,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "rectangle",
+                  "id": "563NE",
+                  "name": "ownRdiv",
+                  "opacity": 0.4,
+                  "fill": "#5B9BD5",
+                  "width": "fill_container",
+                  "height": 1
+                },
+                {
+                  "type": "text",
+                  "id": "mAKYJ",
+                  "name": "ownRitems",
+                  "fill": "#1a1814",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Nom du projet\nDirection créative\nRevenus du projet\nIdentité publique\nDécisions opérationnelles",
+                  "lineHeight": 1.8,
+                  "fontFamily": "Spectral",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "632G4",
+          "name": "comp/C · precedents-grid",
+          "reusable": true,
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 20,
+          "children": [
+            {
+              "type": "text",
+              "id": "j1BBd",
+              "name": "precLabel",
+              "fill": "#E8831A",
+              "content": "ILS ONT UTILISÉ SYNTONIE COMME CADRE",
+              "fontFamily": "Atkinson Hyperlegible",
+              "fontSize": 9,
+              "fontWeight": "normal",
+              "letterSpacing": 1.5
+            },
+            {
+              "type": "frame",
+              "id": "Y3xfV",
+              "name": "cards-row1",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "NxjeO",
+                  "name": "speculoos",
+                  "width": "fill_container",
+                  "fill": "#ffffff",
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#e8d5c0"
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "fFcqk",
+                      "name": "c1name",
+                      "fill": "#1a1814",
+                      "content": "Speculoos",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 15,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "T0M0P",
+                      "name": "c1year",
+                      "fill": "#E8831A",
+                      "content": "2023",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "j8xvx",
+                      "name": "c1desc",
+                      "fill": "#1a1814",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Équipement de production. Soutien à Kesho Kongo (RDC). Premier projet à utiliser explicitement le cadre légal de Syntonie.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Spectral",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "UVJkv",
+                  "name": "fabulous",
+                  "width": "fill_container",
+                  "fill": "#ffffff",
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#e8d5c0"
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "vJXHD",
+                      "name": "c2name",
+                      "fill": "#1a1814",
+                      "content": "Fabulous",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 15,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "TZTsr",
+                      "name": "c2year",
+                      "fill": "#E8831A",
+                      "content": "2022–2023",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "hfRxr",
+                      "name": "c2desc",
+                      "fill": "#1a1814",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Collectif de 16 makers, production coopérative. Évolué en Fabulous 2.0 — modèles éducatifs pour musées.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Spectral",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hXolP",
+              "name": "cards-row2",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "42Hd3",
+                  "name": "cabinet",
+                  "width": "fill_container",
+                  "fill": "#ffffff",
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#e8d5c0"
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "zNDzs",
+                      "name": "c3name",
+                      "fill": "#1a1814",
+                      "content": "Cabinet de l'Étrange",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 15,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "1TcwH",
+                      "name": "c3year",
+                      "fill": "#E8831A",
+                      "content": "2022–2023",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "e8EKe",
+                      "name": "c3desc",
+                      "fill": "#1a1814",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Escape room hybride. Incubé à OpenFab, soutenu par ILES + Seed & Bloom.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Spectral",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "vJKE0",
+                  "name": "enigmaker",
+                  "width": "fill_container",
+                  "fill": "#ffffff",
+                  "stroke": {
+                    "align": "outside",
+                    "thickness": 1,
+                    "fill": "#e8d5c0"
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Tcsli",
+                      "name": "c4name",
+                      "fill": "#1a1814",
+                      "content": "Enigmaker",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 15,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "UddCc",
+                      "name": "c4year",
+                      "fill": "#E8831A",
+                      "content": "2023",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "Ix2mB",
+                      "name": "c4desc",
+                      "fill": "#1a1814",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Créé au Maker Faire Brussels 2023. Répliqué à Ljubljana, en tournée sur le Vulca Maker Tour Europe.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Spectral",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "8L33e",
+          "name": "comp/K · cta",
+          "reusable": true,
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 18,
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "bemLq",
+              "name": "ctaDiv",
+              "opacity": 0.12,
+              "fill": "#1a1814",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "text",
+              "id": "SdV95",
+              "name": "ctaText",
+              "fill": "#1a1814",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Si votre projet résonne avec ce que vous lisez ici, la prochaine étape est humaine.",
+              "lineHeight": 1.5,
+              "fontFamily": "Spectral",
+              "fontSize": 18,
+              "fontWeight": "normal",
+              "fontStyle": "italic"
+            },
+            {
+              "type": "text",
+              "id": "dVjIL",
+              "name": "ctaEmail",
+              "fill": "#5B9BD5",
+              "content": "→ contact@syntonie.be",
+              "fontFamily": "Atkinson Hyperlegible",
+              "fontSize": 15,
+              "fontWeight": "normal",
+              "letterSpacing": 0.3
+            },
+            {
+              "type": "text",
+              "id": "WrOAC",
+              "name": "ctaNote",
+              "fill": "#6b5b4e",
+              "content": "Pas de formulaire. Juste un message.",
+              "fontFamily": "Atkinson Hyperlegible",
+              "fontSize": 12,
+              "fontWeight": "normal",
+              "letterSpacing": 0.5
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "QKg0j",
+          "name": "comp/E · project:allo-ia",
+          "reusable": true,
+          "width": "fill_container",
+          "fill": "#ffffff",
+          "stroke": {
+            "align": "outside",
+            "thickness": 1,
+            "fill": "#e8d5c0"
+          },
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 30,
+          "children": [
+            {
+              "type": "text",
+              "id": "rAGmw",
+              "name": "eEyebrow",
+              "fill": "#E8831A",
+              "content": "ERASMUS+ KA210 · EN COURS",
+              "fontFamily": "Atkinson Hyperlegible",
+              "fontSize": 10,
+              "fontWeight": "normal",
+              "letterSpacing": 2
+            },
+            {
+              "type": "text",
+              "id": "RqiWQ",
+              "name": "eTitle",
+              "fill": "#1a1814",
+              "content": "Allo-IA",
+              "fontFamily": "Atkinson Hyperlegible",
+              "fontSize": 36,
+              "fontWeight": "800",
+              "letterSpacing": -1
+            },
+            {
+              "type": "text",
+              "id": "JWzkT",
+              "name": "eLead",
+              "fill": "#1a1814",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Documentation par IA pour espaces de fabrication. Design universel, inclusion des publics neurodivergents.",
+              "lineHeight": 1.4,
+              "fontFamily": "Spectral",
+              "fontSize": 20,
+              "fontWeight": "normal",
+              "fontStyle": "italic"
+            },
+            {
+              "type": "text",
+              "id": "iKBqH",
+              "name": "eTags",
+              "fill": "#5B9BD5",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "intelligence artificielle  ·  documentation  ·  inclusion  ·  makerspaces  ·  design universel",
+              "fontFamily": "Atkinson Hyperlegible",
+              "fontSize": 11,
+              "fontWeight": "normal",
+              "letterSpacing": 0.5
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "XOEf0",
+          "name": "comp/F · project:invisible-play",
+          "reusable": true,
+          "width": "fill_container",
+          "fill": "#ffffff",
+          "stroke": {
+            "align": "outside",
+            "thickness": 1,
+            "fill": "#e8d5c0"
+          },
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 30,
+          "children": [
+            {
+              "type": "text",
+              "id": "b0YEi",
+              "name": "fEyebrow",
+              "fill": "#E8831A",
+              "content": "ERASMUS+ KA210 · EN COURS",
+              "fontFamily": "Atkinson Hyperlegible",
+              "fontSize": 10,
+              "fontWeight": "normal",
+              "letterSpacing": 2
+            },
+            {
+              "type": "text",
+              "id": "N0SgM",
+              "name": "fTitle",
+              "fill": "#1a1814",
+              "content": "Invisible Play",
+              "fontFamily": "Atkinson Hyperlegible",
+              "fontSize": 36,
+              "fontWeight": "800",
+              "letterSpacing": -1
+            },
+            {
+              "type": "text",
+              "id": "crePK",
+              "name": "fLead",
+              "fill": "#1a1814",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Environnements urbains neuro-inclusifs. Jeu, engagement jeunesse et captation citoyenne.",
+              "lineHeight": 1.4,
+              "fontFamily": "Spectral",
+              "fontSize": 20,
+              "fontWeight": "normal",
+              "fontStyle": "italic"
+            },
+            {
+              "type": "text",
+              "id": "MGks2",
+              "name": "fTags",
+              "fill": "#5B9BD5",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "neurodiversité  ·  urban  ·  jeu  ·  engagement jeunesse  ·  captation citoyenne",
+              "fontFamily": "Atkinson Hyperlegible",
+              "fontSize": 11,
+              "fontWeight": "normal",
+              "letterSpacing": 0.5
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "KbO2R",
+          "name": "comp/G · value:imparfait",
+          "reusable": true,
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            24,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "tpH7B",
+              "name": "gLabel",
+              "fill": "#E8831A",
+              "content": "IMPARFAIT",
+              "fontFamily": "Atkinson Hyperlegible",
+              "fontSize": 10,
+              "fontWeight": "normal",
+              "letterSpacing": 2.2
+            },
+            {
+              "type": "rectangle",
+              "id": "OiC64",
+              "name": "gDiv",
+              "opacity": 0.15,
+              "fill": "#1a1814",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "text",
+              "id": "PhNoy",
+              "name": "gBody",
+              "fill": "#1a1814",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Nous avons essayé des choses qui n'ont pas fonctionné. Un projet de repair café en 2019, une candidature Erasmus refusée en 2021. Ces tentatives ont façonné ce que nous sommes — et ce que nous ne prétendons plus être.",
+              "lineHeight": 1.7,
+              "fontFamily": "Spectral",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "HCKlW",
+          "name": "comp/H · values-all",
+          "reusable": true,
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "T5j0Z",
+              "name": "hLabel",
+              "fill": "#E8831A",
+              "content": "NOS VALEURS — CLIQUEZ POUR OUVRIR",
+              "fontFamily": "Atkinson Hyperlegible",
+              "fontSize": 9,
+              "fontWeight": "normal",
+              "letterSpacing": 1.5
+            },
+            {
+              "type": "text",
+              "id": "9H0ch",
+              "name": "hValues",
+              "fill": "#1a1814",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "→  Indépendant\n→  Innovant\n→  Belge\n→  Imparfait\n→  Prospectif\n→  Open source",
+              "lineHeight": 2.2,
+              "fontFamily": "Atkinson Hyperlegible",
+              "fontSize": 15,
+              "fontWeight": "800"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "OTGNb",
+          "name": "comp/I · about-syntonie",
+          "reusable": true,
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            24,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "Qtt3q",
+              "name": "iEyebrow",
+              "fill": "#E8831A",
+              "content": "SYNTONIE ASBL",
+              "fontFamily": "Atkinson Hyperlegible",
+              "fontSize": 10,
+              "fontWeight": "normal",
+              "letterSpacing": 2.2
+            },
+            {
+              "type": "text",
+              "id": "Ym484",
+              "name": "iStats",
+              "fill": "#1a1814",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Fondée le 3 avril 2012  ·  42 membres actifs  ·  249+ membres cumulés\nPartenaire Commune d'Ixelles depuis 2019  ·  Autofinancée — aucune subvention de fonctionnement",
+              "lineHeight": 1.8,
+              "fontFamily": "Spectral",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "dKLhO",
+          "name": "comp/J · mission",
+          "reusable": true,
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            24,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "Ww9aF",
+              "name": "jQuote",
+              "fill": "#1a1814",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "\"Syntonie n'opère pas. Syntonie permet.\nGouvernance, structure légale, vision stratégique —\npour que d'autres puissent faire.\"",
+              "lineHeight": 1.5,
+              "fontFamily": "Spectral",
+              "fontSize": 24,
+              "fontWeight": "normal",
+              "fontStyle": "italic"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "1Xd7J",
+          "name": "comp/D · constellation-map",
+          "reusable": true,
+          "width": "fill_container",
+          "height": 300,
+          "fill": "#f5f2ec",
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#e8d5c0"
+          },
+          "layout": "vertical",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "kAxsY",
+              "layoutPosition": "absolute",
+              "x": 24,
+              "y": 24,
+              "name": "dLabel",
+              "fill": "#E8831A",
+              "content": "CARTE DE LA CONSTELLATION",
+              "fontFamily": "Atkinson Hyperlegible",
+              "fontSize": 9,
+              "fontWeight": "normal",
+              "letterSpacing": 1.5
+            },
+            {
+              "type": "text",
+              "id": "cR1EY",
+              "layoutPosition": "absolute",
+              "x": 24,
+              "y": 60,
+              "name": "dNote",
+              "fill": "#6b5b4e",
+              "textGrowth": "fixed-width",
+              "width": 1036,
+              "content": "Syntonie au centre · lignes vers OpenFab, Politype, Speculoos, Fabulous, Cabinet de l'Étrange, Enigmaker, Invisible Play, Allo-IA\nChaque nœud : nom + date + lien\n\n→ À concevoir : diagramme SVG interactif",
+              "fontFamily": "Spectral",
+              "fontSize": 13,
+              "fontWeight": "normal",
+              "fontStyle": "italic"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
