@@ -1,0 +1,36 @@
+name: Deploy Syntonie
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'syntonie/**'
+      - '.github/workflows/deploy-syntonie.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.152.2'
+          extended: true
+
+      - name: Build
+        working-directory: syntonie
+        run: hugo --minify --baseURL "https://${{ github.repository_owner }}.github.io/Trinity/syntonie/"
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: syntonie/public
+          destination_dir: syntonie
+          publish_branch: gh-pages
