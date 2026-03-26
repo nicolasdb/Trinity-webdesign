@@ -6,7 +6,7 @@
       "id": "665dI",
       "x": 900,
       "y": 0,
-      "name": "Syntonie — Cool Pavilion",
+      "name": "Syntonie — neutral structure",
       "clip": true,
       "width": 1440,
       "fill": "#0f1216",
@@ -244,7 +244,7 @@
                       "id": "OSKcy",
                       "name": "nav3txt",
                       "fill": "#c0ccd8bf",
-                      "content": "LA TRINITY",
+                      "content": "L'ÉCOSYSTÈME",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 12,
                       "fontWeight": "600",
@@ -510,30 +510,35 @@
                 59,
                 118
               ],
+              "alignItems": "center",
               "children": [
                 {
                   "type": "frame",
                   "id": "CDu1M",
                   "name": "heroLeft",
                   "width": "fill_container",
-                  "height": 391,
+                  "height": 295,
                   "fill": "#0f1216c0",
                   "layout": "vertical",
-                  "gap": 32,
+                  "gap": 20,
                   "padding": [
                     0,
-                    32,
+                    59,
                     0,
                     0
                   ],
+                  "justifyContent": "center",
                   "children": [
                     {
-                      "type": "rectangle",
-                      "id": "lArrV",
-                      "name": "heroAccent",
-                      "fill": "#c47a2a",
-                      "width": 6,
-                      "height": 76
+                      "type": "text",
+                      "id": "AQrWR",
+                      "name": "syHeroEye",
+                      "fill": "#5B9BD5",
+                      "content": "SYNTONIE · ASBL · BRUXELLES",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2.2
                     },
                     {
                       "type": "text",
@@ -542,10 +547,10 @@
                       "fill": "#ffffff",
                       "textGrowth": "fixed-width",
                       "width": 640,
-                      "content": "Être en\nrésonance.",
-                      "lineHeight": 1,
+                      "content": "The harmonic field\nis our playground.",
+                      "lineHeight": 0.95,
                       "fontFamily": "Atkinson Hyperlegible",
-                      "fontSize": 80,
+                      "fontSize": 64,
                       "fontWeight": "800",
                       "letterSpacing": -2
                     },
@@ -553,14 +558,13 @@
                       "type": "text",
                       "id": "5ibJP",
                       "name": "heroSub",
-                      "fill": "#e8eaed",
+                      "fill": "#E0E4E8",
                       "textGrowth": "fixed-width",
                       "width": 691,
                       "content": "Démocratie, technologie, et faire appartiennent ensemble — comme pratique vivante.",
                       "lineHeight": 1.6,
                       "fontFamily": "Spectral",
-                      "fontSize": 20,
-                      "fontWeight": "300",
+                      "fontSize": 28,
                       "fontStyle": "italic"
                     }
                   ]
@@ -570,11 +574,11 @@
                   "id": "zCOCq",
                   "name": "heroDefCard",
                   "width": 236,
-                  "height": 280,
+                  "height": 295,
                   "fill": "#e8eaed",
                   "stroke": {
                     "thickness": 3,
-                    "fill": "#c47a2a"
+                    "fill": "#E8831A"
                   },
                   "layout": "vertical",
                   "gap": 12,
@@ -595,7 +599,7 @@
                       "type": "text",
                       "id": "LzZzR",
                       "name": "defPhon",
-                      "fill": "#4a7fa5",
+                      "fill": "#5B9BD5",
                       "content": "/sɛ̃.tɔ.ni/",
                       "fontFamily": "Syne Mono",
                       "fontSize": 12,
@@ -605,7 +609,7 @@
                       "type": "rectangle",
                       "id": "rR1e7",
                       "name": "defSep",
-                      "fill": "#c47a2a",
+                      "fill": "#E8831A",
                       "width": "fill_container",
                       "height": 3
                     },
@@ -657,7 +661,7 @@
                       "type": "text",
                       "id": "pEKVp",
                       "name": "vLabel",
-                      "fill": "#6a7a8a80",
+                      "fill": "#E8831A",
                       "content": "01 · NOTRE ADN",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 9,
@@ -674,51 +678,22 @@
                       "content": "La relation entre humains, technologie, et environnement se brisait.",
                       "lineHeight": 1.1,
                       "fontFamily": "Atkinson Hyperlegible",
-                      "fontSize": 32,
-                      "fontWeight": "700",
-                      "letterSpacing": -0.5
+                      "fontSize": 36,
+                      "fontWeight": "800",
+                      "letterSpacing": -1
                     },
                     {
                       "type": "text",
                       "id": "lHf7F",
                       "name": "vP1",
-                      "fill": "#c0ccd8bf",
+                      "fill": "#c8d4e0",
                       "textGrowth": "fixed-width",
                       "width": 460,
-                      "content": "En 2012, nous avons fondé Syntonie — du grec syntonia, \"être en résonance.\" Ni entreprise, ni ONG traditionnelle : une ASBL-pont qui tient l'espace pour des expériences émergentes. Pendant 14 ans, cette structure a permis à des communautés de makers, de chercheurs et de citoyens de prototyper ensemble.",
+                      "content": "En 2012, nous avons fondé Syntonie — du grec syntonia, \"être en résonance.\" Une ASBL conçue comme infrastructure de gouvernance : elle ne produit pas, elle permet. Pendant 14 ans, cette structure a abrité des projets européens (Vulca, CHIC2.0, Erasmus+), soutenu une communauté de 250+ makers, et développé une méthodologie d'inclusion par le faire.",
                       "lineHeight": 1.75,
                       "fontFamily": "Spectral",
                       "fontSize": 17,
                       "fontWeight": "normal"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "uD9GL",
-                      "name": "vBadge",
-                      "fill": "#c47a2a14",
-                      "stroke": {
-                        "thickness": 1,
-                        "fill": "#c47a2a66"
-                      },
-                      "gap": 12,
-                      "padding": [
-                        12,
-                        20
-                      ],
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "bdp5B",
-                          "name": "vBadgeTxt",
-                          "fill": "#4a7fa5",
-                          "content": "En 2020, la communauté s'est auto-organisée : 1500 visières, 4500 masques produits en réponse à la crise.",
-                          "fontFamily": "Atkinson Hyperlegible",
-                          "fontSize": 11,
-                          "fontWeight": "normal",
-                          "letterSpacing": 1
-                        }
-                      ]
                     }
                   ]
                 },
@@ -731,7 +706,7 @@
                     "thickness": {
                       "left": 5
                     },
-                    "fill": "#c47a2a"
+                    "fill": "#E8831A"
                   },
                   "layout": "vertical",
                   "gap": 16,
@@ -753,13 +728,14 @@
                       "lineHeight": 1.55,
                       "fontFamily": "Spectral",
                       "fontSize": 26,
+                      "fontWeight": "normal",
                       "fontStyle": "italic"
                     },
                     {
                       "type": "text",
                       "id": "DN5es",
                       "name": "vAnnot",
-                      "fill": "#6a7a8a80",
+                      "fill": "#E8831A",
                       "content": "PRINCIPE FONDATEUR",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 10,
@@ -788,6 +764,39 @@
                           "fontSize": 10,
                           "fontWeight": "normal",
                           "letterSpacing": 0.8
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "uD9GL",
+                      "name": "vBadge",
+                      "width": 292,
+                      "fill": "#E8831A14",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#E8831A66"
+                      },
+                      "gap": 12,
+                      "padding": [
+                        12,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "bdp5B",
+                          "name": "vBadgeTxt",
+                          "fill": "#5B9BD5",
+                          "textGrowth": "fixed-width-height",
+                          "width": 254,
+                          "height": 59,
+                          "content": "En 2020, la communauté s'est auto-organisée : 1500 visières, 4500 masques produits en réponse à la crise.",
+                          "fontFamily": "Atkinson Hyperlegible",
+                          "fontSize": 11,
+                          "fontWeight": "normal",
+                          "letterSpacing": 1
                         }
                       ]
                     }
@@ -819,8 +828,8 @@
                   "type": "text",
                   "id": "REadB",
                   "name": "rLabel",
-                  "fill": "#6a7a8a80",
-                  "content": "02 · GAMELAB",
+                  "fill": "#E8831A",
+                  "content": "02 · RECHERCHE & MÉTHODOLOGIE",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 9,
                   "fontWeight": "normal",
@@ -833,25 +842,25 @@
                   "fill": "#e8eaed",
                   "textGrowth": "fixed-width",
                   "width": 560,
-                  "content": "La tête. Le parapluie.\nLe gardien de la vision.",
+                  "content": "Le cadre. Le parapluie.\nCe qui permet le reste.",
                   "lineHeight": 1.1,
                   "fontFamily": "Atkinson Hyperlegible",
-                  "fontSize": 32,
-                  "fontWeight": "700",
-                  "letterSpacing": -0.5
+                  "fontSize": 36,
+                  "fontWeight": "800",
+                  "letterSpacing": -1
                 },
                 {
                   "type": "text",
                   "id": "xCBh6",
                   "name": "rLead",
-                  "fill": "#c0ccd8bf",
+                  "fill": "#c8d4e0",
                   "textGrowth": "fixed-width",
                   "width": 560,
-                  "content": "Depuis 2017, Syntonie développe une expertise unique : le jeu comme outil de gouvernance et d'engagement. Du Passeport Maker (2017) à L'Enigmaker (Maker Faire 2023) jusqu'à SALANBAYOU — la recherche en game design civique est notre spécialité.",
+                  "content": "Syntonie développe depuis 2017 une méthodologie de recherche-action autour du jeu comme outil de gouvernance et d'engagement citoyen. Du Passeport Maker aux partenariats Erasmus+, notre approche combine prototypage rapide, évaluation terrain et documentation ouverte.",
                   "lineHeight": 1.7,
                   "fontFamily": "Spectral",
-                  "fontSize": 18,
-                  "fontWeight": "normal"
+                  "fontSize": 24,
+                  "fontStyle": "italic"
                 },
                 {
                   "type": "frame",
@@ -897,8 +906,8 @@
                           "type": "text",
                           "id": "SxXzw",
                           "name": "do1",
-                          "fill": "#c0ccd8bf",
-                          "content": "→ Penser à long terme",
+                          "fill": "#c8d4e0",
+                          "content": "→ Penser à long terme et maintenir la cohérence stratégique",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
@@ -908,8 +917,8 @@
                           "type": "text",
                           "id": "JIMfY",
                           "name": "do2",
-                          "fill": "#c0ccd8bf",
-                          "content": "→ Rechercher les modèles de gouvernance par le jeu",
+                          "fill": "#c8d4e0",
+                          "content": "→ Développer la recherche-action en gouvernance participative",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
@@ -919,8 +928,8 @@
                           "type": "text",
                           "id": "xtrVe",
                           "name": "do3",
-                          "fill": "#c0ccd8bf",
-                          "content": "→ Développer le Passeport Maker comme portfolio vivant",
+                          "fill": "#c8d4e0",
+                          "content": "→ Ancrer les partenariats européens (Vulca, CHIC2.0, Erasmus+)",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
@@ -930,8 +939,8 @@
                           "type": "text",
                           "id": "3NzD9",
                           "name": "do4",
-                          "fill": "#c0ccd8bf",
-                          "content": "→ Ancrer les partenariats européens (Vulca, CHIC2.0, Erasmus+)",
+                          "fill": "#c8d4e0",
+                          "content": "→ Posséder et gérer les actifs pour l'écosystème",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
@@ -941,8 +950,8 @@
                           "type": "text",
                           "id": "OxZFe",
                           "name": "do5",
-                          "fill": "#c0ccd8bf",
-                          "content": "→ Permettre aux sous-entités d'exister et prospérer",
+                          "fill": "#c8d4e0",
+                          "content": "→ Assurer la conformité légale et la continuité institutionnelle",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
@@ -987,7 +996,7 @@
                           "type": "text",
                           "id": "aUa8d",
                           "name": "dont1",
-                          "fill": "#c0ccd8bf",
+                          "fill": "#c8d4e0",
                           "content": "✕ Gérer les opérations quotidiennes",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
@@ -998,7 +1007,7 @@
                           "type": "text",
                           "id": "FrZF1",
                           "name": "dont2",
-                          "fill": "#c0ccd8bf",
+                          "fill": "#c8d4e0",
                           "content": "✕ Animer des ateliers directement",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
@@ -1009,7 +1018,7 @@
                           "type": "text",
                           "id": "8KXFn",
                           "name": "dont3",
-                          "fill": "#c0ccd8bf",
+                          "fill": "#c8d4e0",
                           "content": "✕ Fabriquer des choses (c'est OpenFab)",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
@@ -1020,7 +1029,7 @@
                           "type": "text",
                           "id": "ut6Is",
                           "name": "dont4",
-                          "fill": "#c0ccd8bf",
+                          "fill": "#c8d4e0",
                           "content": "✕ Prototyper la gouvernance (c'est Politype)",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
@@ -1031,7 +1040,7 @@
                           "type": "text",
                           "id": "P4x5G",
                           "name": "dont5",
-                          "fill": "#c0ccd8bf",
+                          "fill": "#c8d4e0",
                           "content": "✕ Microgérer les sous-entités",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
@@ -1133,8 +1142,8 @@
                   "type": "text",
                   "id": "M8FHW",
                   "name": "tLabel",
-                  "fill": "#6a7a8a80",
-                  "content": "03 · LA TRINITY",
+                  "fill": "#E8831A",
+                  "content": "03 · L'ÉCOSYSTÈME",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 9,
                   "fontWeight": "normal",
@@ -1147,22 +1156,22 @@
                   "fill": "#e8eaed",
                   "content": "Trois entités. Un écosystème.",
                   "fontFamily": "Atkinson Hyperlegible",
-                  "fontSize": 32,
-                  "fontWeight": "700",
-                  "letterSpacing": -0.5
+                  "fontSize": 36,
+                  "fontWeight": "800",
+                  "letterSpacing": -1
                 },
                 {
                   "type": "text",
                   "id": "nO14M",
                   "name": "tIntro",
-                  "fill": "#c0ccd8bf",
+                  "fill": "#c8d4e0",
                   "textGrowth": "fixed-width",
                   "width": 520,
-                  "content": "Des rôles distincts, un but partagé. La recherche avait besoin de mains — et les mains avaient besoin de gouvernance.",
+                  "content": "Un écosystème où chaque membre est connecté à plusieurs projets. Syntonie tient le centre — les entités opèrent.",
                   "lineHeight": 1.7,
                   "fontFamily": "Spectral",
-                  "fontSize": 18,
-                  "fontWeight": "normal"
+                  "fontSize": 24,
+                  "fontStyle": "italic"
                 },
                 {
                   "type": "frame",
@@ -1195,7 +1204,7 @@
                           "id": "uXK46",
                           "name": "ofTitle",
                           "fill": "#e8eaed",
-                          "content": "Nos recherches avaient besoin de mains.",
+                          "content": "OpenFab",
                           "lineHeight": 1.2,
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 22,
@@ -1205,10 +1214,10 @@
                           "type": "text",
                           "id": "WQrhR",
                           "name": "ofBody",
-                          "fill": "#c0ccd8bf",
+                          "fill": "#c8d4e0",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "OpenFab est le bras exécutif de l'écosystème. Fabmobile (2017-18, Innoviris), FabÉcole (2019), 13 000 jeunes touchés, une communauté de 250+ makers. L'espace où les idées deviennent réalité physique.",
+                          "content": "L'espace maker de l'écosystème : outils, ateliers, communauté. 13 000 jeunes touchés depuis 2012. Fabmobile (Innoviris 2017-18), FabÉcole (2019), communauté de 250+ makers à Ixelles.",
                           "lineHeight": 1.7,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
@@ -1218,8 +1227,8 @@
                           "type": "text",
                           "id": "mf1JJ",
                           "name": "ofCta",
-                          "fill": "#2d6a9f",
-                          "content": "DÉCOUVRIR OPENFAB →",
+                          "fill": "#5B9BD5",
+                          "content": "OPENFAB.BE →",
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 11,
                           "fontWeight": "700",
@@ -1279,7 +1288,7 @@
                           "id": "tOQ0I",
                           "name": "ptTitle",
                           "fill": "#e8eaed",
-                          "content": "Mais il manquait un maillon : la gouvernance.",
+                          "content": "Politype",
                           "lineHeight": 1.2,
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 22,
@@ -1289,10 +1298,10 @@
                           "type": "text",
                           "id": "fuPO8",
                           "name": "ptBody",
-                          "fill": "#c0ccd8bf",
+                          "fill": "#c8d4e0",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "Le Council of Makers était un début. Mais la mise à l'échelle a révélé un vide de gouvernance. La démocratie comme problème de design — à 900m du Parlement européen.",
+                          "content": "Le laboratoire de gouvernance participative. Jeux civiques, outils de démocratie, prototypage de nouvelles formes de décision collective. À 900m du Parlement européen.",
                           "lineHeight": 1.7,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
@@ -1302,8 +1311,8 @@
                           "type": "text",
                           "id": "RXTka",
                           "name": "ptCta",
-                          "fill": "#c47a2a",
-                          "content": "DÉCOUVRIR POLITYPE →",
+                          "fill": "#E8831A",
+                          "content": "POLITYPE.BE →",
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 11,
                           "fontWeight": "700",
@@ -1367,7 +1376,7 @@
                   "type": "text",
                   "id": "oVOUV",
                   "name": "ctLabel",
-                  "fill": "#6a7a8a80",
+                  "fill": "#E8831A",
                   "content": "05 — CONTACT",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 9,
@@ -1381,29 +1390,28 @@
                   "fill": "#e8eaed",
                   "content": "Entrons en contact.",
                   "fontFamily": "Atkinson Hyperlegible",
-                  "fontSize": 32,
-                  "fontWeight": "700",
-                  "letterSpacing": -0.5
+                  "fontSize": 36,
+                  "fontWeight": "800",
+                  "letterSpacing": -1
                 },
                 {
                   "type": "text",
                   "id": "qPYA0",
                   "name": "ctLead",
-                  "fill": "#c0ccd8bf",
+                  "fill": "#c8d4e0",
                   "textGrowth": "fixed-width",
                   "width": 480,
-                  "content": "Penseurs stratégiques. Esprits juridiques. Bâtisseurs de partenariats. Des personnes qui voient le long terme.",
+                  "content": "Partenariats institutionnels, co-financement de programmes, accords-cadres — une seule porte pour collaborer avec l'écosystème.",
                   "lineHeight": 1.7,
                   "fontFamily": "Spectral",
-                  "fontSize": 17,
-                  "fontWeight": "normal"
+                  "fontSize": 24,
+                  "fontStyle": "italic"
                 },
                 {
                   "type": "frame",
                   "id": "i6PVD",
                   "name": "ctTracks",
                   "width": "fill_container",
-                  "gap": 30,
                   "children": [
                     {
                       "type": "frame",
@@ -1426,8 +1434,8 @@
                           "type": "text",
                           "id": "ZOqjJ",
                           "name": "tr1head",
-                          "fill": "#e8eaed",
-                          "content": "☂️ Gouvernance & Vision",
+                          "fill": "#c8d4e0",
+                          "content": "☂️ Partenariats & Co-financement",
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 13,
                           "fontWeight": "700"
@@ -1436,10 +1444,10 @@
                           "type": "text",
                           "id": "fhNIE",
                           "name": "tr1desc",
-                          "fill": "#6a7a8a80",
+                          "fill": "#8a96a4",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "Partenariats stratégiques, financement, cadre légal, vision long terme.",
+                          "content": "Erasmus+, programmes régionaux, conventions avec les communes, accords-cadres européens.",
                           "lineHeight": 1.6,
                           "fontFamily": "Spectral",
                           "fontSize": 13,
@@ -1449,114 +1457,8 @@
                           "type": "text",
                           "id": "UnFnK",
                           "name": "tr1cta",
-                          "fill": "#4a7fa5",
-                          "content": "ÉCRIRE →",
-                          "fontFamily": "Atkinson Hyperlegible",
-                          "fontSize": 10,
-                          "fontWeight": "normal",
-                          "letterSpacing": 1.2
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "6pBQz",
-                      "name": "tr2",
-                      "width": "fill_container",
-                      "fill": "#131619",
-                      "stroke": {
-                        "thickness": 1,
-                        "fill": "#b4c8d826"
-                      },
-                      "layout": "vertical",
-                      "gap": 14,
-                      "padding": [
-                        28,
-                        24
-                      ],
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "ubcQF",
-                          "name": "tr2head",
-                          "fill": "#e8eaed",
-                          "content": "🫰 Démocratie & Jeux",
-                          "fontFamily": "Atkinson Hyperlegible",
-                          "fontSize": 13,
-                          "fontWeight": "700"
-                        },
-                        {
-                          "type": "text",
-                          "id": "bd2ia",
-                          "name": "tr2desc",
-                          "fill": "#6a7a8a80",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "Game design civique, outils de participation, recherche en gouvernance.",
-                          "lineHeight": 1.6,
-                          "fontFamily": "Spectral",
-                          "fontSize": 13,
-                          "fontWeight": "normal"
-                        },
-                        {
-                          "type": "text",
-                          "id": "ppCNs",
-                          "name": "tr2cta",
-                          "fill": "#6a7a8a80",
-                          "content": "BIENTÔT",
-                          "fontFamily": "Atkinson Hyperlegible",
-                          "fontSize": 10,
-                          "fontWeight": "normal",
-                          "letterSpacing": 1.2
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "5DMby",
-                      "name": "tr3",
-                      "width": "fill_container",
-                      "fill": "#131619",
-                      "stroke": {
-                        "thickness": 1,
-                        "fill": "#b4c8d826"
-                      },
-                      "layout": "vertical",
-                      "gap": 14,
-                      "padding": [
-                        28,
-                        24
-                      ],
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "LnZHU",
-                          "name": "tr3head",
-                          "fill": "#e8eaed",
-                          "content": "🧰 Faire & Communauté",
-                          "fontFamily": "Atkinson Hyperlegible",
-                          "fontSize": 13,
-                          "fontWeight": "700"
-                        },
-                        {
-                          "type": "text",
-                          "id": "nKYTQ",
-                          "name": "tr3desc",
-                          "fill": "#6a7a8a80",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "Makerspace, ateliers, fabrication, communauté de makers.",
-                          "lineHeight": 1.6,
-                          "fontFamily": "Spectral",
-                          "fontSize": 13,
-                          "fontWeight": "normal"
-                        },
-                        {
-                          "type": "text",
-                          "id": "IGJFF",
-                          "name": "tr3cta",
-                          "fill": "#6a7a8a80",
-                          "content": "BIENTÔT",
+                          "fill": "#5B9BD5",
+                          "content": "ÉCRIRE À SYNTONIE →",
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 10,
                           "fontWeight": "normal",
@@ -1565,18 +1467,6 @@
                       ]
                     }
                   ]
-                },
-                {
-                  "type": "text",
-                  "id": "ZqRA4",
-                  "name": "ctClosing",
-                  "fill": "#c47a2a",
-                  "content": "Si ça résonne, vous êtes au bon endroit.",
-                  "lineHeight": 1.4,
-                  "fontFamily": "Spectral",
-                  "fontSize": 22,
-                  "fontWeight": "300",
-                  "fontStyle": "italic"
                 }
               ]
             },
@@ -1613,7 +1503,7 @@
                   "fill": "#6a7a8a80",
                   "textGrowth": "fixed-width",
                   "width": 320,
-                  "content": "ASBL Syntonie · Ixelles, Bruxelles\nMentions légales · Politique de confidentialité",
+                  "content": "ASBL Syntonie · BE0844983628 · Ixelles, Bruxelles\nMentions légales · Politique de confidentialité",
                   "lineHeight": 1.8,
                   "textAlign": "right",
                   "fontFamily": "Atkinson Hyperlegible",
@@ -1632,10 +1522,11 @@
       "id": "8Hu7D",
       "x": 2500,
       "y": 0,
-      "name": "OpenFab — Warm Workshop",
+      "name": "OpenFab — clean Workshop",
       "clip": true,
       "width": 1440,
-      "fill": "#0c1520",
+      "height": 3438,
+      "fill": "#d8dfe6",
       "children": [
         {
           "type": "frame",
@@ -1874,7 +1765,7 @@
                       "id": "Hopsk",
                       "name": "ofN3t",
                       "fill": "#6a9abfbf",
-                      "content": "LA TRINITY",
+                      "content": "L'ÉCOSYSTÈME",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 12,
                       "fontWeight": "600",
@@ -2104,14 +1995,15 @@
           "id": "Xzllg",
           "name": "OF Main",
           "width": "fill_container",
-          "fill": "#0c1520",
+          "height": 3438,
+          "fill": "#ffffffff",
           "layout": "vertical",
           "children": [
             {
               "type": "rectangle",
               "id": "orfIE",
               "name": "Grid 59px Overlay",
-              "opacity": 0.12,
+              "opacity": 0,
               "fill": {
                 "type": "image",
                 "enabled": true,
@@ -2127,99 +2019,129 @@
               "name": "OF Hero",
               "width": "fill_container",
               "height": 708,
-              "fill": {
-                "type": "gradient",
-                "gradientType": "linear",
-                "enabled": true,
-                "rotation": 135,
-                "size": {
-                  "height": 1
-                },
-                "colors": [
-                  {
-                    "color": "#0e1a28",
-                    "position": 0
-                  },
-                  {
-                    "color": "#0c1520",
-                    "position": 1
-                  }
-                ]
-              },
-              "layout": "vertical",
-              "gap": 20,
+              "fill": "#ffffff",
+              "gap": 59,
               "padding": [
                 118,
                 59,
                 59,
                 118
               ],
-              "justifyContent": "center",
+              "alignItems": "center",
               "children": [
                 {
-                  "type": "text",
-                  "id": "e4IYI",
-                  "name": "ofHeroEye",
-                  "fill": "#2d6a9f",
-                  "content": "OPENFAB · MAKERSPACE · BRUXELLES",
-                  "fontFamily": "Atkinson Hyperlegible",
-                  "fontSize": 10,
-                  "fontWeight": "normal",
-                  "letterSpacing": 2.2
-                },
-                {
-                  "type": "text",
-                  "id": "c88Gd",
-                  "name": "ofHeroTitle",
-                  "fill": "#c8d8e8",
-                  "textGrowth": "fixed-width",
-                  "width": 640,
-                  "content": "Là où les idées\ndeviennent réelles.",
-                  "lineHeight": 0.95,
-                  "fontFamily": "Atkinson Hyperlegible",
-                  "fontSize": 72,
-                  "fontWeight": "800",
-                  "letterSpacing": -2
-                },
-                {
-                  "type": "text",
-                  "id": "Rwqcg",
-                  "name": "ofHeroSub",
-                  "fill": "#6a9abfbf",
-                  "textGrowth": "fixed-width",
-                  "width": 480,
-                  "content": "Un espace maker ouvert à tous. Outils, ateliers, communauté — le pont entre l'idée et la réalité.",
-                  "lineHeight": 1.6,
-                  "fontFamily": "Spectral",
-                  "fontSize": 20,
-                  "fontWeight": "300",
-                  "fontStyle": "italic"
-                },
-                {
                   "type": "frame",
-                  "id": "vVmWj",
-                  "name": "ofHeroSince",
-                  "gap": 16,
-                  "alignItems": "center",
+                  "id": "Pov8t",
+                  "name": "ofHeroLeft",
+                  "width": "fill_container",
+                  "height": 295,
+                  "fill": "#ffffff00",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": [
+                    0,
+                    59,
+                    0,
+                    0
+                  ],
+                  "justifyContent": "center",
                   "children": [
                     {
-                      "type": "rectangle",
-                      "id": "Fga4T",
-                      "name": "ofSinceLine",
-                      "fill": "#4a6a9080",
-                      "width": 32,
-                      "height": 1
-                    },
-                    {
                       "type": "text",
-                      "id": "4RMOV",
-                      "name": "ofSinceTxt",
-                      "fill": "#6a8aaa80",
-                      "content": "DEPUIS 2012 · IXELLES",
+                      "id": "e4IYI",
+                      "name": "ofHeroEye",
+                      "fill": "#DA291C",
+                      "content": "OPENFAB · MAKERSPACE · IXELLES",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 10,
                       "fontWeight": "normal",
-                      "letterSpacing": 1.6
+                      "letterSpacing": 2.2
+                    },
+                    {
+                      "type": "text",
+                      "id": "c88Gd",
+                      "name": "ofHeroTitle",
+                      "fill": "#0c1520",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "The right tool\nfor the right job.",
+                      "lineHeight": 0.95,
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 64,
+                      "fontWeight": "800",
+                      "letterSpacing": -2
+                    },
+                    {
+                      "type": "text",
+                      "id": "Rwqcg",
+                      "name": "ofHeroSub",
+                      "fill": "#DA291C",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Un makerspace à Ixelles. Machines, communauté, projets.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Spectral",
+                      "fontSize": 28,
+                      "fontStyle": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "RbCWA",
+                  "name": "ofDefCard",
+                  "width": 236,
+                  "height": 295,
+                  "fill": "#e8eaed",
+                  "stroke": {
+                    "thickness": 3,
+                    "fill": "#DA291C"
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "MgEq8",
+                      "name": "ofDefWord",
+                      "fill": "#0c1520",
+                      "content": "openfab",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 18,
+                      "fontWeight": "800",
+                      "letterSpacing": -0.3
+                    },
+                    {
+                      "type": "text",
+                      "id": "3QKdA",
+                      "name": "ofDefPhon",
+                      "fill": "#DA291C",
+                      "content": "open + fabrication",
+                      "fontFamily": "Syne Mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "WDUZ1",
+                      "name": "ofDefSep",
+                      "fill": "#DA291C",
+                      "width": "fill_container",
+                      "height": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "7PmYG",
+                      "name": "ofDefTxt",
+                      "fill": "#1a2535",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Atelier ouvert. Fabrication opensource. Un maker a besoin d'un makerspace comme un cuisinier a besoin d'une cuisine.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Spectral",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -2230,8 +2152,8 @@
               "id": "N8kH6",
               "name": "OF Workshop",
               "width": "fill_container",
-              "height": 590,
-              "fill": "#121e2e",
+              "height": 826,
+              "fill": "#ffffff",
               "stroke": {
                 "thickness": {
                   "bottom": 1
@@ -2249,8 +2171,8 @@
                   "type": "text",
                   "id": "YN37q",
                   "name": "ofWLabel",
-                  "fill": "#6a8aaa80",
-                  "content": "01 — L'ATELIER",
+                  "fill": "#DA291C",
+                  "content": "01 · CE QU'ON A CONSTRUIT",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 9,
                   "fontWeight": "normal",
@@ -2260,28 +2182,28 @@
                   "type": "text",
                   "id": "hMs6K",
                   "name": "ofWTitle",
-                  "fill": "#c8d8e8",
+                  "fill": "#0c1520",
                   "textGrowth": "fixed-width",
                   "width": 560,
-                  "content": "Un atelier ouvert.\nDes outils pour tous.",
+                  "content": "250+ makers.\n13 000 jeunes touchés.",
                   "lineHeight": 1.1,
                   "fontFamily": "Atkinson Hyperlegible",
-                  "fontSize": 32,
-                  "fontWeight": "700",
-                  "letterSpacing": -0.5
+                  "fontSize": 36,
+                  "fontWeight": "800",
+                  "letterSpacing": -1
                 },
                 {
                   "type": "text",
                   "id": "XfwPw",
                   "name": "ofWLead",
-                  "fill": "#6a9abfbf",
+                  "fill": "#DA291C",
                   "textGrowth": "fixed-width",
                   "width": 560,
-                  "content": "OpenFab opère l'espace maker : outils, espace, ateliers, communauté. Pendant que Syntonie pense et Politype expérimente, OpenFab construit.",
+                  "content": "Depuis 2012, OpenFab accueille ceux qui veulent fabriquer. Le Fabmobile a emmené les outils dans les écoles (Innoviris 2017-18). FabÉcole a formé les enseignants. En 2020, la communauté s'est auto-organisée pour produire 1500 visières et 4500 masques.",
                   "lineHeight": 1.7,
                   "fontFamily": "Spectral",
-                  "fontSize": 18,
-                  "fontWeight": "normal"
+                  "fontSize": 24,
+                  "fontStyle": "italic"
                 },
                 {
                   "type": "frame",
@@ -2295,10 +2217,10 @@
                       "id": "FgmDk",
                       "name": "tool1",
                       "width": "fill_container",
-                      "fill": "#0c1520",
+                      "fill": "#f8f8f8",
                       "stroke": {
                         "thickness": 1,
-                        "fill": "#4a8ab826"
+                        "fill": "#DA291C26"
                       },
                       "layout": "vertical",
                       "gap": 12,
@@ -2315,13 +2237,13 @@
                           "height": 32,
                           "iconFontName": "wrench",
                           "iconFontFamily": "lucide",
-                          "fill": "#2d6a9f"
+                          "fill": "#DA291C"
                         },
                         {
                           "type": "text",
                           "id": "pDcjv",
                           "name": "t1name",
-                          "fill": "#c8d8e8",
+                          "fill": "#0c1520",
                           "content": "Accès aux outils",
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 16,
@@ -2331,7 +2253,7 @@
                           "type": "text",
                           "id": "LYQpu",
                           "name": "t1desc",
-                          "fill": "#6a9abf80",
+                          "fill": "#4a5568",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Impression 3D, découpe laser, CNC, électronique, couture, bois.",
@@ -2347,10 +2269,10 @@
                       "id": "ivzDG",
                       "name": "tool2",
                       "width": "fill_container",
-                      "fill": "#0c1520",
+                      "fill": "#f8f8f8",
                       "stroke": {
                         "thickness": 1,
-                        "fill": "#4a8ab826"
+                        "fill": "#DA291C26"
                       },
                       "layout": "vertical",
                       "gap": 12,
@@ -2367,13 +2289,13 @@
                           "height": 32,
                           "iconFontName": "users",
                           "iconFontFamily": "lucide",
-                          "fill": "#2d6a9f"
+                          "fill": "#DA291C"
                         },
                         {
                           "type": "text",
                           "id": "HAIN3",
                           "name": "t2name",
-                          "fill": "#c8d8e8",
+                          "fill": "#0c1520",
                           "content": "Ateliers & formation",
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 16,
@@ -2383,7 +2305,7 @@
                           "type": "text",
                           "id": "lspf4",
                           "name": "t2desc",
-                          "fill": "#6a9abf80",
+                          "fill": "#4a5568",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Apprentissage informel, formation à la sécurité, workshops communautaires.",
@@ -2399,10 +2321,10 @@
                       "id": "R9tQi",
                       "name": "tool3",
                       "width": "fill_container",
-                      "fill": "#0c1520",
+                      "fill": "#f8f8f8",
                       "stroke": {
                         "thickness": 1,
-                        "fill": "#4a8ab826"
+                        "fill": "#DA291C26"
                       },
                       "layout": "vertical",
                       "gap": 12,
@@ -2419,13 +2341,13 @@
                           "height": 32,
                           "iconFontName": "heart",
                           "iconFontFamily": "lucide",
-                          "fill": "#2d6a9f"
+                          "fill": "#DA291C"
                         },
                         {
                           "type": "text",
                           "id": "Dz4R6",
                           "name": "t3name",
-                          "fill": "#c8d8e8",
+                          "fill": "#0c1520",
                           "content": "Communauté maker",
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 16,
@@ -2435,7 +2357,7 @@
                           "type": "text",
                           "id": "3s5Nr",
                           "name": "t3desc",
-                          "fill": "#6a9abf80",
+                          "fill": "#4a5568",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Neurodiversité bienvenue. Accès universel aux outils. Faire ensemble.",
@@ -2456,7 +2378,7 @@
               "name": "OF Role",
               "width": "fill_container",
               "height": 590,
-              "fill": "#162436",
+              "fill": "#ffffff",
               "stroke": {
                 "thickness": {
                   "bottom": 1
@@ -2474,8 +2396,8 @@
                   "type": "text",
                   "id": "oYGK1",
                   "name": "ofRLabel",
-                  "fill": "#6a8aaa80",
-                  "content": "02 — CE QU'ON FAIT",
+                  "fill": "#DA291C",
+                  "content": "02 · VIENS FAIRE",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 9,
                   "fontWeight": "normal",
@@ -2485,15 +2407,15 @@
                   "type": "text",
                   "id": "dx3C2",
                   "name": "ofRTitle",
-                  "fill": "#c8d8e8",
+                  "fill": "#0c1520",
                   "textGrowth": "fixed-width",
                   "width": 560,
-                  "content": "Les mains. L'atelier.\nL'expression physique.",
+                  "content": "Les outils sont là.\nÀ toi de jouer.",
                   "lineHeight": 1.1,
                   "fontFamily": "Atkinson Hyperlegible",
-                  "fontSize": 32,
-                  "fontWeight": "700",
-                  "letterSpacing": -0.5
+                  "fontSize": 36,
+                  "fontWeight": "800",
+                  "letterSpacing": -1
                 },
                 {
                   "type": "frame",
@@ -2519,7 +2441,7 @@
                           "type": "text",
                           "id": "XV8O4",
                           "name": "ofDoH",
-                          "fill": "#2d6a9f",
+                          "fill": "#DA291C",
                           "content": "✓  CE QUE NOUS FAISONS",
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 12,
@@ -2538,8 +2460,8 @@
                           "type": "text",
                           "id": "LrR8H",
                           "name": "ofDo1",
-                          "fill": "#6a9abfbf",
-                          "content": "→ Fournir les outils (propriété Syntonie)",
+                          "fill": "#2a3545",
+                          "content": "→ Accès aux machines (impression 3D, laser, CNC, bois)",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
@@ -2549,8 +2471,8 @@
                           "type": "text",
                           "id": "P9yOV",
                           "name": "ofDo2",
-                          "fill": "#6a9abfbf",
-                          "content": "→ Organiser événements et ateliers",
+                          "fill": "#2a3545",
+                          "content": "→ Ateliers et formations communautaires",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
@@ -2560,8 +2482,8 @@
                           "type": "text",
                           "id": "bmdoL",
                           "name": "ofDo3",
-                          "fill": "#6a9abfbf",
-                          "content": "→ Enseigner le faire",
+                          "fill": "#2a3545",
+                          "content": "→ Événements makers et soirées ouvertes",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
@@ -2571,8 +2493,8 @@
                           "type": "text",
                           "id": "4WBTK",
                           "name": "ofDo4",
-                          "fill": "#6a9abfbf",
-                          "content": "→ Accueillir la neurodiversité",
+                          "fill": "#2a3545",
+                          "content": "→ Accompagnement de projets personnels",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
@@ -2582,8 +2504,8 @@
                           "type": "text",
                           "id": "WKZJI",
                           "name": "ofDo5",
-                          "fill": "#6a9abfbf",
-                          "content": "→ Construire la communauté",
+                          "fill": "#2a3545",
+                          "content": "→ Communauté neurodiverse-friendly",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
@@ -2627,8 +2549,8 @@
                           "type": "text",
                           "id": "bBoCH",
                           "name": "ofDont1",
-                          "fill": "#6a9abfbf",
-                          "content": "✕ Définir la stratégie légale (Syntonie)",
+                          "fill": "#2a3545",
+                          "content": "✕ Un bureau de coworking",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
@@ -2638,8 +2560,8 @@
                           "type": "text",
                           "id": "TMA3O",
                           "name": "ofDont2",
-                          "fill": "#6a9abfbf",
-                          "content": "✕ Mener des expériences de gouvernance (Politype)",
+                          "fill": "#2a3545",
+                          "content": "✕ Un service d'impression à la demande",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
@@ -2649,8 +2571,8 @@
                           "type": "text",
                           "id": "WxOsT",
                           "name": "ofDont3",
-                          "fill": "#6a9abfbf",
-                          "content": "✕ Posséder les actifs",
+                          "fill": "#2a3545",
+                          "content": "✕ Un incubateur de startups",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
@@ -2664,10 +2586,209 @@
             },
             {
               "type": "frame",
+              "id": "mW2ZX",
+              "name": "OF Ecosystem",
+              "width": "fill_container",
+              "height": 590,
+              "fill": "#ffffff",
+              "stroke": {
+                "thickness": {
+                  "bottom": 1
+                },
+                "fill": "#4a8ab826"
+              },
+              "layout": "vertical",
+              "gap": 59,
+              "padding": [
+                118,
+                59
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "NiTYG",
+                  "name": "ofEcoLabel",
+                  "fill": "#DA291C",
+                  "content": "03 · L'ÉCOSYSTÈME",
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 9,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.8
+                },
+                {
+                  "type": "text",
+                  "id": "GBLUq",
+                  "name": "ofEcoTitle",
+                  "fill": "#0c1520",
+                  "textGrowth": "fixed-width",
+                  "width": 560,
+                  "content": "OpenFab fait partie de quelque chose de plus grand.",
+                  "lineHeight": 1.1,
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 36,
+                  "fontWeight": "800",
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "text",
+                  "id": "tklSw",
+                  "name": "ofEcoLead",
+                  "fill": "#DA291C",
+                  "textGrowth": "fixed-width",
+                  "width": 520,
+                  "content": "Les outils appartiennent à Syntonie ASBL. La gouvernance se prototype chez Politype. Et toi, tu fabriques ici. Trois rôles, un organisme.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "Spectral",
+                  "fontSize": 24,
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "frame",
+                  "id": "QiEOW",
+                  "name": "ofEcoBadge",
+                  "fill": "#DA291C14",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#DA291C66"
+                  },
+                  "gap": 12,
+                  "padding": [
+                    12,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wa449",
+                      "name": "ofEcoBadgeTxt",
+                      "fill": "#DA291C",
+                      "content": "☂️ Syntonie tient la structure  ·  🫰 Politype invente la gouvernance  ·  🧰 Tu fais.",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 11,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qmzfO",
+              "name": "OF Contact",
+              "width": "fill_container",
+              "height": 590,
+              "fill": "#ffffff",
+              "stroke": {
+                "thickness": {
+                  "bottom": 1
+                },
+                "fill": "#4a8ab826"
+              },
+              "layout": "vertical",
+              "gap": 59,
+              "padding": [
+                118,
+                59
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "4IggV",
+                  "name": "ofCtLabel",
+                  "fill": "#DA291C",
+                  "content": "04 · REJOINDRE",
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 9,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.8
+                },
+                {
+                  "type": "text",
+                  "id": "oJaQp",
+                  "name": "ofCtTitle",
+                  "fill": "#0c1520",
+                  "content": "Viens voir l'atelier.",
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 36,
+                  "fontWeight": "800",
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "text",
+                  "id": "J1Afm",
+                  "name": "ofCtLead",
+                  "fill": "#DA291C",
+                  "textGrowth": "fixed-width",
+                  "width": 480,
+                  "content": "Passe un mardi soir. Regarde les machines. Rencontre la communauté. On t'explique tout sur place.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "Spectral",
+                  "fontSize": 24,
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "frame",
+                  "id": "Jvt5o",
+                  "name": "ofCtTrack",
+                  "width": 400,
+                  "fill": "#f0f0f0",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#DA291C26"
+                  },
+                  "layout": "vertical",
+                  "gap": 14,
+                  "padding": [
+                    28,
+                    24
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "w60YI",
+                      "name": "ofCtHead",
+                      "fill": "#0c1520",
+                      "content": "🧰 Accès Makerspace & Communauté",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "K1cgX",
+                      "name": "ofCtDesc",
+                      "fill": "#4a5568",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Visites, abonnements, ateliers, projets personnels.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Spectral",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "lUQKm",
+                      "name": "ofCtCta",
+                      "fill": "#DA291C",
+                      "content": "VENIR MARDI →",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "700",
+                      "letterSpacing": 1.2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
               "id": "ugILq",
               "name": "OF Footer",
               "width": "fill_container",
-              "fill": "#080f18",
+              "fill": "#0c210fcc",
               "stroke": {
                 "thickness": {
                   "top": 1
@@ -2719,9 +2840,10 @@
       "id": "qLhKi",
       "x": 4100,
       "y": 0,
-      "name": "Politype — Balanced Horizon",
+      "name": "Politype — warm attractor landscape",
       "clip": true,
       "width": 1440,
+      "height": 3910,
       "fill": "#150d08",
       "children": [
         {
@@ -2961,7 +3083,7 @@
                       "id": "apwbd",
                       "name": "poN3t",
                       "fill": "#d4916abf",
-                      "content": "LA TRINITY",
+                      "content": "L'ÉCOSYSTÈME",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 12,
                       "fontWeight": "600",
@@ -3191,6 +3313,7 @@
           "id": "4hUvq",
           "name": "PO Main",
           "width": "fill_container",
+          "height": 3910,
           "fill": "#150d08",
           "layout": "vertical",
           "children": [
@@ -3215,102 +3338,133 @@
               "width": "fill_container",
               "height": 708,
               "fill": {
-                "type": "gradient",
-                "gradientType": "linear",
+                "type": "image",
                 "enabled": true,
-                "rotation": 135,
-                "size": {
-                  "height": 1
-                },
-                "colors": [
-                  {
-                    "color": "#1e1208",
-                    "position": 0
-                  },
-                  {
-                    "color": "#150d06",
-                    "position": 0.5
-                  },
-                  {
-                    "color": "#1a1008",
-                    "position": 1
-                  }
-                ]
+                "url": "./images/generated-1773245459178.png",
+                "mode": "fill"
               },
-              "layout": "vertical",
-              "gap": 20,
+              "gap": 59,
               "padding": [
                 118,
                 59,
                 59,
                 118
               ],
-              "justifyContent": "center",
+              "alignItems": "center",
               "children": [
                 {
-                  "type": "text",
-                  "id": "2q8tH",
-                  "name": "poHeroEye",
-                  "fill": "#c47a2a",
-                  "content": "POLITYPE · DÉMOCRATIE · BRUXELLES",
-                  "fontFamily": "Atkinson Hyperlegible",
-                  "fontSize": 10,
-                  "fontWeight": "normal",
-                  "letterSpacing": 2.2
-                },
-                {
-                  "type": "text",
-                  "id": "O4kgC",
-                  "name": "poHeroTitle",
-                  "fill": "#F0E8E0",
-                  "textGrowth": "fixed-width",
-                  "width": 680,
-                  "content": "La démocratie\nest en beta.",
-                  "lineHeight": 0.95,
-                  "fontFamily": "Atkinson Hyperlegible",
-                  "fontSize": 72,
-                  "fontWeight": "800",
-                  "letterSpacing": -2
-                },
-                {
-                  "type": "text",
-                  "id": "PfT7R",
-                  "name": "poHeroSub",
-                  "fill": "#d4916abf",
-                  "textGrowth": "fixed-width",
-                  "width": 500,
-                  "content": "Et si on traitait la gouvernance comme du logiciel open-source ? Prototyper. Tester. Itérer. Casser. Reconstruire.",
-                  "lineHeight": 1.6,
-                  "fontFamily": "Spectral",
-                  "fontSize": 20,
-                  "fontWeight": "300",
-                  "fontStyle": "italic"
-                },
-                {
                   "type": "frame",
-                  "id": "82Jqj",
-                  "name": "poHeroSince",
-                  "gap": 16,
-                  "alignItems": "center",
+                  "id": "LmpOn",
+                  "name": "poHeroLeft",
+                  "width": "fill_container",
+                  "height": 295,
+                  "fill": "#150d08c0",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": [
+                    0,
+                    59,
+                    0,
+                    0
+                  ],
+                  "justifyContent": "center",
                   "children": [
                     {
-                      "type": "rectangle",
-                      "id": "YAeVA",
-                      "name": "poSinceLine",
-                      "fill": "#c47a2a80",
-                      "width": 32,
-                      "height": 1
-                    },
-                    {
                       "type": "text",
-                      "id": "OHC11",
-                      "name": "poSinceTxt",
-                      "fill": "#c47a2a80",
-                      "content": "900M DU PARLEMENT EUROPÉEN",
+                      "id": "2q8tH",
+                      "name": "poHeroEye",
+                      "fill": "#60B5FF",
+                      "content": "POLITYPE · GOVERNANCE · BRUXELLES",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 10,
                       "fontWeight": "normal",
-                      "letterSpacing": 1.6
+                      "letterSpacing": 2.2
+                    },
+                    {
+                      "type": "text",
+                      "id": "O4kgC",
+                      "name": "poHeroTitle",
+                      "fill": "#ffffff",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Democracy needs\nbetter tools.",
+                      "lineHeight": 0.95,
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 64,
+                      "fontWeight": "800",
+                      "letterSpacing": -2
+                    },
+                    {
+                      "type": "text",
+                      "id": "PfT7R",
+                      "name": "poHeroSub",
+                      "fill": "#E8D5C0",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Et si la gouvernance se prototypait comme un objet ? Impression 3D, électronique, vote quadratique — distillés en mécaniques de jeu.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Spectral",
+                      "fontSize": 28,
+                      "fontStyle": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "b2ZO1",
+                  "name": "poDefCard",
+                  "width": 236,
+                  "height": 295,
+                  "fill": "#F0E8E0",
+                  "stroke": {
+                    "thickness": 3,
+                    "fill": "#3A8FD6"
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PsquF",
+                      "name": "poDefWord",
+                      "fill": "#150d08",
+                      "content": "politype",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 18,
+                      "fontWeight": "800",
+                      "letterSpacing": -0.3
+                    },
+                    {
+                      "type": "text",
+                      "id": "Rq7vD",
+                      "name": "poDefPhon",
+                      "fill": "#3A8FD6",
+                      "content": "polity + type",
+                      "fontFamily": "Syne Mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "cqVb1",
+                      "name": "poDefSep",
+                      "fill": "#3A8FD6",
+                      "width": "fill_container",
+                      "height": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "Cq4RN",
+                      "name": "poDefTxt",
+                      "fill": "#2a1a0e",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Polity : organisation politique, groupe avec identité collective et capacité de mobilisation. Type : prototype, archétype. Types multiples de gouvernance dans un seul cadre.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Spectral",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -3321,7 +3475,7 @@
               "id": "sJh3y",
               "name": "PO Vision",
               "width": "fill_container",
-              "height": 590,
+              "height": 708,
               "fill": "#1a1208",
               "stroke": {
                 "thickness": {
@@ -3340,6 +3494,7 @@
                   "id": "ADaXT",
                   "name": "poVBody",
                   "width": "fill_container",
+                  "height": "fill_container",
                   "layout": "vertical",
                   "gap": 20,
                   "children": [
@@ -3347,8 +3502,8 @@
                       "type": "text",
                       "id": "VhDsI",
                       "name": "poVLabel",
-                      "fill": "#c47a2a80",
-                      "content": "01 — VISION",
+                      "fill": "#3A8FD6",
+                      "content": "01 · RECONNAISSANCE",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 9,
                       "fontWeight": "normal",
@@ -3361,34 +3516,35 @@
                       "fill": "#F0E8E0",
                       "textGrowth": "fixed-width",
                       "width": 480,
-                      "content": "La démocratie comme problème de design.",
+                      "content": "Vous n'êtes pas seuls. Et vous n'avez pas tort.",
                       "lineHeight": 1.1,
                       "fontFamily": "Atkinson Hyperlegible",
-                      "fontSize": 32,
-                      "fontWeight": "700",
-                      "letterSpacing": -0.5
+                      "fontSize": 36,
+                      "fontWeight": "800",
+                      "letterSpacing": -1
                     },
                     {
                       "type": "text",
                       "id": "5b5X6",
                       "name": "poVP1",
-                      "fill": "#d4916abf",
+                      "fill": "#E8D5C0",
                       "textGrowth": "fixed-width",
                       "width": 460,
-                      "content": "Le nom vient de polity (organisation politique) + type (prototype, archétype). Types multiples de gouvernance dans un seul cadre.",
+                      "content": "Des collectifs comme DémocratieXXL, des mouvements citoyens, des associations de quartier — vous faites déjà le travail. Mais il manque souvent deux choses : un atelier pour prototyper vos idées, et une structure qui tient dans la durée.",
                       "lineHeight": 1.75,
                       "fontFamily": "Spectral",
-                      "fontSize": 17,
-                      "fontWeight": "normal"
+                      "fontSize": 24,
+                      "fontStyle": "italic"
                     },
                     {
                       "type": "frame",
                       "id": "kgNER",
                       "name": "poVBadge",
-                      "fill": "#c47a2a14",
+                      "width": "fill_container",
+                      "fill": "#3A8FD614",
                       "stroke": {
                         "thickness": 1,
-                        "fill": "#c47a2a66"
+                        "fill": "#3A8FD666"
                       },
                       "gap": 12,
                       "padding": [
@@ -3401,8 +3557,8 @@
                           "type": "text",
                           "id": "QRtQ9",
                           "name": "poVBadgeTxt",
-                          "fill": "#d4916a",
-                          "content": "🫰  Là où Plurality rencontre la pratique.",
+                          "fill": "#3A8FD6",
+                          "content": "🫰  Politype complète l'écosystème : gouvernance + fabrication + vision stratégique.",
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 11,
                           "fontWeight": "normal",
@@ -3421,7 +3577,7 @@
                     "thickness": {
                       "left": 2
                     },
-                    "fill": "#c47a2a"
+                    "fill": "#3A8FD6"
                   },
                   "layout": "vertical",
                   "gap": 16,
@@ -3439,7 +3595,7 @@
                       "fill": "#F0E8E0",
                       "textGrowth": "fixed-width",
                       "width": 340,
-                      "content": "« La démocratie n'est pas terminée. Elle est en beta permanente. »",
+                      "content": "« Vous n'êtes pas incomplets — vous êtes prêts pour le prochain pas. »",
                       "lineHeight": 1.55,
                       "fontFamily": "Spectral",
                       "fontSize": 22,
@@ -3450,7 +3606,7 @@
                       "type": "text",
                       "id": "VS2PY",
                       "name": "poVAnnot",
-                      "fill": "#c47a2a80",
+                      "fill": "#3A8FD6",
                       "content": "POLITY + TYPE = POLITYPE",
                       "fontFamily": "Atkinson Hyperlegible",
                       "fontSize": 10,
@@ -3485,8 +3641,8 @@
                   "type": "text",
                   "id": "AW2EW",
                   "name": "poMLabel",
-                  "fill": "#c47a2a80",
-                  "content": "02 — MÉTHODOLOGIE",
+                  "fill": "#3A8FD6",
+                  "content": "02 · GAMELAB",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 9,
                   "fontWeight": "normal",
@@ -3499,12 +3655,12 @@
                   "fill": "#F0E8E0",
                   "textGrowth": "fixed-width",
                   "width": 560,
-                  "content": "Jeux de gouvernance.\nParticipation jouable.",
+                  "content": "Le jeu comme outil\nde gouvernance.",
                   "lineHeight": 1.1,
                   "fontFamily": "Atkinson Hyperlegible",
-                  "fontSize": 32,
-                  "fontWeight": "700",
-                  "letterSpacing": -0.5
+                  "fontSize": 36,
+                  "fontWeight": "800",
+                  "letterSpacing": -1
                 },
                 {
                   "type": "frame",
@@ -3545,7 +3701,7 @@
                           "id": "nzMxP",
                           "name": "poMC1n",
                           "fill": "#F0E8E0",
-                          "content": "Jeux civiques",
+                          "content": "Passeport Maker",
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 16,
                           "fontWeight": "700"
@@ -3554,10 +3710,10 @@
                           "type": "text",
                           "id": "RKUJJ",
                           "name": "poMC1d",
-                          "fill": "#d4916a80",
+                          "fill": "#E8D5C080",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "Prise de décision basée sur le jeu. Simplifier la complexité par le play.",
+                          "content": "Portfolio vivant de compétences. Apprendre en faisant, documenter en jouant. Depuis 2017.",
                           "lineHeight": 1.65,
                           "fontFamily": "Spectral",
                           "fontSize": 14,
@@ -3597,7 +3753,7 @@
                           "id": "Otc3y",
                           "name": "poMC2n",
                           "fill": "#F0E8E0",
-                          "content": "Neuro-inclusif",
+                          "content": "L'Enigmaker",
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 16,
                           "fontWeight": "700"
@@ -3606,10 +3762,10 @@
                           "type": "text",
                           "id": "ndj12",
                           "name": "poMC2d",
-                          "fill": "#d4916a80",
+                          "fill": "#E8D5C080",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "Participation accessible à toutes les formes de pensée et d'expression.",
+                          "content": "Soirées publiques de découverte de jeux de société. Sensibiliser par le plaisir. Maker Faire 2023.",
                           "lineHeight": 1.65,
                           "fontFamily": "Spectral",
                           "fontSize": 14,
@@ -3649,7 +3805,7 @@
                           "id": "yBp6n",
                           "name": "poMC3n",
                           "fill": "#F0E8E0",
-                          "content": "Itération permanente",
+                          "content": "SALANBAYOU",
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 16,
                           "fontWeight": "700"
@@ -3658,10 +3814,10 @@
                           "type": "text",
                           "id": "Ey2qX",
                           "name": "poMC3d",
-                          "fill": "#d4916a80",
+                          "fill": "#E8D5C080",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "Tester, itérer, casser, reconstruire. La démocratie comme processus vivant.",
+                          "content": "Game design civique. La gouvernance comme problème de jeu. En développement.",
                           "lineHeight": 1.65,
                           "fontFamily": "Spectral",
                           "fontSize": 14,
@@ -3697,8 +3853,8 @@
                   "type": "text",
                   "id": "XNFCt",
                   "name": "poRLabel",
-                  "fill": "#c47a2a80",
-                  "content": "03 — NOTRE RÔLE",
+                  "fill": "#3A8FD6",
+                  "content": "03 · CE QU'ON APPORTE",
                   "fontFamily": "Atkinson Hyperlegible",
                   "fontSize": 9,
                   "fontWeight": "normal",
@@ -3711,12 +3867,12 @@
                   "fill": "#F0E8E0",
                   "textGrowth": "fixed-width",
                   "width": 600,
-                  "content": "Le cœur. Les expérimentateurs.\nLes prototypeurs de démocratie.",
+                  "content": "Prototyper la gouvernance.\nPar le jeu. Par le faire.",
                   "lineHeight": 1.1,
                   "fontFamily": "Atkinson Hyperlegible",
-                  "fontSize": 32,
-                  "fontWeight": "700",
-                  "letterSpacing": -0.5
+                  "fontSize": 36,
+                  "fontWeight": "800",
+                  "letterSpacing": -1
                 },
                 {
                   "type": "frame",
@@ -3742,7 +3898,7 @@
                           "type": "text",
                           "id": "X83Td",
                           "name": "poDoH",
-                          "fill": "#c47a2a",
+                          "fill": "#3A8FD6",
                           "content": "✓  CE QUE NOUS FAISONS",
                           "fontFamily": "Atkinson Hyperlegible",
                           "fontSize": 12,
@@ -3761,8 +3917,8 @@
                           "type": "text",
                           "id": "c9nZj",
                           "name": "poDo1",
-                          "fill": "#d4916abf",
-                          "content": "→ Designer des jeux de gouvernance",
+                          "fill": "#E8D5C0",
+                          "content": "→ Méthodologies de gouvernance participative",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
@@ -3772,8 +3928,8 @@
                           "type": "text",
                           "id": "QLeiO",
                           "name": "poDo2",
-                          "fill": "#d4916abf",
-                          "content": "→ Prototyper des outils démocratiques",
+                          "fill": "#E8D5C0",
+                          "content": "→ Accès à un makerspace (via OpenFab)",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
@@ -3783,8 +3939,8 @@
                           "type": "text",
                           "id": "oAGfT",
                           "name": "poDo3",
-                          "fill": "#d4916abf",
-                          "content": "→ Animer des ateliers civiques",
+                          "fill": "#E8D5C0",
+                          "content": "→ Structure légale pérenne (via Syntonie)",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
@@ -3794,8 +3950,8 @@
                           "type": "text",
                           "id": "P9Fsb",
                           "name": "poDo4",
-                          "fill": "#d4916abf",
-                          "content": "→ Simplifier les systèmes complexes",
+                          "fill": "#E8D5C0",
+                          "content": "→ Réseau européen de partenaires",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
@@ -3805,8 +3961,8 @@
                           "type": "text",
                           "id": "P85xt",
                           "name": "poDo5",
-                          "fill": "#d4916abf",
-                          "content": "→ Rendre la participation jouable",
+                          "fill": "#E8D5C0",
+                          "content": "→ Game design comme outil de facilitation",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
@@ -3850,8 +4006,8 @@
                           "type": "text",
                           "id": "zrynH",
                           "name": "poDont1",
-                          "fill": "#d4916abf",
-                          "content": "✕ Être un makerspace généraliste",
+                          "fill": "#E8D5C0",
+                          "content": "✕ Remplacer vos combats existants",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
@@ -3861,8 +4017,8 @@
                           "type": "text",
                           "id": "bAVlb",
                           "name": "poDont2",
-                          "fill": "#d4916abf",
-                          "content": "✕ Faire de la gamification corporate",
+                          "fill": "#E8D5C0",
+                          "content": "✕ Imposer un modèle de gouvernance",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
@@ -3872,8 +4028,8 @@
                           "type": "text",
                           "id": "8Zo5W",
                           "name": "poDont3",
-                          "fill": "#d4916abf",
-                          "content": "✕ Défendre un parti politique",
+                          "fill": "#E8D5C0",
+                          "content": "✕ Prendre des positions partisanes",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
@@ -3883,14 +4039,211 @@
                           "type": "text",
                           "id": "oKUXH",
                           "name": "poDont4",
-                          "fill": "#d4916abf",
-                          "content": "✕ Prendre des positions idéologiques",
+                          "fill": "#E8D5C0",
+                          "content": "✕ Faire de la gamification corporate",
                           "lineHeight": 1.5,
                           "fontFamily": "Spectral",
                           "fontSize": 15,
                           "fontWeight": "normal"
                         }
                       ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "PW2I0",
+              "name": "PO Ecosystem",
+              "width": "fill_container",
+              "height": 590,
+              "fill": "#1e1510",
+              "stroke": {
+                "thickness": {
+                  "bottom": 1
+                },
+                "fill": "#c47a2a26"
+              },
+              "layout": "vertical",
+              "gap": 59,
+              "padding": [
+                118,
+                59
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Wm4TH",
+                  "name": "poEcoLabel",
+                  "fill": "#3A8FD6",
+                  "content": "04 · L'ÉCOSYSTÈME",
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 9,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.8
+                },
+                {
+                  "type": "text",
+                  "id": "pYlyn",
+                  "name": "poEcoTitle",
+                  "fill": "#F0E8E0",
+                  "content": "Le triangle complet.",
+                  "lineHeight": 1.1,
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 36,
+                  "fontWeight": "800",
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "text",
+                  "id": "XXim9",
+                  "name": "poEcoLead",
+                  "fill": "#E8D5C0",
+                  "textGrowth": "fixed-width",
+                  "width": 520,
+                  "content": "Tous les membres font partie de Syntonie ASBL. Ils s'organisent en clusters et projets selon leurs besoins. Politype apporte la gouvernance. OpenFab apporte les mains. Syntonie tient le cadre.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "Spectral",
+                  "fontSize": 24,
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "frame",
+                  "id": "nk5Rb",
+                  "name": "poEcoBadge",
+                  "fill": "#3A8FD614",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#3A8FD666"
+                  },
+                  "gap": 12,
+                  "padding": [
+                    12,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "EXSPa",
+                      "name": "poEcoBadgeTxt",
+                      "fill": "#3A8FD6",
+                      "content": "🫰 Tu gouvernes  ·  🧰 OpenFab fabrique  ·  ☂️ Syntonie abrite.",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 11,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "HnUvc",
+              "name": "PO Contact",
+              "width": "fill_container",
+              "height": 590,
+              "fill": "#0f0a06",
+              "stroke": {
+                "thickness": {
+                  "bottom": 1
+                },
+                "fill": "#c47a2a26"
+              },
+              "layout": "vertical",
+              "gap": 59,
+              "padding": [
+                118,
+                59
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "oGQ3u",
+                  "name": "poCtLabel",
+                  "fill": "#3A8FD6",
+                  "content": "05 · REJOINDRE",
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 9,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.8
+                },
+                {
+                  "type": "text",
+                  "id": "cUdMw",
+                  "name": "poCtTitle",
+                  "fill": "#F0E8E0",
+                  "content": "Ça résonne ?",
+                  "fontFamily": "Atkinson Hyperlegible",
+                  "fontSize": 36,
+                  "fontWeight": "800",
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "text",
+                  "id": "I6nUO",
+                  "name": "poCtLead",
+                  "fill": "#E8D5C0",
+                  "textGrowth": "fixed-width",
+                  "width": 480,
+                  "content": "Vous portez déjà un projet citoyen, un collectif, une association. Vous cherchez une infrastructure — pas un chef. Parlons.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "Spectral",
+                  "fontSize": 24,
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "frame",
+                  "id": "Vr0iy",
+                  "name": "poCtTrack",
+                  "width": 400,
+                  "fill": "#1a1208",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#3A8FD626"
+                  },
+                  "layout": "vertical",
+                  "gap": 14,
+                  "padding": [
+                    28,
+                    24
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tWjHG",
+                      "name": "poCtHead",
+                      "fill": "#F0E8E0",
+                      "content": "🫰 Gouvernance & Projets Citoyens",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "AXdjA",
+                      "name": "poCtDesc",
+                      "fill": "#E8D5C080",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Rejoindre un cluster, proposer un projet, expérimenter ensemble.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Spectral",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "n8sME",
+                      "name": "poCtCta",
+                      "fill": "#3A8FD6",
+                      "content": "PRENDRE CONTACT →",
+                      "fontFamily": "Atkinson Hyperlegible",
+                      "fontSize": 10,
+                      "fontWeight": "700",
+                      "letterSpacing": 1.2
                     }
                   ]
                 }
@@ -3967,6 +4320,15 @@
       "width": 412,
       "height": 197,
       "content": "SIDEBAR: position:fixed; height:100vh; width:280px;\nMAIN: margin-left:280px; overflow-y:auto;\nNAV: Anchor links to section IDs (magnetic scroll-snap)."
+    },
+    {
+      "type": "note",
+      "id": "abXMH",
+      "x": 6097.485354840993,
+      "y": -143.84896888594847,
+      "width": 740,
+      "height": 470,
+      "content": "Polity Democracy Civic Engagement\n\n**Polity** refers to a system of government or a political order, encompassing the institutions, structures, and processes through which power is exercised and decisions are made. It is a broad term that can describe any form of governance, including democracies, autocracies, or monarchies.\n\n**Democracy** is a specific type of polity characterized by rule by the people, either directly or through elected representatives. Core elements include free and fair elections, protection of human rights, the rule of law, separation of powers, and political pluralism. In a democracy, citizens have the right and opportunity to participate in shaping public policy and holding leaders accountable.\n\n**Civic engagement** is the participation of individuals and groups in activities that address public concerns and contribute to the well-being of their communities. It includes both political actions—such as voting, protesting, or running for office—and non-political actions like volunteering, community organizing, or participating in local forums. While **democracy depends on civic engagement** to function effectively, civic engagement is broader in scope and includes all forms of community involvement that promote collective well-being and social responsibility. As noted by scholars, **democratic engagement is a key component of civic engagement**, focusing specifically on participation in democratic processes."
     }
   ]
 }
