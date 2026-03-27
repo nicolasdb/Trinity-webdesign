@@ -4906,11 +4906,6 @@
                   "name": "topics",
                   "opacity": 0.55,
                   "fill": "#5B9BD5",
-                  "stroke": {
-                    "align": "outside",
-                    "thickness": 0,
-                    "fill": "#5B9BD540"
-                  },
                   "textGrowth": "fixed-width",
                   "width": 600,
                   "content": "neurodiversité  ·  fablab  ·  gouvernance  ·  making  ·  inclusion  ·  autonomie  ·  open source",
@@ -6580,8 +6575,8 @@
     {
       "type": "frame",
       "id": "RGbnV",
-      "x": 7400,
-      "y": 0,
+      "x": -1115,
+      "y": 1995,
       "name": "Pantry — Syntonie Components",
       "width": 1300,
       "fill": "#ede9e3",
