@@ -115,6 +115,49 @@ Sidebar (236px wide, padding [36,28,32,28], vertical, justifyContent: space_betw
 - Trinity: 3 cards (gap 59px) — card 2 (Politype) drops 30px vertical stagger
 - Contact: label + title + lead + 3 horizontal tracks
 
+## Hugo Site — Syntonie (`syntonie/`)
+
+The active implementation is a Hugo static site in `syntonie/`. The design-spec HTML mockups above are reference only; the Hugo site is what gets deployed.
+
+### Build & Development
+
+```bash
+cd syntonie
+hugo server          # dev server at http://localhost:1313/syntonie/
+hugo                 # build to syntonie/public/
+```
+
+The site deploys to GitHub Pages with `baseURL = "/syntonie/"` — all asset paths must be root-relative or Hugo `relURL`/`absURL` calls.
+
+### Site Structure
+
+```
+syntonie/
+  hugo.toml              # baseURL="/syntonie/", disableKinds taxonomy/term
+  layouts/
+    index.html           # fog-of-war homepage (fogzone + recipe reveal)
+    _default/baseof.html # shell: sidebar, main, JS/CSS includes
+  static/
+    css/main.css         # all styles (fog, recipes, sidebar, about)
+    js/recipes.js        # fog input → autocomplete → recipe reveal logic
+    js/topics.json       # keyword→recipe mapping (loaded by recipes.js)
+  content/
+    _index.md            # homepage front matter
+```
+
+### Fog-of-War System (homepage)
+
+- Input field triggers autocomplete from `topics.json`
+- On match (2+ chars or topic-chip click): recipe `<section>` reveals via `display:none` → visible
+- `RECIPE_SECTIONS` map in `recipes.js` maps recipe keys to DOM section IDs
+- **Radical absence rule**: hidden elements use `display:none`, never `opacity:0` or `visibility:hidden`
+
+### About Page (TODO)
+
+The `/about` route will hold the institutional content currently in `syntonie-baseline.html`. Not yet implemented in Hugo.
+
+---
+
 ## Key Files & Their Purpose
 
 | File | Purpose | Status |
