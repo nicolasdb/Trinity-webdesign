@@ -124,23 +124,28 @@ The active implementation is a Hugo static site in `syntonie/`. The design-spec 
 ```bash
 cd syntonie
 hugo server          # dev server at http://localhost:1313/syntonie/
-hugo                 # build to syntonie/public/
 ```
 
-The site deploys to GitHub Pages with `baseURL = "/syntonie/"` — all asset paths must be root-relative or Hugo `relURL`/`absURL` calls.
+**Deployment**: `syntonie/` is pushed as a git subtree to `openfab-lab/syntonie`. CI builds with `hugo --minify --baseURL "https://syntonie.be/"`. Live at https://syntonie.be/
+
+**CRITICAL**: `public/` is gitignored — CI builds it fresh. Never commit it. `hugo.toml` baseURL is for local dev only; CI overrides it.
 
 ### Site Structure
 
 ```
 syntonie/
-  hugo.toml              # baseURL="/syntonie/", disableKinds taxonomy/term
+  hugo.toml              # baseURL for local dev (CI overrides for production)
+  .gitignore             # excludes public/, .hugo_build.lock
+  .github/workflows/     # build-deploy.yml (Hugo build + GitHub Pages deploy)
   layouts/
     index.html           # fog-of-war homepage (fogzone + recipe reveal)
     _default/baseof.html # shell: sidebar, main, JS/CSS includes
   static/
     css/main.css         # all styles (fog, recipes, sidebar, about)
-    js/recipes.js        # fog input → autocomplete → recipe reveal logic
+    js/recipes.js        # RECIPE_SECTIONS (DOM mapping) + TRIGGERS + revealRecipe()
     js/topics.json       # keyword→recipe mapping (loaded by recipes.js)
+  data/
+    navigation.json      # project metadata from TTL (enrichment only, NOT for DOM reveals)
   content/
     _index.md            # homepage front matter
 ```
@@ -149,8 +154,11 @@ syntonie/
 
 - Input field triggers autocomplete from `topics.json`
 - On match (2+ chars or topic-chip click): recipe `<section>` reveals via `display:none` → visible
-- `RECIPE_SECTIONS` map in `recipes.js` maps recipe keys to DOM section IDs
+- **`RECIPE_SECTIONS`** (hardcoded in `recipes.js`) maps recipe keys to DOM section IDs — this is the source of truth
+- **`navigation.json`** provides project metadata only — must NOT overwrite `RECIPES` used by `revealRecipe()`
 - **Radical absence rule**: hidden elements use `display:none`, never `opacity:0` or `visibility:hidden`
+- **CSS var cleanup**: `revealRecipe(null)` must `removeProperty()` inline vars (`--padding-centered`, `--min-height-collapsed`) so CSS defaults take over
+- **Asset paths**: always use `{{ .Site.BaseURL }}` in templates, never hardcoded paths
 
 ### About Page (TODO)
 
