@@ -88,9 +88,10 @@ Accès lors des permanences publiques. Utilisation des machines via service à l
 Accès autonome aux machines au tarif de base (sans surcharge), lors des permanences ou sur rendez-vous avec un membre effectif. L'accès à une machine se valide par la pratique — on évalue le niveau ensemble, on guide si besoin, on redirige vers une formation structurée si nécessaire (le [CityFab1](https://cityfab.brussels/) propose des formations de base). Soutient l'ASBL et la continuité du commun.
 
 **Membre effectif**
-Droit de vote à l'AG. Pas de conso sur les projets personnels. En contrepartie : porter un rôle actif dans la communauté —
+Droit de vote à l'AG. Pas de conso sur les projets personnels. Le badge entrée. 
+En contrepartie : porter un rôle actif dans la communauté — projet. Exemples:
 - assurer une permanence régulière
-- proposer un workshop ou encadrer un stage
+- proposer un workshop ou encadrer un stage, un événement.
 - prendre le lead sur un appel à projet
 - ou toute autre contribution à proposer
 
